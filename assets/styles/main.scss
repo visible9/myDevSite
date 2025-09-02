@@ -1,0 +1,85 @@
+@import 'inc/vars';
+
+// Utils
+@import 'inc/fonts';
+@import 'inc/mixins';
+
+// Import everything from autoload folder
+@import 'autoload/**/*';
+
+// Plugins
+//@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+//@import '~jarallax/src/jarallax.css';
+
+/* -----------------------------------------
+  Animation
+----------------------------------------- */
+
+@import 'inc/animation';
+
+/* -----------------------------------------
+   Slick
+----------------------------------------- */
+@import 'inc/slick';
+
+/* -----------------------------------------
+  WooCommerce
+----------------------------------------- */
+//@import 'inc/woo';
+
+/* -----------------------------------------
+  Global styles
+----------------------------------------- */
+@import 'inc/global';
+
+/* -----------------------------------------
+  Typography / Forms / Inputs / Buttons
+----------------------------------------- */
+@import 'inc/typography';
+
+/* -----------------------------------------
+  Contact Form
+----------------------------------------- */
+/* basic Gravity Form styles and fixes, if you dont need/use this -
+comment or delete styles below */
+@import 'inc/gform';
+
+/* -----------------------------------------
+  Content Styles
+----------------------------------------- */
+@import 'inc/content';
+
+/* -----------------------------------------
+  Repeatable blocks
+----------------------------------------- */
+@import 'inc/repeatable-blocks';
+
+/* -----------------------------------------
+  Header
+----------------------------------------- */
+@import 'inc/header';
+
+/* -----------------------------------------
+  Sidebar
+----------------------------------------- */
+@import 'inc/sidebar';
+
+/* -----------------------------------------
+  Footer
+----------------------------------------- */
+@import 'inc/footer';
+
+/* -----------------------------------------
+  Page: Blog
+----------------------------------------- */
+@import 'templates/blog';
+
+/* -----------------------------------------
+  TMPL: Default page
+----------------------------------------- */
+@import 'templates/default';
+
+/* -----------------------------------------
+   Gutenberg blocks
+----------------------------------------- */
+//@import '../blocks/gutenberg/**/styles.scss';

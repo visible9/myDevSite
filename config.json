@@ -1,0 +1,11 @@
+{
+  "devUrl": "%SITE_URL%",
+  "themeName": "devwp",
+  "proxyUrl": "https://localhost:3000",
+  "open": false,
+  "bsWatchFiles": [
+    "inc/**/*.php",
+    "parts/**/*.php",
+    "templates/**/*.php"
+  ]
+}
