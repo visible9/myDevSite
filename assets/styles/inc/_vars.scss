@@ -1,24 +1,63 @@
-// Project variables
-// Note: Prefer using framework variables
-
-//$blue: #1a608b;
-//
-//$text-color: #333;
-
-//$primary-color: $blue;
-//$sub-color: $primary-color;
-
-$font: 'Open Sans', serif;
-//$sub-font: $font;
-$fa: 'Font Awesome 6 Free';
-//$fab: 'Font Awesome 6 Brands';
-
-// Font Awesome Vars
-//$fa-font-display: swap;
-
-// Project mixins
-
-// Custom fonts
 :root {
-  --content-size: 80rem;
+  //container
+  --content-size: 75rem;
+  --wide-size: 85rem;
+
+  //colors
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #cccccc;
+  --red: #ff0000;
+  --green: #008000;
+  --blue: #0000ff;
+
+  --primary: var(--blue);
+  --secondary: var(--primary);
+  --text-color: var(--black);
+  --bg-color: var(--white);
+
+  //spacings
+  --size-2xs: 0.25rem;
+  --size-xs: 0.5rem;
+  --size-sm: 0.75rem;
+  --size-md: 1rem;
+  --size-lg: 2rem;
+  --size-xl: 3rem;
+  --size-2xl: 4rem;
+
+  //typo
+  // -- family
+  --primary-font-family: 'Open Sans', sans-serif;
+  --heading-font-family: 'Open Sans', sans-serif;
+
+  // -- weights
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-default: var(--font-weight-regular);
+
+  // -- transitions
+  --transition-base: all 0.3s ease-in-out;
+
+  // -- sizes
+  --font-size-h1: 2.3rem;
+  --font-size-h2: 1.6rem;
+  --font-size-h3: 1.3rem;
+  --font-size-h4: 1.2rem;
+  --font-size-h5: 1.1rem;
+  --font-size-h6: 1rem;
+  --font-size-text-xlarge: 1.25rem;
+  --font-size-text-large: 1rem;
+  --font-size-text-medium: 0.75rem;
+  --font-size-text-small: 0.5rem;
+
+  // -- line-height
+  --line-height-heading: 1.1;
+  --line-height-text: 1.4;
+
+  @media (max-width: 1440px) {
+    // -- mobile sizes (if different from desktop)
+  }
 }

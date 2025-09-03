@@ -14,13 +14,7 @@
 /* -----------------------------------------
   Animation
 ----------------------------------------- */
-
-@import 'inc/animation';
-
-/* -----------------------------------------
-   Slick
------------------------------------------ */
-@import 'inc/slick';
+//@import 'inc/animation';
 
 /* -----------------------------------------
   WooCommerce
@@ -35,51 +29,52 @@
 /* -----------------------------------------
   Typography / Forms / Inputs / Buttons
 ----------------------------------------- */
-@import 'inc/typography';
+//@import 'inc/typography';
 
 /* -----------------------------------------
   Contact Form
 ----------------------------------------- */
 /* basic Gravity Form styles and fixes, if you dont need/use this -
 comment or delete styles below */
-@import 'inc/gform';
+//@import 'inc/gform';
 
 /* -----------------------------------------
   Content Styles
 ----------------------------------------- */
-@import 'inc/content';
+//@import 'inc/content';
 
 /* -----------------------------------------
   Repeatable blocks
 ----------------------------------------- */
-@import 'inc/repeatable-blocks';
+//@import 'inc/repeatable-blocks';
 
 /* -----------------------------------------
   Header
 ----------------------------------------- */
-@import 'inc/header';
+//@import 'inc/header';
 
 /* -----------------------------------------
   Sidebar
 ----------------------------------------- */
-@import 'inc/sidebar';
+//@import 'inc/sidebar';
 
 /* -----------------------------------------
   Footer
 ----------------------------------------- */
-@import 'inc/footer';
+//@import 'inc/footer';
 
 /* -----------------------------------------
   Page: Blog
 ----------------------------------------- */
-@import 'templates/blog';
+//@import 'templates/blog';
 
 /* -----------------------------------------
   TMPL: Default page
 ----------------------------------------- */
-@import 'templates/default';
+//@import 'templates/default';
 
 /* -----------------------------------------
    Gutenberg blocks
 ----------------------------------------- */
-//@import '../blocks/gutenberg/**/styles.scss';
+@import '../gutenberg/acf-blocks/**/styles.scss';
+//@import '../gutenberg/custom-blocks/**/styles.scss';

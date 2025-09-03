@@ -11,12 +11,11 @@ import objectFitImages from 'object-fit-images';
 // import { jarallax, jarallaxElement } from 'jarallax';
 // import ScrollOut from 'scroll-out';
 
-
 /**
  * Import scripts from Custom ACF Gutenberg blocks
  */
 // eslint-disable-next-line import/no-unresolved
-// import '../blocks/gutenberg/**/index.js';
+import '../gutenberg/acf-blocks/**/index.js';
 
 /**
  * Fit slide video background to video holder

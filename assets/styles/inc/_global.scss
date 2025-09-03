@@ -8,14 +8,51 @@ body {
   flex-direction: column;
   height: auto;
   min-height: 100vh;
+
+  > main {
+    display: block;
+    flex-grow: 1;
+    overflow: clip;
+  }
+
+  > footer {
+    flex-shrink: 0;
+    margin-top: auto;
+  }
 }
 
-main {
-  display: block;
-}
-
-.grid-container {
+// is-root-container support for frontend
+.is-root-container,
+.is-layout-constrained,
+.is-root-container
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout,
+.is-root-container > [data-habitat] {
   width: 100%;
+  max-width: 100%;
+  padding: 0;
+
+  > * {
+    padding-inline: var(--size-lg);
+    margin-inline: auto;
+    width: 100%;
+    max-width: var(--content-size);
+
+    &[data-align='wide'],
+    &.alignwide {
+      max-width: var(--wide-size);
+    }
+
+    &[data-align='full'],
+    &.alignfull {
+      padding-inline: 0;
+      max-width: unset;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 *:last-child {
@@ -23,7 +60,6 @@ main {
 }
 
 /* Preloader */
-
 @keyframes spin {
   100% {
     transform: rotate(360deg);
@@ -39,8 +75,8 @@ main {
   left: 0;
   visibility: visible;
   opacity: 1;
-  background-color: $white;
-  color: $primary-color;
+  background-color: var(--white);
+  color: var(--primary);
   transition: opacity 0.4s ease, visibility 0.4s ease;
 
   &__icon {
@@ -67,14 +103,7 @@ main {
   }
 }
 
-/* Position center */
-
-.position-center {
-  @include absolute-center;
-}
-
 /* Search form */
-
 .search {
   position: relative;
 
@@ -108,7 +137,6 @@ main {
 }
 
 //use @extend %bgcover; to selector if you need background cover;
-
 %bgcover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -120,7 +148,6 @@ main {
 }
 
 //use @extend %bgcontain; to selector if you need contain image in block;
-
 %bgcontain {
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -148,33 +175,11 @@ main {
 .of-cover,
 .stretched-img {
   object-fit: cover;
+  object-position: 50% 50%;
   font-family: 'object-fit: cover;';
 }
 
-.two-columns {
-  @include breakpoint(medium) {
-    columns: 2;
-  }
-}
-
-.three-columns {
-  @include breakpoint(medium) {
-    columns: 3;
-  }
-}
-
-.stretched-link::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: auto;
-  content: '';
-  background-color: transparentize($black, 1);
-}
-
+/* Lazyload images */
 img {
   &[data-lazy-src] {
     transition: opacity 0.3s ease-in-out;

@@ -1,5 +1,39 @@
 @import 'inc/vars';
 
+.is-root-container,
+.is-layout-constrained,
+.is-root-container
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout,
+.is-root-container > [data-habitat] {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+
+  > * {
+    //padding-inline: var(--size-lg);
+    margin-inline: auto;
+    width: 100%;
+    max-width: var(--content-size);
+
+    &[data-align='wide'],
+    &.alignwide {
+      max-width: var(--wide-size);
+    }
+
+    &[data-align='full'],
+    &.alignfull {
+      padding-inline: 0;
+      max-width: unset;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Page title in editor
 .edit-post-visual-editor__post-title-wrapper {
   //display: none;
   height: 48px;
@@ -11,10 +45,10 @@
   margin-bottom: 2rem;
 
   h1 {
+    font-family: var(--primary-font-family);
     font-size: initial;
     line-height: initial;
     text-transform: none;
-    font-family: $font;
     width: 100%;
     max-width: var(--content-size);
     margin: 0 auto;
@@ -27,15 +61,18 @@
   }
 }
 
-.is-root-container {
-  max-width: var(--content-size);
-  margin: 0 auto;
-
-  .wp-block {
-    max-width: unset;
-  }
+// Spacer block in editor
+.block-editor-block-list__block[data-type='core/spacer']:before {
+  background-color: var(--white);
+  opacity: 1;
+  background-image: linear-gradient(var(--gray) 2px, transparent 2px),
+    linear-gradient(90deg, var(--gray) 2px, transparent 2px),
+    linear-gradient(var(--gray) 1px, transparent 1px),
+    linear-gradient(90deg, var(--gray) 1px, var(--white) 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
 }
 
 div.editor-styles-wrapper {
-  @import '../blocks/**/styles.scss';
+  @import '../gutenberg/acf-blocks/**/styles.scss';
 }

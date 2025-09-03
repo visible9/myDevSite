@@ -3,9 +3,9 @@
 namespace theme;
 
 /**
- * Class FoundationNavigation.
+ * Class ThemeNavigation.
  */
-class FoundationNavigation extends \Walker_Nav_Menu
+class ThemeNavigation extends \Walker_Nav_Menu
 {
     /**
      * Adds custom class to dropdown menu for foundation dropdown script.
