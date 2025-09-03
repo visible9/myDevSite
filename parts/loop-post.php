@@ -10,17 +10,17 @@
     <div class="">
         <h3 class="preview__title">
             <a href="<?php the_permalink(); ?>"
-               title="<?php echo esc_attr(sprintf(__('Permalink to %s', 'devwp'), the_title_attribute('echo=0'))); ?>"
-               rel="bookmark"><?php echo get_the_title() ?: __('No title', 'devwp'); ?>
+               title="<?php echo esc_attr(sprintf(__('Permalink to %s', 'dev-theme'), the_title_attribute('echo=0'))); ?>"
+               rel="bookmark"><?php echo get_the_title() ?: __('No title', 'dev-theme'); ?>
             </a>
         </h3>
         <?php if (is_sticky()) { ?>
-            <span class="secondary label preview__sticky"><?php _e('Sticky', 'devwp'); ?></span>
+            <span class="secondary label preview__sticky"><?php _e('Sticky', 'dev-theme'); ?></span>
         <?php } ?>
         <div class="preview__excerpt">
             <?php the_excerpt(); // Use wp_trim_words() instead if you need specific number of words?>
         </div>
-        <p class="preview__meta"><?php echo sprintf(__('Written by %s on %s', 'devwp'), get_the_author_posts_link(), get_the_time(get_option('date_format'))); ?></p>
+        <p class="preview__meta"><?php echo sprintf(__('Written by %s on %s', 'dev-theme'), get_the_author_posts_link(), get_the_time(get_option('date_format'))); ?></p>
     </div>
 </article>
 <!-- END of Post -->

@@ -43,6 +43,11 @@ add_action('tgmpa_register', function () {
             'required' => false,
         ],
         [
+            'name' => 'Disable Comments', // The plugin name
+            'slug' => 'disable-comments', // The plugin slug (typically the folder name)
+            'required' => false,
+        ],
+        [
             'name' => 'Yoast SEO', // The plugin name
             'slug' => 'wordpress-seo', // The plugin slug (typically the folder name)
             'required' => false,
@@ -51,7 +56,7 @@ add_action('tgmpa_register', function () {
 
     // Array of configuration settings. Amend each line as needed.
     $config = [
-        'id' => 'devwp', // Unique ID for hashing notices for multiple instances of TGMPA.
+        'id' => 'dev-theme', // Unique ID for hashing notices for multiple instances of TGMPA.
         'default_path' => '', // Default absolute path to bundled plugins.
         'menu' => 'install-plugins', // Menu slug.
         'parent_slug' => 'plugins.php', // Parent menu slug.

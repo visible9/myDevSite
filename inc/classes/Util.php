@@ -4,6 +4,14 @@ namespace theme;
 
 class Util
 {
+    public static function log()
+    {
+        $args = func_get_args();
+        foreach ($args as $arg) {
+            error_log(var_export($arg, true));
+        }
+    }
+
     public static function registerPostType(string $slug, string $singular, string $plural, array $args = [])
     {
         $labels = array_merge([

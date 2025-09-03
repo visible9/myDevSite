@@ -309,13 +309,13 @@ function is_embed_video($url)
  * @param mixed $filepath
  * @param mixed $atts
  */
-function render_block_tempalte($filepath, $atts = [])
+function render_block_template($filepath, $atts = [])
 {
     if (!empty($atts)) {
         extract($atts);
     }
 
-    if ($template = locate_template(str_replace(get_theme_file_path(), '', $filepath))) {
+    if ($template = locate_template(str_replace(get_theme_file_path() . '/', '', $filepath))) {
         ob_start();
 
         include $template; // Theme Check free. Child themes support.

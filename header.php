@@ -3,7 +3,7 @@
  * Header.
  */
 
-use theme\FoundationNavigation;
+use theme\ThemeNavigation;
 
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ use theme\FoundationNavigation;
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('no-outline fwp'); ?>>
+<body <?php body_class('no-outline devwp'); ?>>
 <?php wp_body_open(); ?>
 
 <!-- <div class="preloader hide-for-medium">
@@ -33,10 +33,9 @@ use theme\FoundationNavigation;
     <div class="grid-container menu-grid-container">
         <div class="grid-x grid-margin-x">
             <div class="medium-4 small-12 cell">
-                <div class="logo text-center medium-text-left">
-                    <h1>
-                        <?php show_custom_logo(); ?><span class="show-for-sr"><?php echo get_bloginfo('name'); ?></span>
-                    </h1>
+                <div class="logo">
+                    <?php show_custom_logo(); ?>
+                    <span class="show-for-sr"><?php echo get_bloginfo('name'); ?></span>
                 </div>
             </div>
             <div class="medium-8 small-12 cell">
@@ -52,7 +51,7 @@ use theme\FoundationNavigation;
                             'theme_location' => 'header-menu',
                             'menu_class' => 'menu header-menu',
                             'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown" data-submenu-toggle="true" data-multi-open="false" data-close-on-click-inside="false">%3$s</ul>',
-                            'walker' => new FoundationNavigation(),
+                            'walker' => new ThemeNavigation(),
                         ]); ?>
                     </nav>
                 <?php } ?>

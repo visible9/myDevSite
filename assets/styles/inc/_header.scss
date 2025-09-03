@@ -1,8 +1,4 @@
 .logo {
-  h1 {
-    font-size: 0;
-  }
-
   a {
     display: inline-block;
   }
@@ -12,7 +8,7 @@
   }
 }
 
-@include breakpoint(small down) {
+@media (max-width: 762px) {
   /* TOP BAR Mobile STYLING */
 
   .menu-grid-container {
@@ -109,7 +105,7 @@
   }
 }
 
-@include breakpoint(medium) {
+@media (min-width: 762px) {
   /* TOP BAR STYLING */
 
   .header-menu.menu {

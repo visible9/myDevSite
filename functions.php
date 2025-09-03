@@ -78,7 +78,7 @@ array_map(function ($filename) {
 ]);
 
 // Register ACF Gravity Forms field
-if (class_exists('WlAcfGfField')) {
+if (class_exists('theme\WlAcfGfField')) {
     // initialize
     new WlAcfGfField();
 }
@@ -156,4 +156,3 @@ if (class_exists('theme\CreateLazyImg')) {
 add_image_size('full_hd', 1920, 0, ['center', 'center']);
 add_image_size('large_high', 1024, 0, false);
 // add_image_size( 'name', width, height, ['center','center']);
-

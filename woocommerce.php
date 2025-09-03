@@ -5,14 +5,8 @@
 get_header(); ?>
 
 <main class="main-content">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <!-- BEGIN of page content -->
-            <div class="cell">
-                <?php woocommerce_content(); ?>
-            </div>
-            <!-- END of page content -->
-        </div>
+    <div class="is-root-container">
+        <?php woocommerce_content(); ?>
     </div>
 </main>
 

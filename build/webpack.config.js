@@ -138,6 +138,9 @@ module.exports = (env = {}) => {
     },
     externals: {
       jquery: 'jQuery',
+      '@wordpress/dom-ready': ['wp', 'domReady'],
+      '@wordpress/i18n': ['wp', 'i18n'],
+      '@wordpress/blocks': ['wp', 'blocks'],
     },
     optimization: {
       minimize: config.env.isProduction,

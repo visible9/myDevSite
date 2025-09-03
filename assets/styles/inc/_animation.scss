@@ -1,8 +1,7 @@
 /* ---------------------------------------
 	Appear animation
 --------------------------------------- */
-
-@include breakpoint(large) {
+@media (min-width: 1200px) {
   [data-scroll] {
     transition: opacity 0.5s ease-in-out,
       transform 1s cubic-bezier(0.16, 0.88, 0.45, 1);

@@ -1,0 +1,112 @@
+{
+  "version": 2,
+  "settings": {
+    "typography": {
+      "dropCap": false,
+      "fontWeight": true,
+      "fontSizes": [
+        {
+          "name": "Heading 1",
+          "slug": "heading-1",
+          "size": "var(--font-size-h1)"
+        },
+        {
+          "name": "Heading 2",
+          "slug": "heading-2",
+          "size": "var(--font-size-h2)"
+        },
+        {
+          "name": "Heading 3",
+          "slug": "heading-3",
+          "size": "var(--font-size-h3)"
+        },
+        {
+          "name": "Heading 4",
+          "slug": "heading-4",
+          "size": "var(--font-size-h4)"
+        },
+        {
+          "name": "Heading 5",
+          "slug": "heading-5",
+          "size": "var(--font-size-h5)"
+        },
+        {
+          "name": "Text Extra Large",
+          "slug": "text-xlarge",
+          "size": "var(--font-size-text-xlarge)"
+        },
+        {
+          "name": "Text Large",
+          "slug": "text-large",
+          "size": "var(--font-size-text-large)"
+        },
+        {
+          "name": "Text Medium",
+          "slug": "text-medium",
+          "size": "var(--font-size-text-medium)"
+        },
+        {
+          "name": "Text Small",
+          "slug": "text-small",
+          "size": "var(--font-size-text-small)"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "var(--content-size)",
+      "wideSize": "var(--wide-size)"
+    },
+    "spacing": {
+      "units": ["rem", "%", "px"],
+      "customSpacingSize": true,
+      "spacingScale": {
+        "operator": "+",
+        "increment": 0.5,
+        "steps": 7,
+        "mediumStep": 2.5,
+        "unit": "rem"
+      }
+    },
+    "color": {
+      "link": false,
+      "text": true,
+      "customGradient": false,
+      "defaultPalette": false,
+      "background": true,
+      "gradients": [],
+      "duotone": [],
+      "palette": [
+        {
+          "name": "Blue",
+          "slug": "blue",
+          "color": "var(--blue)"
+        },
+        {
+          "name": "Red",
+          "slug": "red",
+          "color": "var(--red)"
+        },
+        {
+          "name": "Green",
+          "slug": "green",
+          "color": "var(--green)"
+        },
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "var(--black)"
+        },
+        {
+          "name": "Gray",
+          "slug": "gray",
+          "color": "var(--gray)"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "var(--white)"
+        }
+      ]
+    }
+  }
+}

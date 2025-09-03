@@ -9,10 +9,15 @@ $name = 'example-block';
  * @see https://www.advancedcustomfields.com/resources/acf_register_block_type/
  */
 $settings = [
-    'title' => __('Example block', 'fwp'),
-    'description' => __('A custom example block.', 'fwp'),
-    'category' => 'common',
+    'title' => __('Example ACF Block', 'dev-theme'),
+    'description' => __('ACF example block.', 'dev-theme'),
+    'category' => 'acf-blocks',
     'icon' => 'block-default',
+    'supports' => [
+        'mode' => false,
+        'align' => ['wide', 'full'],
+        'anchor' => true,
+    ],
 ];
 
 $controller = function ($block_attributes) {
