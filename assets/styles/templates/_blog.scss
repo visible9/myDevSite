@@ -5,18 +5,18 @@
 .preview {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid $medium-gray;
+  border-bottom: 1px solid var(--gray);
 }
 
 .preview__meta {
   margin-top: 20px;
   margin-bottom: 0;
-  color: $dark-gray;
+  color: var(--gray);
   font-size: 14px;
 }
 
 .preview__thumb {
-  @include breakpoint(small down) {
+  @media (max-width: 782px) {
     margin-bottom: 20px;
   }
 }
@@ -30,7 +30,7 @@
 }
 
 .entry__meta {
-  color: $dark-gray;
+  color: var(--gray);
   font-size: 14px;
 }
 

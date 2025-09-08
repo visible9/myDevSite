@@ -1,3 +1,5 @@
+@import '@wordpress/base-styles/breakpoints'; // Default Wordpress breakpoints
+
 :root {
   //container
   --content-size: 75rem;
@@ -28,7 +30,7 @@
   //typo
   // -- family
   --primary-font-family: 'Open Sans', sans-serif;
-  --heading-font-family: 'Open Sans', sans-serif;
+  --heading-font-family: var(--primary-font-family);
 
   // -- weights
   --font-weight-light: 300;
@@ -39,7 +41,7 @@
   --font-weight-default: var(--font-weight-regular);
 
   // -- transitions
-  --transition-base: all 0.3s ease-in-out;
+  --transition-base: all 0.2s ease-in-out;
 
   // -- sizes
   --font-size-h1: 2.3rem;
@@ -57,7 +59,7 @@
   --line-height-heading: 1.1;
   --line-height-text: 1.4;
 
-  @media (max-width: 1440px) {
+  @media (max-width: #{ $break-medium }) {
     // -- mobile sizes (if different from desktop)
   }
 }

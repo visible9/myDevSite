@@ -10,7 +10,7 @@ function show_custom_logo($size = 'medium'): void
         $attachment_array = wp_get_attachment_image_src($custom_logo_id, $size);
         $logo_url = $attachment_array[0];
     } else {
-        $logo_url = asset_path('images/custom-logo.png');
+        $logo_url = asset_path('images/custom-logo.svg');
     }
     $logo_image = sprintf(
         '<img src="%s" class="custom-logo" itemprop="siteLogo" alt="%s"/>',
@@ -31,7 +31,7 @@ function show_custom_logo($size = 'medium'): void
  *
  * @param string $query
  */
-function foundation_pagination($query = ''): void
+function theme_pagination($query = ''): void
 {
     if (empty($query)) {
         global $wp_query;

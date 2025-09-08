@@ -1,5 +1,5 @@
 {
-  "name": "foundation/webpack",
+  "name": "webpack",
   "minimum-stability": "stable",
   "license": "proprietary",
   "require": {

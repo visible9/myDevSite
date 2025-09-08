@@ -13,8 +13,6 @@
 }
 
 .footer-menu {
-  @include list-unstyled;
-
   text-align: center;
 
   li {
@@ -30,7 +28,6 @@
 .footer__copy {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: $light-gray;
   font-size: 12px;
   text-align: center;
 }

@@ -1,8 +1,12 @@
 @import 'inc/vars';
 
 // Utils
+@import 'inc/reset';
 @import 'inc/fonts';
 @import 'inc/mixins';
+@import 'inc/typography';
+//@import 'inc/animation';
+@import 'inc/global';
 
 // Import everything from autoload folder
 @import 'autoload/**/*';
@@ -11,70 +15,20 @@
 //@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css';
 //@import '~jarallax/src/jarallax.css';
 
-/* -----------------------------------------
-  Animation
------------------------------------------ */
-//@import 'inc/animation';
-
-/* -----------------------------------------
-  WooCommerce
------------------------------------------ */
-//@import 'inc/woo';
-
-/* -----------------------------------------
-  Global styles
------------------------------------------ */
-@import 'inc/global';
-
-/* -----------------------------------------
-  Typography / Forms / Inputs / Buttons
------------------------------------------ */
-//@import 'inc/typography';
-
-/* -----------------------------------------
-  Contact Form
------------------------------------------ */
+// Layouts
+@import 'layouts/header';
+@import 'layouts/socials';
+@import 'layouts/footer';
+@import 'layouts/sidebar';
 /* basic Gravity Form styles and fixes, if you dont need/use this -
 comment or delete styles below */
-//@import 'inc/gform';
+//@import 'layouts/gform';
+//@import 'layouts/woo';
 
-/* -----------------------------------------
-  Content Styles
------------------------------------------ */
-//@import 'inc/content';
+// Templates
+@import 'templates/default';
+@import 'templates/blog';
 
-/* -----------------------------------------
-  Repeatable blocks
------------------------------------------ */
-//@import 'inc/repeatable-blocks';
-
-/* -----------------------------------------
-  Header
------------------------------------------ */
-//@import 'inc/header';
-
-/* -----------------------------------------
-  Sidebar
------------------------------------------ */
-//@import 'inc/sidebar';
-
-/* -----------------------------------------
-  Footer
------------------------------------------ */
-//@import 'inc/footer';
-
-/* -----------------------------------------
-  Page: Blog
------------------------------------------ */
-//@import 'templates/blog';
-
-/* -----------------------------------------
-  TMPL: Default page
------------------------------------------ */
-//@import 'templates/default';
-
-/* -----------------------------------------
-   Gutenberg blocks
------------------------------------------ */
+// Custom Gutenberg blocks
 @import '../gutenberg/acf-blocks/**/styles.scss';
-//@import '../gutenberg/custom-blocks/**/styles.scss';
+@import '../gutenberg/custom-blocks/**/styles.scss';

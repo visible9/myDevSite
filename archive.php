@@ -20,7 +20,7 @@ get_header(); ?>
                     <?php } ?>
                 <?php } ?>
                 <!-- BEGIN of pagination -->
-                <?php foundation_pagination(); ?>
+                <?php theme_pagination(); ?>
                 <!-- END of pagination -->
             </div>
             <!-- END of Archive Content -->

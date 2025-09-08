@@ -1,5 +1,5 @@
 .sidebar {
-  @include breakpoint(small down) {
+  @media (max-width: 782px) {
     margin-top: 50px;
   }
 }

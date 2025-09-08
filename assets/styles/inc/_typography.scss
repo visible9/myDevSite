@@ -1,52 +1,75 @@
 /* ---------------------------------------
 	Typography
 --------------------------------------- */
+html {
+  font-size: clamp(16px, 1vw, 22px);
+}
+
+body {
+  font-family: var(--primary-font-family), sans-serif;
+  font-size: var(--font-size-text-large);
+  font-weight: var(--font-weight-default);
+  line-height: var(--line-height-text);
+  color: var(--text-color);
+  background: var(--bg-color);
+}
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 .h1,
+.has-h1-font-size,
+h2,
 .h2,
+.has-h2-font-size,
+h3,
 .h3,
+.has-h3-font-size,
+h4,
 .h4,
+.has-h4-font-size,
+h5,
 .h5,
+.has-h5-font-size,
+h6,
 .h6 {
-  a {
-    color: inherit;
-  }
+  font-family: var(--heading-font-family), sans-serif;
+  line-height: var(--line-height-text);
+  font-weight: var(--font-weight-bold);
 }
 
 h1,
-.h1 {
-  /* basic heading styles */
+.h1,
+.has-h1-font-size {
+  font-size: var(--font-size-h1);
 }
 
 h2,
-.h2 {
-  /* basic heading styles */
+.h2,
+.has-h2-font-size {
+  font-size: var(--font-size-h2);
 }
 
 h3,
-.h3 {
-  /* basic heading styles */
+.h3,
+.has-h3-font-size {
+  font-size: var(--font-size-h3);
 }
 
 h4,
-.h4 {
-  /* basic heading styles */
+.h4,
+.has-h4-font-size {
+  font-size: var(--font-size-h4);
 }
 
 h5,
-.h5 {
-  /* basic heading styles */
+.h5,
+.has-h5-font-size {
+  font-size: var(--font-size-h5);
 }
 
 h6,
-.h6 {
-  /* basic heading styles */
+.h6,
+.has-h6-font-size {
+  font-size: var(--font-size-h6);
 }
 
 p {
@@ -55,9 +78,18 @@ p {
     display: none;
   }
 
+  &:not(:last-child) {
+    margin-bottom: var(--size-md);
+  }
+
   a {
     text-decoration: underline;
   }
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
 }
 
 ul {
@@ -69,51 +101,21 @@ ul {
   }
 }
 
-address {
-  font-style: normal;
-  margin-bottom: $global-margin;
-}
-
 a {
-  color: $primary-color;
-  transition: all 0.2s ease-in-out;
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-base);
 
   &:hover,
   &:focus {
     /* basic hover and focus effects */
-    color: darken($primary-color, 20);
-  }
-}
-
-/* ---------------------------------------
-	Tiny MCE formats
---------------------------------------- */
-
-.text-large {
-  font-size: 125%;
-}
-
-.text-align-justify {
-  text-align: justify;
-}
-
-/* ---------------------------------------
-	Tables
---------------------------------------- */
-table {
-  margin-bottom: 1rem;
-
-  th,
-  td {
-    border: $table-border;
-    padding: 0.75rem;
+    color: var(--primary);
   }
 }
 
 /* ---------------------------------------
 	Forms/Inputs
 --------------------------------------- */
-
 .no-outline {
   button,
   a,
@@ -123,7 +125,6 @@ table {
 }
 
 /* Placeholder styling */
-
 input,
 textarea {
   &::placeholder {
@@ -132,7 +133,6 @@ textarea {
 }
 
 /* Input Styling */
-
 [type='color'],
 [type='date'],
 [type='datetime-local'],
@@ -150,12 +150,6 @@ textarea {
 textarea,
 select,
 .select-styled {
-  $height: ($input-font-size * unitless-calc($input-line-height)) +
-    (get-side($input-padding, 'top') + get-side($input-padding, 'bottom')) +
-    rem-calc(get-border-value($input-border, 'width') * 2);
-
-  /* STYLES GO THERE */
-  height: $height;
   margin-bottom: 0;
 }
 
@@ -179,27 +173,4 @@ textarea[rows] {
 [type='file'],
 [type='radio'] {
   margin-bottom: 0;
-}
-
-button,
-.button,
-input[type='submit'],
-input[type='reset'],
-input[type='button'] {
-  border-width: $button-hollow-border-width;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  //&:hover,
-  //&:focus {
-  //}
-}
-
-/* Button additional styles */
-
-.button {
-  &:hover,
-  &:focus {
-    /* basic hover and focus effects */
-  }
 }

@@ -22,7 +22,7 @@ get_header(); ?>
                     <p><?php _e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'fwp'); ?></p>
                 <?php } ?>
                 <!-- BEGIN of pagination -->
-                <?php foundation_pagination(); ?>
+                <?php theme_pagination(); ?>
                 <!-- END of pagination -->
             </main>
         </div>

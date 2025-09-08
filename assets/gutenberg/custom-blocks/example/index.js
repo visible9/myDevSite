@@ -10,7 +10,7 @@ import { useBlockProps, RichText } from '@wordpress/block-editor';
  * Internal dependencies
  */
 import './editor.scss';
-import './style.scss';
+import './styles.scss';
 import metadata from './block.json';
 import BlockControls from './controls/BlockControls';
 import InspectorControls from './controls/InspectorControls';

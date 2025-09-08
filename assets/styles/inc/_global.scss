@@ -1,16 +1,28 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   height: 100%;
 }
 
+html,
 body {
-  position: static !important;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  position: static;
   display: flex;
   flex-direction: column;
   height: auto;
   min-height: 100vh;
+  overflow-x: clip;
 
   > main {
-    display: block;
     flex-grow: 1;
     overflow: clip;
   }
@@ -26,8 +38,7 @@ body {
 .is-layout-constrained,
 .is-root-container
   > .block-editor-inner-blocks
-  > .block-editor-block-list__layout,
-.is-root-container > [data-habitat] {
+  > .block-editor-block-list__layout {
   width: 100%;
   max-width: 100%;
   padding: 0;
@@ -176,7 +187,6 @@ body {
 .stretched-img {
   object-fit: cover;
   object-position: 50% 50%;
-  font-family: 'object-fit: cover;';
 }
 
 /* Lazyload images */

@@ -1,6 +1,10 @@
-$fields-gap: map_get($grid-column-gutter, 'medium');
+/* ---------------------------------------
+	Gravity Forms styles
+--------------------------------------- */
 
-.fwp {
+.base-theme {
+  --fields-gap: var(--size-md);
+
   .gform_wrapper {
     $ignoredFieldTypes: '[type="radio"]', '[type="checkbox"]', '[type="submit"]',
       '[type="button"]', '[type="image"]', '[type="file"]';
@@ -12,6 +16,7 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
     input,
     textarea {
       padding: 0.5em 1em;
+
       @include not_in($ignoredFieldTypes) {
         padding: 0.5em 1em;
       }
@@ -23,7 +28,7 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
 
     .gfield_contains_required .ginput_container_phone {
       .validation_message {
-        @extend .show-for-sr;
+        //
       }
     }
 
@@ -431,7 +436,7 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
   .gf_left_half,
   .gf_right_half {
     float: left;
-    width: calc(50% - $fields-gap / 2);
+    width: calc(50% - var(--fields-gap) / 2);
 
     + .gfield:not(.gf_left_half):not(.gf_right_half) {
       clear: both;
@@ -442,7 +447,7 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
   .gf_middle_third,
   .gf_right_third {
     float: left;
-    width: calc(33.3333% - $fields-gap * 2 / 3);
+    width: calc(33.3333% - var(--fields-gap) * 2 / 3);
 
     + .gfield:not(.gf_left_third):not(.gf_middle_third):not(.gf_right_third) {
       clear: both;
@@ -450,11 +455,11 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
   }
 
   .gf_left_half {
-    margin-right: calc($fields-gap / 2);
+    margin-right: calc(var(--fields-gap) / 2);
   }
 
   .gf_right_half {
-    margin-left: calc($fields-gap / 2);
+    margin-left: calc(var(--fields-gap) / 2);
 
     + .gfield {
       clear: both;
@@ -462,11 +467,11 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
   }
 
   .gf_left_third {
-    margin-right: calc($fields-gap * 2 / 3);
+    margin-right: calc(var(--fields-gap) * 2 / 3);
   }
 
   .gf_right_third {
-    margin-left: calc($fields-gap * 2 / 3);
+    margin-left: calc(var(--fields-gap) * 2 / 3);
 
     + .gfield {
       clear: both;
@@ -474,8 +479,8 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
   }
 
   .gf_middle_third {
-    margin-right: calc($fields-gap / 3);
-    margin-left: calc($fields-gap / 3);
+    margin-right: calc(var(--fields-gap) / 3);
+    margin-left: calc(var(--fields-gap) / 3);
   }
 }
 
@@ -485,8 +490,8 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
 //  }
 //
 //  @include breakpoint(medium) {
-//    margin-right: calc($fields-gap / 2 * -1);
-//    margin-left: calc($fields-gap / 2 * -1);
+//    margin-right: calc(var(--fields-gap) / 2 * -1);
+//    margin-left: calc(var(--fields-gap) / 2 * -1);
 //
 //    &::after {
 //      content: '';
@@ -497,18 +502,18 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
 //    > span {
 //      display: block;
 //      float: left;
-//      width: calc(50% - $fields-gap);
-//      margin-right: calc($fields-gap / 2);
+//      width: calc(50% - var(--fields-gap));
+//      margin-right: calc(var(--fields-gap) / 2);
 //      margin-bottom: 20px;
-//      margin-left: calc($fields-gap / 2);
+//      margin-left: calc(var(--fields-gap) / 2);
 //
 //      &.ginput_full {
-//        width: calc(100% - $fields-gap);
+//        width: calc(100% - var(--fields-gap));
 //
 //        > span {
 //          display: block;
 //          float: left;
-//          width: calc(50% - $fields-gap);
+//          width: calc(50% - var(--fields-gap));
 //        }
 //      }
 //
@@ -535,11 +540,11 @@ $fields-gap: map_get($grid-column-gutter, 'medium');
 
   @include breakpoint(medium) {
     .ginput_cardinfo_left {
-      margin-right: calc($fields-gap / 2);
+      margin-right: calc(var(--fields-gap) / 2);
     }
 
     .ginput_cardinfo_right {
-      margin-left: calc($fields-gap / 2);
+      margin-left: calc(var(--fields-gap) / 2);
     }
 
     select.ginput_card_expiration {
