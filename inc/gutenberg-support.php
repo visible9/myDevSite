@@ -125,10 +125,11 @@ add_action('init', function () {
             if (!$hasBlockJson) {
                 user_error(
                     "error registering dynamic block: {$filename}. Metadata file not found at {$blockJson}."
-                    . " see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/"
-                    . " for details on block metadata files.",
+                    . ' see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/'
+                    . ' for details on block metadata files.',
                     E_USER_ERROR
                 );
+
                 return;
             }
 
