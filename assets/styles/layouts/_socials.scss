@@ -2,24 +2,24 @@
 	Social networks
 --------------------------------------- */
 .stay-tuned {
-  @include list-unstyled;
-
-  margin-right: -5px;
-  margin-left: -5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--size-2xs);
   font-size: 0;
-}
 
-.stay-tuned__item {
-  display: inline-block;
-  margin-right: 5px;
-  margin-left: 5px;
-}
+  &__item {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 
-.stay-tuned__link {
-  display: block;
-
-  .fab {
+  &__link {
     display: block;
-    font-size: 16px;
+
+    .fab {
+      display: block;
+      font-size: 16px;
+    }
   }
 }

@@ -47,7 +47,7 @@ spl_autoload_register(function ($class_name) {
         $file = get_stylesheet_directory() . "/inc/classes/{$class_name}.php";
 
         if (!file_exists($file)) {
-            echo sprintf(__('Error locating <code>%s</code> for inclusion.', 'fwp'), $file);
+            echo sprintf(__('Error locating <code>%s</code> for inclusion.', 'base-theme'), $file);
         } else {
             require_once $file;
         }
@@ -57,7 +57,7 @@ spl_autoload_register(function ($class_name) {
 array_map(function ($filename) {
     $file = get_stylesheet_directory() . "/inc/{$filename}.php";
     if (!file_exists($file)) {
-        echo sprintf(__('Error locating <code>%s</code> for inclusion.', 'fwp'), $file);
+        echo sprintf(__('Error locating <code>%s</code> for inclusion.', 'base-theme'), $file);
     } else {
         include_once $file;
     }
@@ -129,7 +129,7 @@ add_action('wp_enqueue_scripts', function () {
 // Dynamic Admin
 if (class_exists('theme\DynamicAdmin') && is_admin()) {
     $dynamic_admin = new DynamicAdmin();
-    //    $dynamic_admin->addField('page', 'template', __('Page Template', 'fwp'), 'template_detail_field_for_page');
+    //    $dynamic_admin->addField('page', 'template', __('Page Template', 'base-theme'), 'template_detail_field_for_page');
     $dynamic_admin->run();
 }
 

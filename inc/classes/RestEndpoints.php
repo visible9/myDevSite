@@ -7,9 +7,9 @@ class RestEndpoints
     public function __construct()
     {
         add_action('rest_api_init', function () {
-            // GET /wp-json/fwp/page
+            // GET /wp-json/base-theme/page
             register_rest_route(
-                'fwp',
+                'base-theme',
                 '/page(?:/(?P<id>\d+))?',
                 [
                     'methods' => 'GET',

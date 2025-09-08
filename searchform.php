@@ -7,9 +7,9 @@
 ?>
 <!-- BEGIN of search form -->
 <form method="get" class="search" action="<?php echo esc_url(home_url('/')); ?>">
-    <input type="search" name="s" class="search__input" placeholder="<?php _e('Search', 'fwp'); ?>"
-           value="<?php echo get_search_query(); ?>" aria-label="<?php _e('Search input', 'fwp'); ?>" />
+    <input type="search" name="s" class="search__input" placeholder="<?php _e('Search', 'base-theme'); ?>"
+           value="<?php echo get_search_query(); ?>" aria-label="<?php _e('Search input', 'base-theme'); ?>" />
     <button type="submit" name="submit" class="search__submit"
-            aria-label="<?php _e('Submit search', 'fwp'); ?>"><?php _e('Search', 'fwp'); ?></button>
+            aria-label="<?php _e('Submit search', 'base-theme'); ?>"><?php _e('Search', 'base-theme'); ?></button>
 </form>
 <!-- END of search form -->

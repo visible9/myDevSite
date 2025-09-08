@@ -33,7 +33,7 @@ add_action(
      */
     function ($wp_customize) {
         $wp_customize->add_section('google_maps', [
-            'title' => __('Google Maps', 'fwp'),
+            'title' => __('Google Maps', 'base-theme'),
             'priority' => 30,
         ]);
 
@@ -42,7 +42,7 @@ add_action(
         ]);
 
         $wp_customize->add_control('google_maps_api', [
-            'label' => __('Google Maps API key', 'fwp'),
+            'label' => __('Google Maps API key', 'base-theme'),
             'section' => 'google_maps',
             'settings' => 'google_maps_api',
             'type' => 'text',
@@ -55,7 +55,7 @@ add_action(
                 $wp_customize,
                 'outline_color',
                 [
-                    'label' => __('Outline color', 'fwp'),
+                    'label' => __('Outline color', 'base-theme'),
                     'section' => 'colors',
                     'settings' => 'outline_color',
                 ]

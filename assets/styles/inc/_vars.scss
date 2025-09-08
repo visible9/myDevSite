@@ -1,11 +1,11 @@
 @import '@wordpress/base-styles/breakpoints'; // Default Wordpress breakpoints
 
 :root {
-  //container
+  // container
   --content-size: 75rem;
   --wide-size: 85rem;
 
-  //colors
+  // colors
   --black: #000000;
   --white: #ffffff;
   --gray: #cccccc;
@@ -18,7 +18,7 @@
   --text-color: var(--black);
   --bg-color: var(--white);
 
-  //spacings
+  // spacings
   --size-2xs: 0.25rem;
   --size-xs: 0.5rem;
   --size-sm: 0.75rem;
@@ -27,21 +27,18 @@
   --size-xl: 3rem;
   --size-2xl: 4rem;
 
-  //typo
+  // transitions
+  --transition-base: all 0.2s ease-in-out;
+
+  // typo
   // -- family
-  --primary-font-family: 'Open Sans', sans-serif;
+  --primary-font-family: 'Montserrat', sans-serif;
   --heading-font-family: var(--primary-font-family);
 
   // -- weights
-  --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-default: var(--font-weight-regular);
-
-  // -- transitions
-  --transition-base: all 0.2s ease-in-out;
 
   // -- sizes
   --font-size-h1: 2.3rem;

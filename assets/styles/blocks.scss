@@ -1,11 +1,11 @@
 @import 'inc/vars';
 
+// is-root-container support
 .is-root-container,
 .is-layout-constrained,
 .is-root-container
   > .block-editor-inner-blocks
-  > .block-editor-block-list__layout,
-.is-root-container > [data-habitat] {
+  > .block-editor-block-list__layout {
   width: 100%;
   max-width: 100%;
   padding: 0;
@@ -35,7 +35,6 @@
 
 // Page title in editor
 .edit-post-visual-editor__post-title-wrapper {
-  //display: none;
   height: 48px;
   border-bottom: 1px solid #e0e0e0;
   padding: 0;
@@ -45,7 +44,7 @@
   margin-bottom: 2rem;
 
   h1 {
-    font-family: var(--primary-font-family);
+    font-family: var(--primary-font-family), sans-serif;
     font-size: initial;
     line-height: initial;
     text-transform: none;
@@ -73,6 +72,8 @@
   background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
 }
 
+// Add modules styles to editor
 div.editor-styles-wrapper {
   @import '../gutenberg/acf-blocks/**/styles.scss';
+  @import '../gutenberg/custom-blocks/**/styles.scss';
 }

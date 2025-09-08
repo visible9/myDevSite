@@ -1,0 +1,29 @@
+/* ---------------------------------------
+	Pagination
+--------------------------------------- */
+ul.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--size-2xs);
+  margin-block: var(--size-lg);
+
+  li {
+    > * {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      color: var(--primary);
+    }
+
+    a {
+      border: 1px solid var(--primary);
+      border-radius: 4px;
+      text-decoration: none;
+      transition: var(--transition-base);
+
+      &:hover {
+        background-color: var(--primary);
+        color: var(--white);
+      }
+    }
+  }
+}

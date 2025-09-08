@@ -7,27 +7,32 @@
 get_header(); ?>
 
 <main class="main-content">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x posts-list">
-            <!-- BEGIN of Blog posts -->
-            <div class="large-8 medium-8 small-12 cell">
-                <?php if (have_posts()) { ?>
-                    <?php while (have_posts()) {
-                        the_post(); ?>
-                        <?php get_template_part('parts/loop', 'post'); // Post item?>
+    <div class="is-root-container">
+        <div class="blog">
+            <h1 class="blog__title">
+                <?php echo get_the_title(); ?>
+            </h1>
+            <div class="blog__outer">
+                <!-- BEGIN of Blog posts -->
+                <div class="blog__inner">
+                    <?php if (have_posts()) { ?>
+                        <?php while (have_posts()) {
+                            the_post(); ?>
+                            <?php show_template('loop-post'); // Post item?>
+                        <?php } ?>
                     <?php } ?>
-                <?php } ?>
-                <!-- BEGIN of pagination -->
-                <?php theme_pagination(); ?>
-                <!-- END of pagination -->
-            </div>
-            <!-- END of Blog posts -->
+                    <!-- BEGIN of pagination -->
+                    <?php theme_pagination(); ?>
+                    <!-- END of pagination -->
+                </div>
+                <!-- END of Blog posts -->
 
-            <!-- BEGIN of sidebar -->
-            <div class="large-4 medium-4 small-12 cell sidebar">
-                <?php get_sidebar('right'); ?>
+                <!-- BEGIN of sidebar -->
+                <div class="blog__sidebar">
+                    <?php get_sidebar('right'); ?>
+                </div>
+                <!-- END of sidebar -->
             </div>
-            <!-- END of sidebar -->
         </div>
     </div>
 </main>

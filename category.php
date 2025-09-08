@@ -5,31 +5,35 @@
  * Standard loop for the category page
  */
 get_header(); ?>
+
 <main class="main-content">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x posts-list">
-            <div class="cell small-12">
-                <h2 class="page-title page-title--category"><?php echo get_the_archive_title(); ?></h2>
-            </div>
-            <!-- BEGIN Category Content -->
-            <div class="large-8 medium-8 small-12 cell">
-                <?php if (have_posts()) { ?>
-                    <?php while (have_posts()) {
-                        the_post(); ?><!-- BEGIN of Post -->
-                        <?php get_template_part('parts/loop', 'post'); // Post item?>
+    <div class="is-root-container">
+        <div class="blog">
+            <h1 class="blog__title blog__title--archive">
+                <?php echo get_the_archive_title(); ?>
+            </h1>
+            <div class="blog__outer">
+                <!-- BEGIN of Archive Content -->
+                <div class="blog__inner">
+                    <?php if (have_posts()) { ?>
+                        <?php while (have_posts()) {
+                            the_post(); ?>
+                            <?php show_template('loop-post'); // Post item?>
+                        <?php } ?>
                     <?php } ?>
-                <?php } ?>
-                <!-- BEGIN of pagination -->
-                <?php theme_pagination(); ?>
-                <!-- END of pagination -->
+                    <!-- BEGIN of pagination -->
+                    <?php theme_pagination(); ?>
+                    <!-- END of pagination -->
+                </div>
+                <!-- END of Archive Content -->
+                <!-- BEGIN of Sidebar -->
+                <div class="blog__sidebar">
+                    <?php get_sidebar('right'); ?>
+                </div>
+                <!-- END of Sidebar -->
             </div>
-            <!-- END Category Content -->
-            <!-- BEGIN of Sidebar -->
-            <div class="large-4 medium-4 small-12 cell sidebar">
-                <?php get_sidebar('right'); ?>
-            </div>
-            <!-- END of Sidebar -->
         </div>
     </div>
 </main>
+
 <?php get_footer(); ?>

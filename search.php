@@ -6,28 +6,32 @@
  */
 get_header(); ?>
 
-<div class="grid-container">
-    <div class="grid-x grid-margin-x posts-list">
-        <div class="cell small-12">
+<main class="main-content">
+    <div class="is-root-container">
+        <div class="search">
+            <h1 class="search__title">
+                <?php printf(__('Search Results for: %s', 'base-theme'), '<span>' . esc_html(get_search_query()) . '</span>'); ?>
+            </h1>
+            <?php get_search_form(); ?>
             <!-- BEGIN of search results -->
-            <main class="main-content">
-                <h1 class="page-title"><?php printf(__('Search Results for: %s', 'fwp'), '<span>' . esc_html(get_search_query()) . '</span>'); ?></h1>
-                <?php get_search_form(); ?>
+            <div class="search__list">
                 <?php if (have_posts()) { ?>
                     <?php while (have_posts()) {
                         the_post(); ?>
-                        <?php get_template_part('parts/loop', 'post'); // Post item?>
+                        <?php show_template('loop-post'); // Post item?>
                     <?php } ?>
                 <?php } else { ?>
-                    <p><?php _e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'fwp'); ?></p>
+                    <p>
+                        <?php _e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'base-theme'); ?>
+                    </p>
                 <?php } ?>
                 <!-- BEGIN of pagination -->
                 <?php theme_pagination(); ?>
                 <!-- END of pagination -->
-            </main>
+            </div>
+            <!-- END of search results -->
         </div>
-        <!-- END of search results -->
     </div>
-</div>
+</main>
 
 <?php get_footer(); ?>

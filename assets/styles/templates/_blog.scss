@@ -1,39 +1,69 @@
+@import '@wordpress/base-styles/breakpoints';
+
 /* ---------------------------------------
-	Blog page
+	General blog styles
 --------------------------------------- */
+.blog {
+  padding-block: var(--size-lg);
 
+  &__inner {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: #{ $break-wide }) {
+    &__outer {
+      display: flex;
+      gap: var(--size-lg);
+    }
+
+    &__inner {
+      flex: 1;
+    }
+
+    &__sidebar {
+      width: 30%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+/* ---------------------------------------
+	Loop post preview
+--------------------------------------- */
 .preview {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: var(--size-md);
+  padding-bottom: var(--size-md);
   border-bottom: 1px solid var(--gray);
-}
 
-.preview__meta {
-  margin-top: 20px;
-  margin-bottom: 0;
-  color: var(--gray);
-  font-size: 14px;
-}
+  &__meta {
+    margin-top: var(--size-md);
+    margin-bottom: 0;
+    color: var(--gray);
+    font-size: 14px;
+  }
 
-.preview__thumb {
-  @media (max-width: 782px) {
-    margin-bottom: 20px;
+  &__thumb {
+    margin-bottom: var(--size-md);
   }
 }
 
 /* ---------------------------------------
 	Post / Page inner view
 --------------------------------------- */
+.entry {
+  &__thumb {
+    margin-bottom: var(--size-md);
+  }
 
-.entry__thumb {
-  margin-bottom: 20px;
-}
+  &__meta {
+    color: var(--gray);
+    font-size: var(--font-size-text-medium);
+  }
 
-.entry__meta {
-  color: var(--gray);
-  font-size: 14px;
-}
-
-.entry__cat {
-  margin-top: 20px;
+  &__cat {
+    margin-top: var(--size-md);
+  }
 }

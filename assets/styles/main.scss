@@ -7,11 +7,12 @@
 @import 'inc/typography';
 //@import 'inc/animation';
 @import 'inc/global';
-
-// Import everything from autoload folder
-@import 'autoload/**/*';
+@import 'inc/block-styles';
 
 // Plugins
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
 //@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css';
 //@import '~jarallax/src/jarallax.css';
 
@@ -20,6 +21,7 @@
 @import 'layouts/socials';
 @import 'layouts/footer';
 @import 'layouts/sidebar';
+@import 'layouts/pagination';
 /* basic Gravity Form styles and fixes, if you dont need/use this -
 comment or delete styles below */
 //@import 'layouts/gform';

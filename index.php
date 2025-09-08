@@ -5,28 +5,33 @@
  * Standard loop for the front-page
  */
 get_header(); ?>
-<main class="main-content">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x posts-list">
-            <!-- BEGIN of main content -->
-            <div class="large-8 medium-8 small-12 cell">
-                <?php if (have_posts()) { ?>
-                    <?php while (have_posts()) {
-                        the_post(); ?>
-                        <?php get_template_part('parts/loop', 'post'); // Post item?>
-                    <?php } ?>
-                <?php } ?>
-                <!-- BEGIN of pagination -->
-                <?php theme_pagination(); ?>
-                <!-- END of pagination -->
-            </div>
-            <!-- END of main content -->
 
-            <!-- BEGIN of sidebar -->
-            <div class="large-4 medium-4 small-12 cell sidebar">
-                <?php get_sidebar('right'); ?>
+<main class="main-content">
+    <div class="is-root-container">
+        <div class="blog">
+            <h1 class="blog__title blog__title--archive">
+                <?php echo get_the_archive_title(); ?>
+            </h1>
+            <div class="blog__outer">
+                <!-- BEGIN of Archive Content -->
+                <div class="blog__inner">
+                    <?php if (have_posts()) { ?>
+                        <?php while (have_posts()) {
+                            the_post(); ?>
+                            <?php show_template('loop-post'); // Post item?>
+                        <?php } ?>
+                    <?php } ?>
+                    <!-- BEGIN of pagination -->
+                    <?php theme_pagination(); ?>
+                    <!-- END of pagination -->
+                </div>
+                <!-- END of Archive Content -->
+                <!-- BEGIN of Sidebar -->
+                <div class="blog__sidebar">
+                    <?php get_sidebar('right'); ?>
+                </div>
+                <!-- END of Sidebar -->
             </div>
-            <!-- END of sidebar -->
         </div>
     </div>
 </main>

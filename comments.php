@@ -12,9 +12,9 @@ if (post_password_required()) {
         <h3 class="comments-title">
             <?php $comments_number = get_comments_number(); ?>
             <?php if (1 == $comments_number) {
-                _e('1 comment', 'fwp');
+                _e('1 comment', 'base-theme');
             } else {
-                printf(__('%s comments', 'fwp'), $comments_number);
+                printf(__('%s comments', 'base-theme'), $comments_number);
             } ?>
         </h3>
 
@@ -34,7 +34,7 @@ if (post_password_required()) {
     <?php
     // If comments are closed and there are comments, let's leave a little note, shall we?
     if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) { ?>
-        <p class="no-comments"><?php _e('Comments are closed.', 'fwp'); ?></p>
+        <p class="no-comments"><?php _e('Comments are closed.', 'base-theme'); ?></p>
     <?php } ?>
 
     <?php comment_form([

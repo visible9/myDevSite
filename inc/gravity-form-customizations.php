@@ -67,7 +67,7 @@ add_filter('gform_submit_button', function ($button, $form) {
         return $button;
     }
 
-    $button_inner = $form['button']['text'] ?: __('Submit', 'fwp');
+    $button_inner = $form['button']['text'] ?: __('Submit', 'base-theme');
 
     return str_replace(
         ['input', '/>', 'gform_button'],
