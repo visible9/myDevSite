@@ -21,6 +21,6 @@ $classes_string = implode(' ', array_filter($classes));
     class="<?php echo esc_attr($classes_string); ?>"
 >
     <div class="inner">
-        <h2><?php _e('Example Block', 'dev-theme'); ?></h2>
+        <h2><?php _e('Example Block', 'base-theme'); ?></h2>
     </div>
 </div>

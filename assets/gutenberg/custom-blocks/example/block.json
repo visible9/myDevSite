@@ -8,7 +8,7 @@
   "category": "custom-blocks",
   "usesContext": [],
   "keywords": [],
-  "textdomain": "dev-theme",
+  "textdomain": "base-theme",
   "attributes": {
     "testSelect": {
       "type": "string",

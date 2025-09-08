@@ -1,5 +1,5 @@
 {
-  "name": "devwp",
+  "name": "base-theme",
   "version": "1.1.0",
   "private": true,
   "browserslist": [
@@ -17,7 +17,7 @@
     "node": ">= 18.17.0"
   },
   "scripts": {
-    "build": "webpack --progress --config build/webpack.config.js --env skip-config-validation",
+    "build": "webpack --progress --config build/webpack.config.js --env skip-config-validation && wp-scripts build",
     "build:production": "yarn run build --env production",
     "build:production:analyze": "yarn run build:production --analyze",
     "deploy:production": "node build/deploy.mjs --target=pressable.production",
@@ -35,7 +35,11 @@
     "@babel/core": "^7.14.5",
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
+    "@wordpress/block-editor": "12.10.13",
     "@wordpress/blocks": "12.19.13",
+    "@wordpress/components": "25.8.13",
+    "@wordpress/data": "9.12.13",
+    "@wordpress/i18n": "4.42.13",
     "@wordpress/scripts": "^30.23.0",
     "autoprefixer": "^10.2.6",
     "babel-loader": "^9.1.0",

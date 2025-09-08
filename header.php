@@ -21,7 +21,7 @@ use theme\ThemeNavigation;
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('no-outline devwp'); ?>>
+<body <?php body_class('no-outline base-theme'); ?>>
 <?php wp_body_open(); ?>
 
 <!-- <div class="preloader hide-for-medium">

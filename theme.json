@@ -57,7 +57,7 @@
       "wideSize": "var(--wide-size)"
     },
     "spacing": {
-      "units": ["rem", "%", "px"],
+      "units": ["rem", "px"],
       "customSpacingSize": true,
       "spacingScale": {
         "operator": "+",

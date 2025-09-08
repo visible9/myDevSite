@@ -4,7 +4,7 @@
  */
 
 // Add correct theme textdomain for loco translate
-load_theme_textdomain('dev-theme', get_template_directory() . '/languages');
+load_theme_textdomain('base-theme', get_template_directory() . '/languages');
 
 // WP 5.2 wp_body_open backward compatibility
 if (!function_exists('wp_body_open')) {
@@ -17,8 +17,8 @@ if (!function_exists('wp_body_open')) {
 // ACF Pro Options Page
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page([
-        'page_title' => __('Theme General Settings', 'dev-theme'),
-        'menu_title' => __('Theme Settings', 'dev-theme'),
+        'page_title' => __('Theme General Settings', 'base-theme'),
+        'menu_title' => __('Theme Settings', 'base-theme'),
         'menu_slug' => 'theme-general-settings',
         'capability' => 'edit_posts',
         'redirect' => false,
@@ -68,8 +68,8 @@ add_post_type_support('page', 'excerpt');
 
 // Register Navigation Menu
 register_nav_menus([
-    'header-menu' => __('Header Menu', 'dev-theme'),
-    'footer-menu' => __('Footer Menu', 'dev-theme'),
+    'header-menu' => __('Header Menu', 'base-theme'),
+    'footer-menu' => __('Footer Menu', 'base-theme'),
 ]);
 
 // Register Sidebars
@@ -77,8 +77,8 @@ add_action('widgets_init', function () {
     // Sidebar Right
     register_sidebar([
         'id' => 'theme_sidebar_right',
-        'name' => __('Sidebar Right', 'dev-theme'),
-        'description' => __('This sidebar is located on the right-hand side of each page.', 'dev-theme'),
+        'name' => __('Sidebar Right', 'base-theme'),
+        'description' => __('This sidebar is located on the right-hand side of each page.', 'base-theme'),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h5 class="widget__title">',

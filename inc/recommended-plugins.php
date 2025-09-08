@@ -56,7 +56,7 @@ add_action('tgmpa_register', function () {
 
     // Array of configuration settings. Amend each line as needed.
     $config = [
-        'id' => 'dev-theme', // Unique ID for hashing notices for multiple instances of TGMPA.
+        'id' => 'base-theme', // Unique ID for hashing notices for multiple instances of TGMPA.
         'default_path' => '', // Default absolute path to bundled plugins.
         'menu' => 'install-plugins', // Menu slug.
         'parent_slug' => 'plugins.php', // Parent menu slug.

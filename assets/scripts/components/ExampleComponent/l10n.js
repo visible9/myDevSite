@@ -1,3 +1,3 @@
 import { __ } from '@wordpress/i18n';
 
-export default { message: __('React is working :)', 'dev-theme') };
+export default { message: __('React is working :)', 'base-theme') };

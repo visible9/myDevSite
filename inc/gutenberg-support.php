@@ -110,6 +110,9 @@ add_action('init', function () {
         (function () use ($filename) {
             require $filename;
 
+            /**
+             * @global $controller
+             */
             $blockDir = dirname($filename);
             $template = $blockDir . '/template.php';
             $hasTemplate = file_exists($template);

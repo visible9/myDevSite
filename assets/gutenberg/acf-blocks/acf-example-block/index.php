@@ -9,8 +9,8 @@ $name = 'example-block';
  * @see https://www.advancedcustomfields.com/resources/acf_register_block_type/
  */
 $settings = [
-    'title' => __('Example ACF Block', 'dev-theme'),
-    'description' => __('ACF example block.', 'dev-theme'),
+    'title' => __('Example ACF Block', 'base-theme'),
+    'description' => __('ACF example block.', 'base-theme'),
     'category' => 'acf-blocks',
     'icon' => 'block-default',
     'supports' => [
