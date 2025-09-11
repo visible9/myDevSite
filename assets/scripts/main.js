@@ -1,5 +1,5 @@
 // Import everything from autoload folder
-import './autoload/**/*'; // eslint-disable-line
+import './autoload/*'; // eslint-disable-line
 
 // Import local dependencies
 import './plugins/lazyload';
@@ -46,6 +46,17 @@ function resizeVideo() {
     });
   });
 }
+
+const setHeaderHeight = () => {
+  const header = document.querySelector('.header');
+
+  if (header) {
+    document.body.style.setProperty(
+      '--header-height',
+      `${header.offsetHeight}px`
+    );
+  }
+};
 
 /**
  * Scripts which runs after DOM load
@@ -174,6 +185,11 @@ $(window).on('load', function () {
   if ($preloader.length) {
     $preloader.addClass('preloader--hidden');
   }
+
+  /**
+   * Create CSS variable for header height
+   */
+  setHeaderHeight();
 });
 
 /**
@@ -181,8 +197,12 @@ $(window).on('load', function () {
  */
 $(window).on('resize', function () {
   // jQuery code goes here
-
   resizeVideo();
+
+  /**
+   * Create CSS variable for header height
+   */
+  setHeaderHeight();
 });
 
 /**

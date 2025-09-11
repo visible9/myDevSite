@@ -326,7 +326,7 @@
     position: relative;
     padding: 5px 0;
     border: none;
-    background-color: var(--primary); /* set the header background color */
+    background-color: var(--primary);
     color: var(--white);
 
     &::after {
@@ -414,7 +414,7 @@
       position: relative;
       margin: 0;
       border: 0;
-      background-color: var(--primary); /* set the active date background color */
+      background-color: var(--primary);
       color: var(--white);
     }
   }
