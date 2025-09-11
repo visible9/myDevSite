@@ -22,6 +22,8 @@ add_action('enqueue_block_editor_assets', function () {
             'wp-dom-ready',
             'wp-i18n',
             'wp-blocks',
+            'wp-element',
+            'wp-editor',
         ],
     );
 });
@@ -76,7 +78,7 @@ add_action('init', function () {
                                 render_block_template($template, $atts);
                             },
                         ],
-                        isset($settings) ? $settings : []
+                        $settings ?? []
                     ));
                 } elseif ($isAcfBlock && !$hasController) {
                     \acf_register_block_type(array_merge(
@@ -94,7 +96,7 @@ add_action('init', function () {
                                 render_block_template($template, $atts);
                             },
                         ],
-                        isset($settings) ? $settings : []
+                        $settings ?? []
                     ));
                 } else {
                     register_block_type($name);
@@ -174,21 +176,17 @@ add_action('init', function () {
                         'block' => $block,
                     ]);
 
-                    render_block_template($template, $atts);
+                    return render_block_template($template, $atts);
                 };
             } elseif ($hasTemplate && $hasController) {
                 $args['render_callback'] = function ($block_attributes, $content, $block) use ($template, $controller) {
                     $atts = $controller($block_attributes, $content, $block);
 
-                    render_block_template($template, $atts);
+                    return render_block_template($template, $atts);
                 };
             }
 
-            try {
-                register_block_type($blockJson, $args);
-            } catch (Throwable $e) {
-                Util::log('Block registration error: ' . $e->getMessage());
-            }
+            register_block_type($blockJson, $args);
         })();
     }
 });

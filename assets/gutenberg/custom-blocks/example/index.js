@@ -37,9 +37,6 @@ export const settings = {
       ),
     };
 
-    console.log('richTexts', richTexts); //eslint-disable-line
-    console.log('isSelected', isSelected); //eslint-disable-line
-
     return (
       <>
         <InspectorControls {...props} />
