@@ -32,5 +32,4 @@ comment or delete styles below */
 @import 'templates/blog';
 
 // Custom Gutenberg blocks
-@import '../gutenberg/acf-blocks/**/styles.scss';
-@import '../gutenberg/custom-blocks/**/styles.scss';
+@import '../gutenberg/blocks/**/styles.scss';

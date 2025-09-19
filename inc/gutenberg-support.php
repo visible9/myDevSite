@@ -16,14 +16,11 @@ add_action('enqueue_block_editor_assets', function () {
             'runtime.js',
             'ext.js',
             'react-jsx-runtime',
-            'wp-block-editor',
-            'wp-components',
-            'wp-compose',
-            'wp-dom-ready',
-            'wp-i18n',
+            'wp-edit-post',
             'wp-blocks',
-            'wp-element',
-            'wp-editor',
+            'wp-i18n',
+            'wp-components',
+            'wp-rich-text',
         ],
     );
 });
@@ -31,8 +28,8 @@ add_action('enqueue_block_editor_assets', function () {
 add_action('init', function () {
     // Register ACF Gutenberg blocks
     if (function_exists('acf_register_block_type')) {
-        $acf_blocks_dir = get_theme_file_path() . '/assets/gutenberg/acf-blocks';
-        $acf_blocks = glob(get_theme_file_path() . '/assets/gutenberg/acf-blocks/**/index.php');
+        $acf_blocks_dir = get_theme_file_path() . '/assets/gutenberg/blocks';
+        $acf_blocks = glob(get_theme_file_path() . '/assets/gutenberg/blocks/**/index.php');
 
         foreach ($acf_blocks as $filename) {
             (function () use ($filename, $acf_blocks_dir) {
@@ -103,90 +100,5 @@ add_action('init', function () {
                 }
             })();
         }
-    }
-
-    // Register custom Gutenberg blocks
-    $custom_blocks = glob(get_theme_file_path() . '/assets/gutenberg/custom-blocks/**/index.php');
-
-    foreach ($custom_blocks as $filename) {
-        (function () use ($filename) {
-            require $filename;
-
-            /**
-             * @global $controller
-             */
-            $blockDir = dirname($filename);
-            $template = $blockDir . '/template.php';
-            $hasTemplate = file_exists($template);
-            $blockJson = $blockDir . '/block.json';
-            $hasBlockJson = file_exists($blockJson);
-            $hasRender = isset($render);
-            $hasController = isset($controller);
-            $args = [];
-
-            if (!$hasBlockJson) {
-                user_error(
-                    "error registering dynamic block: {$filename}. Metadata file not found at {$blockJson}."
-                    . ' see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/'
-                    . ' for details on block metadata files.',
-                    E_USER_ERROR
-                );
-
-                return;
-            }
-
-            if ($hasRender && $hasTemplate) {
-                user_error(
-                    "error registering dynamic block: {$filename} declares a \$render callback
-                        even though there is an index.blade.php template. Please use either one or the other!",
-                    E_USER_ERROR
-                );
-            }
-
-            if ($hasController && !$hasTemplate) {
-                user_error(
-                    "error registering dynamic block: {$filename} declares a \$controller function
- but does not provide an index.blade.php template. Please add a template for the block to function properly!",
-                    E_USER_ERROR
-                );
-            }
-
-            if ($hasController && $hasRender) {
-                user_error(
-                    "error registering dynamic block: {$filename} declares a \$controller function
- and \$render callback. Either use a \$controller with an index.blade.php template or a \$render callback!",
-                    E_USER_ERROR
-                );
-            }
-
-            if (!$hasTemplate && !$hasRender) {
-                user_error(
-                    "error registering dynamic block: {$filename} does provide neither a \$render callback
- nor is there an index.blade.php template next to it!",
-                    E_USER_ERROR
-                );
-            }
-
-            if (isset($render)) {
-                $args['render_callback'] = $render;
-            } elseif ($hasTemplate && !$hasController) {
-                $args['render_callback'] = function ($block_attributes, $content, $block) use ($template) {
-                    $atts = array_merge($block_attributes, [
-                        'content' => $content,
-                        'block' => $block,
-                    ]);
-
-                    return render_block_template($template, $atts);
-                };
-            } elseif ($hasTemplate && $hasController) {
-                $args['render_callback'] = function ($block_attributes, $content, $block) use ($template, $controller) {
-                    $atts = $controller($block_attributes, $content, $block);
-
-                    return render_block_template($template, $atts);
-                };
-            }
-
-            register_block_type($blockJson, $args);
-        })();
     }
 });

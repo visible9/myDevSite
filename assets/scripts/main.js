@@ -14,12 +14,7 @@ import objectFitImages from 'object-fit-images';
 /**
  * Import scripts from Custom ACF Gutenberg blocks
  */
-import '../gutenberg/acf-blocks/**/index.js'; // eslint-disable-line
-
-/**
- * Import scripts from Custom ACF Gutenberg blocks
- */
-import '../gutenberg/custom-blocks/**/script.js'; // eslint-disable-line
+import '../gutenberg/blocks/**/index.js'; // eslint-disable-line
 
 /**
  * Fit slide video background to video holder

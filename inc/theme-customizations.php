@@ -341,19 +341,15 @@ add_filter(
 );
 
 /**
- * Create a Custom Blocks Categories for WordPress (Gutenberg).
+ * Create a Custom Blocks Category for WordPress (Gutenberg).
  */
 add_filter('block_categories_all', function ($categories) {
     // Adding a new category to the top.
     array_unshift(
         $categories,
         [
-            'slug' => 'acf-blocks',
-            'title' => 'ACF Blocks',
-        ],
-        [
-            'slug' => 'custom-blocks',
-            'title' => 'Custom Blocks',
+            'slug' => 'custom',
+            'title' => 'Custom',
         ]
     );
 

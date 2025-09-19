@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ADA complince fixes.
+ * ADA compliance fixes.
  */
 
 // Add ADA support on Gravity form error message

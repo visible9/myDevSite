@@ -75,6 +75,7 @@ array_map(function ($filename) {
     //    'woo-customizations',
     //    'shortcodes',
     'acf-placeholder',
+    'pressable',
 ]);
 
 // Register ACF Gravity Forms field

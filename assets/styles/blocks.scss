@@ -33,6 +33,31 @@
   }
 }
 
+// Group Module Styles
+.wp-block-group {
+  --group-space: var(--size-lg);
+
+  &.is-style {
+    &-with-space-xl {
+      --group-space: var(--size-2xl);
+    }
+
+    &-without-space {
+      --group-space: 0;
+    }
+  }
+
+  &:not(.is-layout-grid) {
+    > *:first-child {
+      padding-top: var(--group-space);
+    }
+  }
+
+  > *:last-child {
+    padding-bottom: var(--group-space);
+  }
+}
+
 // Page title in editor
 .edit-post-visual-editor__post-title-wrapper {
   height: 48px;
@@ -74,6 +99,5 @@
 
 // Add modules styles to editor
 div.editor-styles-wrapper {
-  @import '../gutenberg/acf-blocks/**/styles.scss';
-  @import '../gutenberg/custom-blocks/**/styles.scss';
+  @import '../gutenberg/blocks/**/styles.scss';
 }

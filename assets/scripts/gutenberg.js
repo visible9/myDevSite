@@ -1,1 +1,1 @@
-import '../gutenberg/index';
+import './gutenberg/index';
