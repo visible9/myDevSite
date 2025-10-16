@@ -130,7 +130,11 @@ add_action('wp_enqueue_scripts', function () {
 // Dynamic Admin
 if (class_exists('theme\DynamicAdmin') && is_admin()) {
     $dynamic_admin = new DynamicAdmin();
-    //    $dynamic_admin->addField('page', 'template', __('Page Template', 'base-theme'), 'template_detail_field_for_page');
+//    $dynamic_admin->addField('page', 'template', __('Page Template', 'base-theme'), function ($column, $post_id) {
+//        if ('template' == $column) {
+//            echo get_the_title($post_id);
+//        }
+//    });
     $dynamic_admin->run();
 }
 
