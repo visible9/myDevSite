@@ -1,3 +1,5 @@
+@import '@wordpress/base-styles/breakpoints';
+
 /* ---------------------------------------
 	is-root-container support for frontend
 --------------------------------------- */
@@ -30,6 +32,27 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+/* ---------------------------------------
+  Visibility Helper Classes
+--------------------------------------- */
+@media (min-width: #{ $break-wide }) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: #{ $break-small + 1 }) and (max-width: #{ $break-wide - 1 }) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: #{ $break-small }) {
+  .hide-on-mobile {
+    display: none !important;
   }
 }
 

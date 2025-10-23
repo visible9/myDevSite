@@ -324,3 +324,31 @@ function render_block_template($filepath, $atts = [])
 
     echo '';
 }
+
+/**
+ * Return visibility classes for ACF block.
+ *
+ * @param array $block
+ */
+function get_acf_block_visibility_classes(
+    $block
+)
+{
+    if (!isset($block) || !is_array($block)) {
+        return '';
+    }
+
+    $classes = [];
+
+    if (isset($block['hideOnDesktop']) && $block['hideOnDesktop']) {
+        $classes[] = 'hide-on-desktop';
+    }
+    if (isset($block['hideOnTablet']) && $block['hideOnTablet']) {
+        $classes[] = 'hide-on-tablet';
+    }
+    if (isset($block['hideOnMobile']) && $block['hideOnMobile']) {
+        $classes[] = 'hide-on-mobile';
+    }
+
+    return implode(' ', $classes);
+}

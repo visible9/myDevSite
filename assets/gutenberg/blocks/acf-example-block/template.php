@@ -12,6 +12,7 @@ $classes = [
     $block['className'] ?? '',
     $is_preview ? 'is-editor' : '',
     !empty($block['align']) ? 'align' . esc_attr($block['align']) : 'alignnone',
+    function_exists('get_acf_block_visibility_classes') ? get_acf_block_visibility_classes($block) : '',
 ];
 $classes_string = implode(' ', array_filter($classes));
 ?>

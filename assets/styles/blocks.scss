@@ -33,6 +33,31 @@
   }
 }
 
+// Visibility Helper Classes
+@media (min-width: #{ $break-wide }) {
+  .wp-block:not(.is-selected) {
+    .hide-on-desktop {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: #{ $break-small + 1 }) and (max-width: #{ $break-wide - 1 }) {
+  .wp-block:not(.is-selected) {
+    .hide-on-tablet {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: #{ $break-small }) {
+  .wp-block:not(.is-selected) {
+    .hide-on-mobile {
+      opacity: 0.5;
+    }
+  }
+}
+
 // Group Module Styles
 .wp-block-group {
   --group-space: var(--size-lg);
