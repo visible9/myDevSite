@@ -483,13 +483,6 @@ $product-gap: 30px;
         }
       }
 
-      &::after {
-        content: '\f078';
-        color: var(--primary);
-        //font-family: $fa;
-        font-weight: 900;
-      }
-
       b {
         display: none;
       }
@@ -498,9 +491,7 @@ $product-gap: 30px;
 
   &--open {
     .select2-selection__arrow {
-      &::after {
-        content: '\f077' !important;
-      }
+      //
     }
   }
 }

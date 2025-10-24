@@ -1,3 +1,22 @@
+// Converts px to rem
+@function rem-calc($values, $base: 16px) {
+  $result: ();
+
+  @each $value in $values {
+    @if $value == 0 {
+      $result: append($result, 0);
+    } @else {
+      @if unitless($value) {
+        $value: $value * 1px;
+      }
+
+      $result: append($result, ($value / $base) * 1rem);
+    }
+  }
+
+  @return if(length($result) == 1, nth($result, 1), $result);
+}
+
 // Replace letters
 @function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
@@ -67,8 +86,8 @@
 // @param {Number} $weight [2px] - Height of individual bars in the icon.
 // @param {Number} $bars [3] - Number of bars in the icon.
 @mixin menu-icon(
-  $color: $black,
-  $color-hover: $dark-gray,
+  $color: #000,
+  $color-hover: #666,
   $width: 20px,
   $height: 16px,
   $weight: 2px,

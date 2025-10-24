@@ -10,7 +10,9 @@
                    aria-label="<?php echo $social_network['label']; ?>"
                    rel="noopener"
                 >
-                    <span aria-hidden="true" class="fab fa-<?php echo $social_network['value']; ?>"></span>
+                    <span>
+                        <?php echo $social_network['value']; ?>
+                    </span>
                 </a>
             </li>
         <?php } ?>

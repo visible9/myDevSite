@@ -1,6 +1,9 @@
 @import '@wordpress/base-styles/breakpoints'; // Default Wordpress breakpoints
 
 :root {
+  // base font size 1rem
+  --base-font-size: clamp(14px, 1vw, 22px);
+
   // container
   --content-size: 75rem;
   --wide-size: 85rem;
