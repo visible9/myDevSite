@@ -1,5 +1,5 @@
 {
-  "devUrl": "https://wla-development.mystagingwebsite.com",
+  "devUrl": "%SITE_URL%",
   "themeName": "devwp",
   "proxyUrl": "https://localhost:3000",
   "open": false,
