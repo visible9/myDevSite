@@ -98,8 +98,7 @@
     "jquery": "^3.5.1",
     "jquery-match-height": "^0.7.2",
     "scroll-out": "^2.2.12",
-    "slick-carousel": "^1.8.1",
-    "what-input": "^5.2.10"
+    "slick-carousel": "^1.8.1"
   },
   "packageManager": "yarn@4.3.1"
 }

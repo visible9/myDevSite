@@ -58,6 +58,9 @@
     },
     "spacing": {
       "units": ["rem", "px"],
+      "padding": true,
+      "margin": true,
+      "blockGap": false,
       "customSpacingSize": true,
       "spacingScale": {
         "operator": "+",
