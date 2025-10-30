@@ -5,16 +5,15 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--size-2xs);
-  font-size: 0;
+  gap: var(--size-xs);
 
   &__item {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-
-  &__link {
     display: block;
+
+    svg {
+      display: block;
+      width: auto;
+      height: var(--size-lg);
+    }
   }
 }

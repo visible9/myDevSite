@@ -1,20 +1,20 @@
-<?php if (have_rows('socials', 'options')) { ?>
-    <ul class="stay-tuned">
+<?php if (!empty(get_field('socials', 'options'))) { ?>
+    <div class="stay-tuned">
         <?php while (have_rows('socials', 'options')) {
-            the_row(); ?>
-            <?php $social_network = get_sub_field('social_network'); ?>
-            <li class="stay-tuned__item">
-                <a class="stay-tuned__link"
-                   href="<?php the_sub_field('social_profile'); ?>"
+            the_row();
+            $social_network = get_sub_field('social_network');
+            $social_icon = asset_path('images/socials/' . $social_network['value'] . '.svg');
+            $social_link = get_sub_field('social_profile');
+            if ($social_link) { ?>
+                <a class="stay-tuned__item"
+                   href="<?php echo esc_url($social_link); ?>"
                    target="_blank"
                    aria-label="<?php echo $social_network['label']; ?>"
                    rel="noopener"
                 >
-                    <span>
-                        <?php echo $social_network['value']; ?>
-                    </span>
+                    <?php echo file_get_contents($social_icon) ?: $social_network['label']; ?>
                 </a>
-            </li>
-        <?php } ?>
-    </ul>
+            <?php }
+        } ?>
+    </div>
 <?php } ?>
