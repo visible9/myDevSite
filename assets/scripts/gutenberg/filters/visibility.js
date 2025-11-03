@@ -1,16 +1,19 @@
-/*
- * Description: Adds visibility options to selected Gutenberg blocks.
- */
+/* global globalData */
 const { __ } = wp.i18n;
 const { InspectorControls } = wp.blockEditor;
 const { PanelBody, ToggleControl } = wp.components;
 const { createHigherOrderComponent } = wp.compose;
 const { createElement, Fragment } = wp.element;
+// Get all ACF registered blocks name
+const acfBlocks = Object.keys(globalData?.acfBlocks.length > 0)
+  ? Object.keys(globalData.acfBlocks)
+  : [];
+
 // Define the blocks that will have visibility options
-const visabilityBlocks = [
+const visibilityBlocks = [
+  ...acfBlocks,
   'core/column',
   'core/spacer',
-  'acf/example-block',
   'core/buttons',
 ];
 
@@ -19,7 +22,7 @@ wp.hooks.addFilter(
   'devwp/add-visibility-attributes',
   (settings, name) => {
     if (typeof settings.attributes !== 'undefined') {
-      if (visabilityBlocks.includes(name)) {
+      if (visibilityBlocks.includes(name)) {
         settings.attributes = Object.assign(settings.attributes, {
           hideOnDesktop: {
             type: 'boolean',
@@ -48,7 +51,7 @@ const visibilityInspectorControl = createHigherOrderComponent((BlockEdit) => {
     } = attributes;
 
     const inspector =
-      props.isSelected && visabilityBlocks.includes(props.name)
+      props.isSelected && visibilityBlocks.includes(props.name)
         ? createElement(
             InspectorControls,
             null,
@@ -57,6 +60,7 @@ const visibilityInspectorControl = createHigherOrderComponent((BlockEdit) => {
               {
                 icon: 'visibility',
                 title: __('Visibility', 'base-theme'),
+                initialOpen: false,
               },
               createElement(ToggleControl, {
                 checked: !!hideOnDesktop,

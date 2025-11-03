@@ -21,6 +21,14 @@ add_action('enqueue_block_editor_assets', function () {
             'wp-rich-text',
         ],
     );
+
+    wp_localize_script(
+        'gutenberg.js',
+        'globalData',
+        [
+            'acfBlocks' => function_exists('acf_get_block_types') ? acf_get_block_types() : [],
+        ]
+    );
 });
 
 add_action('init', function () {
