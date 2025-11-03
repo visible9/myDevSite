@@ -4,9 +4,8 @@ import './autoload/*'; // eslint-disable-line
 // Import local dependencies
 import './plugins/lazyload';
 import './plugins/modernizr.min';
-import 'slick-carousel';
 import 'jquery-match-height';
-import objectFitImages from 'object-fit-images';
+// import 'slick-carousel';
 // import '@fancyapps/fancybox/dist/jquery.fancybox.min';
 // import { jarallax, jarallaxElement } from 'jarallax';
 // import ScrollOut from 'scroll-out';
@@ -61,13 +60,6 @@ $(document).on('ready', function () {
    * Make elements equal height
    */
   $('.matchHeight').matchHeight();
-
-  /**
-   * IE Object-fit cover polyfill
-   */
-  if ($('.of-cover').length) {
-    objectFitImages('.of-cover');
-  }
 
   /**
    * Add fancybox to images
