@@ -11,6 +11,16 @@
     &:first-child {
       border-top: 1px solid var(--gray);
     }
+
+    &.is-active {
+      .accordion-title {
+        color: var(--primary);
+
+        svg {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    }
   }
 
   .accordion-title {
@@ -36,14 +46,6 @@
 
     &:hover {
       color: var(--primary);
-    }
-
-    &.is-active {
-      color: var(--primary);
-
-      svg {
-        transform: translateY(-50%) rotate(180deg);
-      }
     }
   }
 

@@ -21,9 +21,6 @@ onDocumentReady(() => {
             if (!multipleExtended) {
               accordionItems.forEach((otherItem) => {
                 otherItem.classList.remove('is-active');
-                otherItem
-                  .querySelector('.accordion-title')
-                  .classList.remove('is-active');
                 otherItem.querySelector('.accordion-content').style.height =
                   0 + 'px';
               });
@@ -38,7 +35,7 @@ onDocumentReady(() => {
 
 // Extend accordion item
 const extendItem = (item) => {
-  item.querySelector('.accordion-title').classList.add('is-active');
+  item.classList.add('is-active');
   item.querySelector('.accordion-content').style.height =
     item.querySelector('.accordion-content').scrollHeight + 'px';
 };
