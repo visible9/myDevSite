@@ -1,0 +1,69 @@
+.acf-tabs-block:not(.is-editor) {
+  .tabs-nav__button {
+    padding: var(--size-xs) var(--size-md);
+    font-size: var(--font-size-text-medium);
+    font-weight: var(--font-weight-bold);
+    color: var(--black);
+    border: 1px solid var(--gray);
+    cursor: pointer;
+  }
+
+  .tabs-panel {
+    padding: var(--size-md);
+    border: 1px solid var(--gray);
+  }
+
+  .tabs-panel__title {
+    display: none;
+  }
+}
+
+/* ----------------------------------------
+	Tabs Editor Styles
+---------------------------------------- */
+.acf-tabs-block.is-editor {
+  .tabs-nav {
+    display: none;
+  }
+
+  .tabs-panel {
+    margin-bottom: var(--size-md);
+    padding: var(--size-md);
+    border: 1px solid var(--gray);
+  }
+
+  .tabs-panel__title {
+    font-weight: var(--font-weight-bold);
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  .block-list-appender {
+    position: relative;
+    margin: 1rem 0.25rem 0.25rem;
+
+    .block-editor-button-block-appender {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      width: 100%;
+      height: 3rem;
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #000;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: var(--wp-admin-theme-color);
+        border-color: var(--wp-admin-theme-color);
+      }
+
+      &::before {
+        content: attr(aria-label);
+      }
+    }
+  }
+}
