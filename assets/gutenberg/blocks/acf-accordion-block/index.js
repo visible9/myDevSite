@@ -5,24 +5,24 @@ onDocumentReady(() => {
     .forEach(function (accordion) {
       const accordionItems = accordion.querySelectorAll('.accordion-item');
       const multipleExtended = accordion.getAttribute('data-multiple-extended');
+      const selectedItem = accordion.getAttribute('data-selected-element');
 
-      accordionItems.forEach(function (item) {
+      accordionItems.forEach(function (item, index) {
         const title = item.querySelector('.accordion-title');
 
-        if (item.classList.contains('is-active')) {
+        // Open selected item on load
+        if (selectedItem && parseInt(selectedItem, 10) === index) {
           extendItem(item);
         }
 
+        // Toggle accordion item on title click
         title.addEventListener('click', () => {
           if (item.classList.contains('is-active')) {
-            item.classList.remove('is-active');
-            item.querySelector('.accordion-content').style.height = 0 + 'px';
+            closeItem(item);
           } else {
             if (!multipleExtended) {
               accordionItems.forEach((otherItem) => {
-                otherItem.classList.remove('is-active');
-                otherItem.querySelector('.accordion-content').style.height =
-                  0 + 'px';
+                closeItem(otherItem);
               });
             }
             item.classList.add('is-active');
@@ -38,6 +38,12 @@ const extendItem = (item) => {
   item.classList.add('is-active');
   item.querySelector('.accordion-content').style.height =
     item.querySelector('.accordion-content').scrollHeight + 'px';
+};
+
+// Close accordion item
+const closeItem = (item) => {
+  item.classList.remove('is-active');
+  item.querySelector('.accordion-content').style.height = 0 + 'px';
 };
 
 // Get anchor from URL and open accordion item

@@ -17,7 +17,7 @@ $classes = [
 $classes_string = implode(' ', array_filter($classes));
 
 $multiple_extended = $fields['multiple_extended'] ?? false;
-
+$selected_element = $fields['selected_element'] ?? '-1';
 $allowed_blocks = ['acf/accordion-item'];
 $template = [
     ['acf/accordion-item'],
@@ -28,6 +28,7 @@ $template = [
     <?php echo !empty($block['anchor']) ? 'id="' . esc_attr($block['anchor']) . '"' : ''; ?>
     class="<?php echo esc_attr($classes_string); ?>"
     data-multiple-extended="<?php echo $multiple_extended; ?>"
+    data-selected-element="<?php echo esc_attr($selected_element); ?>"
 >
     <?php
     echo '

@@ -22,6 +22,29 @@
             "ui_on_text": "Enable",
             "ui_off_text": "Disable",
             "ui": 1
+        },
+        {
+            "key": "field_69172ce09edb0",
+            "label": "Selected element",
+            "name": "selected_element",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "First element: 0 \/ None: -1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": -1,
+            "min": -1,
+            "max": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": 1,
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -43,5 +66,5 @@
     "description": "Block",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1763047873
+    "modified": 1763126621
 }
