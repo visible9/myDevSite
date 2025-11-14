@@ -14,11 +14,25 @@
   }
 
   .accordion-title {
+    position: relative;
     font-size: var(--font-size-text-xlarge);
     font-weight: var(--font-weight-bold);
     padding-block: var(--size-md);
+    padding-left: var(--size-xs);
+    padding-right: var(--size-2xl);
     cursor: pointer;
     transition: var(--transition-base);
+
+    svg {
+      display: block;
+      position: absolute;
+      right: var(--size-xs);
+      top: 50%;
+      transform: translateY(-50%);
+      width: var(--size-lg);
+      height: var(--size-lg);
+      transition: var(--transition-base);
+    }
 
     &:hover {
       color: var(--primary);
@@ -26,6 +40,10 @@
 
     &.is-active {
       color: var(--primary);
+
+      svg {
+        transform: translateY(-50%) rotate(180deg);
+      }
     }
   }
 

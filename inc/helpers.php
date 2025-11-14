@@ -57,33 +57,6 @@ function theme_pagination($query = ''): void
 }
 
 /**
- * Enqueue external fonts with font-display: swap; property.
- *
- * @param string $url fonts link GoogleFonts/Typekit
- * @param bool $echo echo or return the styles
- *
- * @return string|void
- */
-function enqueue_fonts($url, $echo = true)
-{
-    $response = wp_remote_get($url);
-    $body = wp_remote_retrieve_body($response);
-
-    if (false === strpos($body, 'font-display')) {
-        $body = str_replace('}', 'font-display:swap;}', $body);
-    }
-
-    ob_start(); ?>
-    <style><?php echo $body; ?></style>
-    <?php
-
-    if (!$echo) {
-        return ob_get_clean();
-    }
-    echo ob_get_clean();
-}
-
-/**
  * Output HTML markup of template with passed args.
  *
  * @param string $file File name without extension (.php)

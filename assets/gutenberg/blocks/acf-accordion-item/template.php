@@ -12,7 +12,7 @@ $classes = [
     function_exists('get_acf_block_visibility_classes') ? get_acf_block_visibility_classes($block) : '',
 ];
 $classes_string = implode(' ', array_filter($classes));
-
+$arrow_icon = asset_path('images/icons/arrow-down.svg');
 $title = $fields['title'] ?? __('Item title', 'block-theme');
 $template = [
     ['core/paragraph', [
@@ -27,6 +27,7 @@ $template = [
 >
     <div class="accordion-title">
         <?php echo esc_html($title); ?>
+        <?php echo file_get_contents($arrow_icon); ?>
     </div>
     <div class="accordion-content">
         <div class="accordion-content__inner">
