@@ -13,7 +13,7 @@ $classes = [
 ];
 $classes_string = implode(' ', array_filter($classes));
 $arrow_icon = asset_path('images/icons/arrow-down.svg');
-$title = $fields['title'] ?? __('Item title', 'block-theme');
+$title = $fields['title'] ?? __('Item title', 'base-theme');
 $template = [
     ['core/paragraph', [
         'placeholder' => 'Add item content...',

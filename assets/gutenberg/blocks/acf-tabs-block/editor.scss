@@ -1,0 +1,17 @@
+.acf-tabs-block {
+  .tabs-nav {
+    display: none;
+  }
+
+  .tabs-panel {
+    margin-bottom: var(--size-md);
+    padding: var(--size-md);
+    border: 1px solid var(--gray);
+  }
+
+  .tabs-panel__title {
+    font-weight: var(--font-weight-bold);
+    color: var(--black);
+    cursor: pointer;
+  }
+}

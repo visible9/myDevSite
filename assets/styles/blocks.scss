@@ -122,7 +122,42 @@
   background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
 }
 
+// Custom Add Block Button Styles
+.acf-accordion-block,
+.acf-tabs-block {
+  .block-list-appender {
+    position: relative;
+    margin: 1rem 0.25rem 0;
+    bottom: 0.25rem;
+
+    .block-editor-button-block-appender {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      width: 100%;
+      height: 3rem;
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #000;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: var(--wp-admin-theme-color);
+        border-color: var(--wp-admin-theme-color);
+      }
+
+      &::before {
+        content: attr(aria-label);
+      }
+    }
+  }
+}
+
 // Add modules styles to editor
 div.editor-styles-wrapper {
   @import '../gutenberg/blocks/**/styles.scss';
+  @import '../gutenberg/blocks/**/editor.scss';
 }

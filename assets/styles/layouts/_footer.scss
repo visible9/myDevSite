@@ -1,4 +1,6 @@
 .footer {
+  padding-block: var(--size-lg);
+
   &__top {
     display: flex;
     justify-content: space-between;
