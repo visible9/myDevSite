@@ -1,4 +1,5 @@
 import { onDocumentReady } from '../../../scripts/utils/events';
+import { scrollIntoViewWithOffset } from '../../../scripts/utils/helpers';
 onDocumentReady(() => {
   document
     .querySelectorAll('.js-acf-accordion-block')
@@ -49,7 +50,6 @@ const closeItem = (item) => {
 // Get anchor from URL and open accordion item
 const urlHash = window.location.hash;
 if (urlHash) {
-  console.log('urlHash', urlHash); //eslint-disable-line
   const targetAccordionItem = document.querySelector(
     `.js-acf-accordion-block .accordion-item${urlHash}`
   );
@@ -58,7 +58,7 @@ if (urlHash) {
     extendItem(targetAccordionItem);
     // Scroll to the accordion item
     setTimeout(() => {
-      targetAccordionItem.scrollIntoView({ behavior: 'smooth' });
+      scrollIntoViewWithOffset(targetAccordionItem);
     }, 300);
   }
 }

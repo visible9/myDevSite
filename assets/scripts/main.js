@@ -4,6 +4,8 @@ import './autoload/*'; // eslint-disable-line
 // Import local dependencies
 import './plugins/lazyload';
 import './plugins/modernizr.min';
+import { scrollIntoViewWithOffset } from './utils/helpers';
+// Import plugins
 import 'jquery-match-height';
 // import 'slick-carousel';
 // import '@fancyapps/fancybox/dist/jquery.fancybox.min';
@@ -135,10 +137,13 @@ $(document).on('ready', function () {
   /**
    * Scroll to Gravity Form confirmation message after form submit
    */
-  $(document).on('gform_confirmation_loaded', function (event, formId) {
-    let $target = $('#gform_confirmation_wrapper_' + formId);
-    if ($target.length) {
-      $('html, body').animate({ scrollTop: $target.offset().top - 50 }, 500);
+  $(document).on('gform_confirmation_loaded', function (_, formId) {
+    let target = document.getElementById(
+      `gform_confirmation_wrapper_${formId}`
+    );
+
+    if (target) {
+      scrollIntoViewWithOffset(target, 100);
       return false;
     }
   });
