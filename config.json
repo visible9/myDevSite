@@ -6,6 +6,7 @@
   "bsWatchFiles": [
     "inc/**/*.php",
     "parts/**/*.php",
-    "templates/**/*.php"
+    "templates/**/*.php",
+    "assets/gutenberg/blocks/**/*.php"
   ]
 }
