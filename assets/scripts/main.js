@@ -5,6 +5,7 @@ import './autoload/*'; // eslint-disable-line
 import './plugins/lazyload';
 import './plugins/modernizr.min';
 import { scrollIntoViewWithOffset } from './utils/helpers';
+
 // Import plugins
 import 'jquery-match-height';
 // import 'slick-carousel';
@@ -12,9 +13,7 @@ import 'jquery-match-height';
 // import { jarallax, jarallaxElement } from 'jarallax';
 // import ScrollOut from 'scroll-out';
 
-/**
- * Import scripts from Custom ACF Gutenberg blocks
- */
+// Import scripts from Custom ACF Gutenberg blocks
 import '../gutenberg/blocks/**/index.js'; // eslint-disable-line
 
 /**
@@ -43,6 +42,9 @@ function resizeVideo() {
   });
 }
 
+/**
+ * Set CSS variable for header height
+ */
 const setHeaderHeight = () => {
   const header = document.querySelector('.header');
 
@@ -171,16 +173,13 @@ $(document).on('ready', function () {
  * Scripts which runs after all elements load
  */
 $(window).on('load', function () {
-  // jQuery code goes here
-
+  // Preloader
   let $preloader = $('.preloader');
   if ($preloader.length) {
     $preloader.addClass('preloader--hidden');
   }
 
-  /**
-   * Create CSS variable for header height
-   */
+  // Create CSS variable for header height
   setHeaderHeight();
 });
 
@@ -191,9 +190,7 @@ $(window).on('resize', function () {
   // jQuery code goes here
   resizeVideo();
 
-  /**
-   * Create CSS variable for header height
-   */
+  // Create CSS variable for header height
   setHeaderHeight();
 });
 

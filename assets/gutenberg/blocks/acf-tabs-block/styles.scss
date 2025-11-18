@@ -2,6 +2,9 @@
   // Styles for the frontend only
   &:not(.is-editor) {
     .tabs-nav {
+      display: flex;
+      flex-wrap: wrap;
+
       &__button {
         padding: var(--size-xs) var(--size-md);
         font-size: var(--font-size-text-xlarge);
