@@ -5,5 +5,5 @@ $(document).ready(function () {
 });
 
 function acfExampleBlock() {
-  $('.js-acf-example-block').each(function () {});
+  $('.js-acf-example').each(function () {});
 }

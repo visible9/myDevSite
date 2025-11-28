@@ -3,13 +3,13 @@
 /**
  * The name variable is required and should NOT include the namespace.
  */
-$name = 'tabs-block';
+$name = 'tabs';
 
 /**
  * @see https://www.advancedcustomfields.com/resources/acf_register_block_type/
  */
 $settings = [
-    'title' => __('Tabs Block', 'base-theme'),
+    'title' => __('Tabs', 'base-theme'),
     'description' => __('Group of Tabs', 'base-theme'),
     'category' => 'custom',
     'icon' => 'welcome-widgets-menus',

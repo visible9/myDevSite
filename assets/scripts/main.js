@@ -2,8 +2,6 @@
 import './autoload/*'; // eslint-disable-line
 
 // Import local dependencies
-import './plugins/lazyload';
-import './plugins/modernizr.min';
 import { scrollIntoViewWithOffset } from './utils/helpers';
 
 // Import plugins

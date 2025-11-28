@@ -3,21 +3,20 @@
 /**
  * The name variable is required and should NOT include the namespace.
  */
-$name = 'accordion-block';
+$name = 'example';
 
 /**
  * @see https://www.advancedcustomfields.com/resources/acf_register_block_type/
  */
 $settings = [
-    'title' => __('Accordion Block', 'base-theme'),
-    'description' => __('', 'base-theme'),
+    'title' => __('Example', 'base-theme'),
+    'description' => __('ACF example block.', 'base-theme'),
     'category' => 'custom',
-    'icon' => 'menu',
+    'icon' => 'block-default',
     'supports' => [
         'mode' => false,
         'align' => ['wide', 'full'],
         'anchor' => true,
-        'jsx' => true,
     ],
 ];
 

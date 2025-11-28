@@ -3,20 +3,19 @@
 /**
  * The name variable is required and should NOT include the namespace.
  */
-$name = 'tab-item';
+$name = 'accordion';
 
 /**
  * @see https://www.advancedcustomfields.com/resources/acf_register_block_type/
  */
 $settings = [
-    'title' => __('Tab Item', 'base-theme'),
-    'description' => __('Single tab content item.', 'base-theme'),
+    'title' => __('Accordion', 'base-theme'),
+    'description' => __('Accordion block', 'base-theme'),
     'category' => 'custom',
-    'icon' => 'minus',
-    'parent' => ['acf/tabs-block'],
+    'icon' => 'menu',
     'supports' => [
         'mode' => false,
-        'align' => false,
+        'align' => ['wide', 'full'],
         'anchor' => true,
         'jsx' => true,
     ],

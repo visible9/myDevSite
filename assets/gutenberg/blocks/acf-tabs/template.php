@@ -7,8 +7,8 @@
  * @var array $fields contains all ACF fields
  */
 $classes = [
-    'acf-tabs-block',
-    'js-acf-tabs-block',
+    'acf-tabs',
+    'js-acf-tabs',
     $block['className'] ?? '',
     $is_preview ? 'is-editor' : '',
     !empty($block['align']) ? 'align' . esc_attr($block['align']) : 'alignnone',
@@ -16,8 +16,8 @@ $classes = [
 ];
 $classes_string = implode(' ', array_filter($classes));
 
-$allowed_blocks = ['acf/tab-item'];
-$template = [['acf/tab-item']];
+$allowed_blocks = ['acf/tabs-item'];
+$template = [['acf/tabs-item']];
 ?>
 
 <div

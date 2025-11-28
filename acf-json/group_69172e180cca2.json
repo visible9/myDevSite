@@ -1,6 +1,6 @@
 {
     "key": "group_69172e180cca2",
-    "title": "Tab Item",
+    "title": "Tabs Item",
     "fields": [
         {
             "key": "field_69172e19edad3",
@@ -29,7 +29,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/tab-item"
+                "value": "acf\/tabs-item"
             }
         ]
     ],
@@ -40,8 +40,8 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
-    "description": "",
+    "description": "Block",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1763127016
+    "modified": 1764343976
 }

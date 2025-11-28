@@ -1,6 +1,6 @@
 {
     "key": "group_6915f5f859f50",
-    "title": "Accordion block",
+    "title": "Accordion",
     "fields": [
         {
             "key": "field_6915f5f8ee3bb",
@@ -52,7 +52,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/accordion-block"
+                "value": "acf\/accordion"
             }
         ]
     ],
@@ -66,5 +66,5 @@
     "description": "Block",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1763126621
+    "modified": 1764342967
 }

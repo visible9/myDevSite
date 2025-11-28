@@ -44,7 +44,7 @@ const initTabsBlock = (tabsBlock) => {
   const urlHash = window.location.hash;
   if (urlHash) {
     const targetTabItem = document.querySelector(
-      `.js-acf-tabs-block .tabs-panel${urlHash}`
+      `.js-acf-tabs .tabs-panel${urlHash}`
     );
     if (targetTabItem) {
       // Find the index of the target tab item
@@ -62,5 +62,5 @@ const initTabsBlock = (tabsBlock) => {
 };
 
 onDocumentReady(() => {
-  document.querySelectorAll('.js-acf-tabs-block').forEach(initTabsBlock);
+  document.querySelectorAll('.js-acf-tabs').forEach(initTabsBlock);
 });

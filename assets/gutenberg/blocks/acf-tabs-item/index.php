@@ -3,20 +3,22 @@
 /**
  * The name variable is required and should NOT include the namespace.
  */
-$name = 'example-block';
+$name = 'tabs-item';
 
 /**
  * @see https://www.advancedcustomfields.com/resources/acf_register_block_type/
  */
 $settings = [
-    'title' => __('Example ACF Block', 'base-theme'),
-    'description' => __('ACF example block.', 'base-theme'),
+    'title' => __('Tabs Item', 'base-theme'),
+    'description' => __('Single tab content item.', 'base-theme'),
     'category' => 'custom',
-    'icon' => 'block-default',
+    'icon' => 'minus',
+    'parent' => ['acf/tabs'],
     'supports' => [
         'mode' => false,
-        'align' => ['wide', 'full'],
+        'align' => false,
         'anchor' => true,
+        'jsx' => true,
     ],
 ];
 
