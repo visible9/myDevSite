@@ -1,0 +1,26 @@
+.wp-block-button {
+  .wp-block-button__link {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--primary);
+      background-color: var(--white);
+      color: var(--primary);
+    }
+  }
+
+  &.is-style-secondary .wp-block-button__link {
+    border: 1px solid var(--primary);
+    background-color: var(--white);
+    color: var(--primary);
+
+    &:hover,
+    &:focus {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}

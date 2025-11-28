@@ -82,21 +82,3 @@
     padding-bottom: var(--group-space);
   }
 }
-
-/* ---------------------------------------
-	Button Module Styles
---------------------------------------- */
-.wp-block-button {
-  &__link {
-    border: 1px solid var(--primary);
-    background-color: var(--primary);
-    color: var(--white);
-
-    &:hover,
-    &:focus {
-      border: 1px solid var(--primary);
-      background-color: var(--white);
-      color: var(--primary);
-    }
-  }
-}

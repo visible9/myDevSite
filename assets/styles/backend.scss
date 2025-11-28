@@ -157,6 +157,7 @@
 
 // Add modules styles to editor
 div.editor-styles-wrapper {
+  @import './layouts/button';
   @import '../gutenberg/blocks/**/styles.scss';
   @import '../gutenberg/blocks/**/editor.scss';
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Custom logo.
  *
@@ -305,8 +306,7 @@ function render_block_template($filepath, $atts = [])
  */
 function get_acf_block_visibility_classes(
     $block
-)
-{
+) {
     if (!isset($block) || !is_array($block)) {
         return '';
     }
@@ -324,4 +324,78 @@ function get_acf_block_visibility_classes(
     }
 
     return implode(' ', $classes);
+}
+
+/**
+ * Render multiple Gutenberg buttons inside wp:buttons wrapper.
+ *
+ * @param array $buttons Array of buttons:
+ * [
+ *   [
+ *     'title'  => '',
+ *     'url'    => '',
+ *     'target' => '',
+ *     'type'   => '',
+ *     'attrs'  => [], // Additional attributes for <a> tag
+ *   ],
+ * ]
+ * @param string $wrapper_class Additional class for wp:buttons
+ */
+function render_gutenberg_buttons(array $buttons = [], string $wrapper_class = ''): string
+{
+    if (empty($buttons)) {
+        return '';
+    }
+
+    // Start Gutenberg wrapper block
+    $block = '
+        <!-- wp:buttons {"className":"' . esc_attr($wrapper_class) . '"} -->
+        <div class="wp-block-buttons ' . esc_attr($wrapper_class) . '">
+    ';
+
+    foreach ($buttons as $btn) {
+        // Skip empty buttons
+        if (empty($btn['url'])) {
+            continue;
+        }
+
+        // Type → Gutenberg class
+        $style = 'is-style-' . ($btn['type'] ?? 'primary');
+
+        // Button attributes
+        $attrs = [
+            'class' => 'wp-block-button__link',
+            'href' => esc_url($btn['url']),
+            'target' => $btn['target'] ?? '',
+            'rel' => ($btn['target'] ?? '') === '_blank' ? 'noopener noreferrer' : '',
+        ];
+        // Additional attributes
+        if (!empty($btn['attrs']) && is_array($btn['attrs'])) {
+            foreach ($btn['attrs'] as $attr_key => $attr_value) {
+                $attrs[$attr_key] = $attr_value;
+            }
+        }
+        $attrs_string = '';
+        foreach ($attrs as $key => $value) {
+            if (!empty($value)) {
+                $attrs_string .= ' ' . esc_attr($key) . '="' . esc_attr($value) . '"';
+            }
+        }
+
+        $block .= '
+            <!-- wp:button -->
+            <div class="wp-block-button ' . $style . '">
+                <a' . $attrs_string . '>' . esc_html($btn['title']) . '</a>
+            </div>
+            <!-- /wp:button -->
+        ';
+    }
+
+    // Close wrapper
+    $block .= '
+        </div>
+        <!-- /wp:buttons -->
+    ';
+
+    return do_blocks($block);
 }

@@ -9,7 +9,8 @@ const disableCoreFormats = [
 
 const disableCoreStyles = [
   // add block styles to remove (keep this comment)
-  //{ name: 'button', style: 'outline' }, // => core/button style=outline
+  { name: 'button', style: 'fill' }, // => core/button style=fill
+  { name: 'button', style: 'outline' }, // => core/button style=outline
 ];
 
 wp.domReady(() => {

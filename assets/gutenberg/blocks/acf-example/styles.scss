@@ -3,5 +3,9 @@
     background-color: #f5f5f5;
     border: 2px dashed var(--gray);
     padding: var(--size-xl);
+
+    h2 {
+      margin-bottom: var(--size-lg);
+    }
   }
 }

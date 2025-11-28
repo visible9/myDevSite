@@ -15,6 +15,22 @@ $classes = [
     function_exists('get_acf_block_visibility_classes') ? get_acf_block_visibility_classes($block) : '',
 ];
 $classes_string = implode(' ', array_filter($classes));
+
+$test_buttons = function_exists('render_gutenberg_buttons') ? render_gutenberg_buttons([
+    [
+        'title' => 'Test Button',
+        'url' => '#',
+        'target' => '_blank',
+        'attrs' => [
+            'data-example' => 'test',
+        ],
+    ],
+    [
+        'title' => 'Test Button 2',
+        'url' => '#',
+        'type' => 'secondary',
+    ],
+], 'example-button-wrapper') : '';
 ?>
 
 <div
@@ -23,5 +39,6 @@ $classes_string = implode(' ', array_filter($classes));
 >
     <div class="inner">
         <h2><?php _e('Example Block', 'base-theme'); ?></h2>
+        <?php echo $test_buttons; ?>
     </div>
 </div>
