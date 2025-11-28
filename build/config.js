@@ -20,8 +20,7 @@ module.exports = (env = {}) => {
 
   const entry = {
     main: ['./scripts/main.js', './styles/main.scss'],
-    gutenberg: ['./scripts/gutenberg.js'],
-    blocks: ['./styles/blocks.scss'],
+    backend: ['./scripts/backend.js', './styles/backend.scss'],
   };
 
   if (process.env.NODE_ENV === undefined) {

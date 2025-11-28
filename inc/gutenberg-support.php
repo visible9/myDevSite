@@ -3,13 +3,13 @@
 // Enqueue Styles & Scripts
 add_action('enqueue_block_editor_assets', function () {
     wp_enqueue_style(
-        'blocks.css',
-        \asset_path('styles/blocks.css')
+        'backend.css',
+        \asset_path('styles/backend.css')
     );
 
     wp_enqueue_script(
-        'gutenberg.js',
-        \asset_path('scripts/gutenberg.js'),
+        'backend.js',
+        \asset_path('scripts/backend.js'),
         [
             'runtime.js',
             'ext.js',
@@ -23,7 +23,7 @@ add_action('enqueue_block_editor_assets', function () {
     );
 
     wp_localize_script(
-        'gutenberg.js',
+        'backend.js',
         'globalData',
         [
             'acfBlocks' => function_exists('acf_get_block_types') ? acf_get_block_types() : [],
