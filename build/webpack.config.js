@@ -51,6 +51,15 @@ module.exports = (env = {}) => {
     module: {
       rules: [
         {
+          test: /\.css$/i,
+          use: [
+            // use MiniCssExtractPlugin.loader in production, style-loader for dev if preferred
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'postcss-loader',
+          ],
+        },
+        {
           enforce: 'pre',
           test: /\.(js|s?[ca]ss)$/,
           include: config.paths.assets,
@@ -164,6 +173,7 @@ module.exports = (env = {}) => {
       },
     },
     plugins: [
+      new MiniCssExtractPlugin({ filename: '[name].css' }),
       new CopyPlugin({
         patterns: [
           {

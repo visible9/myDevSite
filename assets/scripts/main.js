@@ -58,6 +58,8 @@ const setHeaderHeight = () => {
  * Scripts which runs after DOM load
  */
 $(document).on('ready', function () {
+  // Create CSS variable for header height
+  setHeaderHeight();
   /**
    * Make elements equal height
    */
@@ -176,9 +178,6 @@ $(window).on('load', function () {
   if ($preloader.length) {
     $preloader.addClass('preloader--hidden');
   }
-
-  // Create CSS variable for header height
-  setHeaderHeight();
 });
 
 /**

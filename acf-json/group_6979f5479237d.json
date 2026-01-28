@@ -1,0 +1,211 @@
+{
+    "key": "group_6979f5479237d",
+    "title": "Hero Slider",
+    "fields": [
+        {
+            "key": "field_6979f579dee95",
+            "label": "Autoplay",
+            "name": "hero_slider_autoplay",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "true": "Enable",
+                "false": "Disable"
+            },
+            "default_value": "true",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_697a19ef42954",
+            "label": "Effect",
+            "name": "hero_slider_effect",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fade": "Fade",
+                "slide": "Slide"
+            },
+            "default_value": "fade",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_6979f549dee93",
+            "label": "Speed",
+            "name": "hero_slider_speed",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1000,
+            "min": 0,
+            "max": 50000,
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": 1,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6979f56bdee94",
+            "label": "Delay",
+            "name": "hero_slider_delay",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5000,
+            "min": 0,
+            "max": 50000,
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": 3,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_697a37de0493f",
+            "label": "Navigation",
+            "name": "hero_slider_navigation",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "arrow": "Arrow",
+                "dots": "Dots"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "multiple": 1,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 1,
+            "ajax": 0,
+            "create_options": 0,
+            "placeholder": "",
+            "save_options": 0
+        },
+        {
+            "key": "field_697a26ad39415",
+            "label": "Overlay",
+            "name": "hero_slider_overlay",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide",
+            "ui": 1
+        },
+        {
+            "key": "field_697a1fa1eac9c",
+            "label": "Image Overlay Color",
+            "name": "hero_slider_overlay_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_697a26ad39415",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 1,
+            "return_format": "string",
+            "allow_in_bindings": 0,
+            "show_custom_palette": 1,
+            "custom_palette_source": "themejson",
+            "show_color_wheel": 1,
+            "palette_colors": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/hero-slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "BLOCK",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1769618024
+}
