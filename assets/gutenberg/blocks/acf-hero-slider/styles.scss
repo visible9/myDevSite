@@ -30,6 +30,7 @@
 
     .swiper-pagination-bullet {
       transition: var(--transition-base);
+
       &:hover {
         --swiper-pagination-bullet-opacity: 0.9;
         --swiper-pagination-bullet-inactive-opacity: 0.9;
@@ -71,9 +72,9 @@
         top: 50%;
         left: 50%;
         width: 100vw;
-        height: 56.25vw; // 16:9 ratio
+        height: 56.25vw;
         min-height: 100vh;
-        min-width: 177.77vh; // 16:9 ratio
+        min-width: 177.77vh;
         transform: translate(-50%, -50%);
         object-fit: cover;
         object-position: center;
@@ -90,6 +91,10 @@
       max-width: var(--content-size);
       height: 800px;
       color: var(--white);
+
+      > * {
+        height: 100%;
+      }
     }
   }
 }
