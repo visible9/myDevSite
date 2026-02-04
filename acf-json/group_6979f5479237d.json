@@ -145,7 +145,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -174,7 +174,7 @@
                 ]
             ],
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -207,5 +207,5 @@
     "description": "BLOCK",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1769618024
+    "modified": 1770204324
 }
