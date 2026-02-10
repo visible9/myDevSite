@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="PASSWORD" host="sftp.pressable.com" id="27c9267f-6cd8-4746-8226-db47d8f06db3" port="22" nameFormat="DESCRIPTIVE" username="s4494719dd929df35" useOpenSSHConfig="false" />
+      <sshConfig authType="PASSWORD" host="sftp.pressable.com" id="27c9267f-6cd8-4746-8226-db47d8f06db3" port="22" nameFormat="DESCRIPTIVE" username="h759a274b47a1cc1b" useOpenSSHConfig="false" />
     </configs>
   </component>
 </project>
