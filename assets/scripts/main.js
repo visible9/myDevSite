@@ -58,6 +58,9 @@ const setHeaderHeight = () => {
  * Scripts which runs after DOM load
  */
 $(document).on('ready', function () {
+  // Mobile menu handler
+  mobileMenuHandler();
+
   // Create CSS variable for header height
   setHeaderHeight();
   /**
@@ -168,6 +171,95 @@ $(document).on('ready', function () {
 
   resizeVideo();
 });
+
+/**
+ * Mobile menu handler
+ */
+function mobileMenuHandler() {
+  const $menu = $('#menu-header-menu');
+  const $titleBar = $('.title-bar');
+  const $menuButton = $('.menu-icon');
+  const $body = $('body');
+
+  if (!$menu.length || !$titleBar.length) return;
+
+  function isMobileMenuActive() {
+    return $titleBar.is(':visible');
+  }
+
+  function initMobileMenu() {
+    if (!isMobileMenuActive()) return;
+
+    $menu.find('.menu-item-has-children').each(function () {
+      const $item = $(this);
+      const $submenu = $item.children('.submenu');
+      const $link = $item.children('a');
+
+      if (!$submenu.length || $item.children('.submenu-toggle').length) return;
+
+      $item.attr('aria-expanded', 'false');
+      $submenu.hide();
+
+      const $button = $(
+        '<button class="submenu-toggle" aria-expanded="false"><span></span></button>'
+      );
+      $link.after($button);
+
+      $button.on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const isOpen = $item.hasClass('is-open');
+        const newState = !isOpen;
+
+        $item.toggleClass('is-open');
+        $item.attr('aria-expanded', newState);
+        $button.attr('aria-expanded', newState);
+
+        $submenu.stop(true, true).slideToggle(300);
+      });
+    });
+  }
+
+  function closeAllSubmenus() {
+    $menu.find('.submenu').stop(true, true).slideUp(0);
+    $menu
+      .find('.menu-item-has-children')
+      .removeClass('is-open')
+      .attr('aria-expanded', 'false');
+    $menu.find('.submenu-toggle').attr('aria-expanded', 'false');
+  }
+
+  function destroyMobileMenu() {
+    closeAllSubmenus();
+    $menu.find('.submenu').removeAttr('style').show();
+    $menu.find('.submenu-toggle').remove();
+    $menu.find('.menu-item-has-children').removeAttr('aria-expanded');
+  }
+
+  function checkMenuState() {
+    if (isMobileMenuActive()) {
+      initMobileMenu();
+    } else {
+      destroyMobileMenu();
+    }
+  }
+
+  $menuButton.on('click', function () {
+    const isOpen = $(this).hasClass('is-active');
+
+    if (isOpen) {
+      $body.css('overflow', 'hidden');
+    } else {
+      $body.css('overflow', '');
+      closeAllSubmenus();
+    }
+  });
+
+  checkMenuState();
+
+  $(window).on('resize', checkMenuState);
+}
 
 /**
  * Scripts which runs after all elements load

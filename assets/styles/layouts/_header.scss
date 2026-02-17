@@ -45,7 +45,7 @@
       width: 100%;
       height: calc(100vh - var(--header-height, 0));
       overflow-y: auto;
-      background: var(--primary);
+      background: var(--white);
       padding: var(--size-lg);
       z-index: -1;
       transform: translateX(100%);
@@ -79,15 +79,15 @@
       background: transparent;
 
       li {
+        position: relative;
         > a {
-          background: var(--primary);
-          color: var(--white);
+          color: var(--secondary);
           line-height: 45px;
 
           &:focus {
             &,
             & + .submenu-toggle {
-              background: var(--primary);
+              color: var(--primary);
             }
           }
         }
@@ -97,13 +97,42 @@
         &.current_page_parent {
           > a,
           .submenu-toggle {
-            background: var(--primary);
+            color: var(--primary);
           }
         }
 
         &[aria-expanded='true'] {
           > a,
           .submenu-toggle {
+            color: var(--primary);
+          }
+        }
+      }
+
+      .menu-item-has-children {
+        position: relative;
+
+        .submenu-toggle {
+          width: 2rem;
+          height: 2rem;
+          background: var(--secondary);
+          mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>');
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: 1rem;
+          position: absolute;
+          top: 0.5rem;
+          right: 0;
+          transition: var(--transition-base);
+          cursor: pointer;
+
+          &:hover,
+          &:focus {
+            background: var(--primary);
+          }
+
+          &[aria-expanded='true'] {
+            transform: rotate(180deg);
             background: var(--primary);
           }
         }
@@ -133,7 +162,7 @@
     .header-menu.menu {
       display: flex;
       align-items: center;
-      gap: var(--size-lg);
+      gap: var(--size-sm);
 
       li {
         display: block;
@@ -143,7 +172,7 @@
           /* Regular menu item style */
           display: block;
           color: var(--primary);
-          padding: var(--size-xl);
+          padding: var(--size-xs);
 
           &:hover {
             /* menu item style on hover */
