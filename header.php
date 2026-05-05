@@ -29,7 +29,7 @@ use theme\ThemeNavigation;
 </div> -->
 
 <!-- BEGIN of header -->
-<header class="header is-root-container">
+<header class="header is-root-container test-header">
     <div class="header-inner">
         <div class="logo">
             <?php show_custom_logo(); ?>
