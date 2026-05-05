@@ -4246,13 +4246,13 @@ __metadata:
     scroll-out: "npm:^2.2.12"
     select2: "npm:^4.1.0-rc.0"
     sharp: "npm:^0.33.4"
-    slick-carousel: "npm:^1.8.1"
     source-map-resolve: "npm:^0.6.0"
     style-loader: "npm:^3.3.1"
     stylelint: "npm:^14.15.0"
     stylelint-config-prettier: "npm:^9.0.4"
     stylelint-prettier: "npm:^2.0.0"
     stylelint-webpack-plugin: "npm:^3.3.0"
+    swiper: "npm:^12.0.3"
     vanilla-lazyload: "npm:^17.4.0"
     webpack: "npm:^5.92.1"
     webpack-assets-manifest: "npm:^5.1.0"
@@ -9716,15 +9716,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slick-carousel@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "slick-carousel@npm:1.8.1"
-  peerDependencies:
-    jquery: ">=1.8.0"
-  checksum: 10c0/e8c9c9a454c107cfee88689477b453449ed66d5343cf495d3135ec25ea736a0df862f625a9cdc8abd6262629ecef3343c5de686694831f99b13dfe837a1aa587
-  languageName: node
-  linkType: hard
-
 "smart-buffer@npm:^4.2.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
@@ -10367,6 +10358,13 @@ __metadata:
   bin:
     svgo: bin/svgo
   checksum: 10c0/0741f5d5cad63111a90a0ce7a1a5a9013f6d293e871b75efe39addb57f29a263e45294e485a4d2ff9cc260a5d142c8b5937b2234b4ef05efdd2706fb2d360ecc
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^12.0.3":
+  version: 12.1.4
+  resolution: "swiper@npm:12.1.4"
+  checksum: 10c0/bbde6c489cae0853f9d7774d69bcb70d5dab1b94f3c1929a81c0d1f1cb9b302bb32101f38ed0b45e77a7158411887bf1ec162afc5335c73d9beb3c4c0ee101a0
   languageName: node
   linkType: hard
 
