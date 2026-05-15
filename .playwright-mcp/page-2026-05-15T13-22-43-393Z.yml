@@ -1,0 +1,1015 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Main menu":
+      - link "Skip to main content" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - link "Skip to toolbar" [ref=e4] [cursor=pointer]:
+        - /url: "#wp-toolbar"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Dashboard" [ref=e9] [cursor=pointer]:
+            - /url: index.php
+            - generic [ref=e10]: 
+            - generic [ref=e11]: Dashboard
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link "Home" [ref=e14] [cursor=pointer]:
+                - /url: index.php
+            - listitem [ref=e15]:
+              - link "Updates 3" [ref=e16] [cursor=pointer]:
+                - /url: update-core.php
+                - text: Updates
+                - generic [ref=e17]: "3"
+        - listitem [ref=e18]
+        - listitem [ref=e20]:
+          - link "Posts" [ref=e21] [cursor=pointer]:
+            - /url: edit.php
+            - generic [ref=e22]: 
+            - generic [ref=e23]: Posts
+          - list [ref=e24]:
+            - listitem [ref=e25]:
+              - link "All Posts" [ref=e26] [cursor=pointer]:
+                - /url: edit.php
+            - listitem [ref=e27]:
+              - link "Add Post" [ref=e28] [cursor=pointer]:
+                - /url: post-new.php
+            - listitem [ref=e29]:
+              - link "Categories" [ref=e30] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=category
+            - listitem [ref=e31]:
+              - link "Tags" [ref=e32] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=post_tag
+        - listitem [ref=e33]:
+          - link "Media" [ref=e34] [cursor=pointer]:
+            - /url: upload.php
+            - generic [ref=e35]: 
+            - generic [ref=e36]: Media
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "Library" [ref=e39] [cursor=pointer]:
+                - /url: upload.php
+            - listitem [ref=e40]:
+              - link "Add Media File" [ref=e41] [cursor=pointer]:
+                - /url: media-new.php
+        - listitem [ref=e42]:
+          - link "Forms 1" [ref=e43] [cursor=pointer]:
+            - /url: admin.php?page=gf_edit_forms
+            - generic [ref=e45]:
+              - text: Forms
+              - generic "Update Available" [ref=e46]: "1"
+          - list [ref=e47]:
+            - listitem [ref=e48]:
+              - link "Forms" [ref=e49] [cursor=pointer]:
+                - /url: admin.php?page=gf_edit_forms
+            - listitem [ref=e50]:
+              - link "New Form" [ref=e51] [cursor=pointer]:
+                - /url: admin.php?page=gf_new_form
+            - listitem [ref=e52]:
+              - link "Entries" [ref=e53] [cursor=pointer]:
+                - /url: admin.php?page=gf_entries
+            - listitem [ref=e54]:
+              - link "Settings" [ref=e55] [cursor=pointer]:
+                - /url: admin.php?page=gf_settings
+            - listitem [ref=e56]:
+              - link "Import/Export" [ref=e57] [cursor=pointer]:
+                - /url: admin.php?page=gf_export
+            - listitem [ref=e58]:
+              - link "Add-Ons" [ref=e59] [cursor=pointer]:
+                - /url: admin.php?page=gf_addons
+            - listitem [ref=e60]:
+              - link "System Status" [ref=e61] [cursor=pointer]:
+                - /url: admin.php?page=gf_system_status
+            - listitem [ref=e62]:
+              - link "Help" [ref=e63] [cursor=pointer]:
+                - /url: admin.php?page=gf_help
+        - listitem [ref=e64]:
+          - link "Pages" [ref=e65] [cursor=pointer]:
+            - /url: edit.php?post_type=page
+            - generic [ref=e66]: 
+            - generic [ref=e67]: Pages
+          - list [ref=e68]:
+            - listitem [ref=e69]:
+              - link "All Pages" [ref=e70] [cursor=pointer]:
+                - /url: edit.php?post_type=page
+            - listitem [ref=e71]:
+              - link "Add Page" [ref=e72] [cursor=pointer]:
+                - /url: post-new.php?post_type=page
+        - listitem [ref=e73]:
+          - link "Comments" [ref=e74] [cursor=pointer]:
+            - /url: edit-comments.php
+            - generic [ref=e75]: 
+            - generic [ref=e76]: Comments
+        - listitem [ref=e77]:
+          - link "Examples posttype" [ref=e78] [cursor=pointer]:
+            - /url: edit.php?post_type=example-posttype
+            - generic [ref=e79]: 
+            - generic [ref=e80]: Examples posttype
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - link "Examples posttype" [ref=e83] [cursor=pointer]:
+                - /url: edit.php?post_type=example-posttype
+            - listitem [ref=e84]:
+              - link "Add New Example posttype" [ref=e85] [cursor=pointer]:
+                - /url: post-new.php?post_type=example-posttype
+            - listitem [ref=e86]:
+              - link "Example taxonomies" [ref=e87] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=example-taxonomy&post_type=example-posttype
+        - listitem [ref=e88]
+        - listitem [ref=e90]:
+          - link "Appearance" [ref=e91] [cursor=pointer]:
+            - /url: themes.php
+            - generic [ref=e92]: 
+            - generic [ref=e93]: Appearance
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - link "Themes" [ref=e96] [cursor=pointer]:
+                - /url: themes.php
+            - listitem [ref=e97]:
+              - link "Design" [ref=e98] [cursor=pointer]:
+                - /url: site-editor.php
+            - listitem [ref=e99]:
+              - link "Customize" [ref=e100] [cursor=pointer]:
+                - /url: customize.php?return=%2Fwp-admin%2Fpost.php%3Fpost%3D190%26action%3Dedit
+            - listitem [ref=e101]:
+              - link "Widgets" [ref=e102] [cursor=pointer]:
+                - /url: widgets.php
+            - listitem [ref=e103]:
+              - link "Menus" [ref=e104] [cursor=pointer]:
+                - /url: nav-menus.php
+            - listitem [ref=e105]:
+              - link "Background" [ref=e106] [cursor=pointer]:
+                - /url: customize.php?return=%2Fwp-admin%2Fpost.php%3Fpost%3D190%26action%3Dedit&autofocus%5Bcontrol%5D=background_image
+            - listitem
+            - listitem [ref=e107]:
+              - link "Theme File Editor" [ref=e108] [cursor=pointer]:
+                - /url: theme-editor.php
+        - listitem [ref=e109]:
+          - link "Plugins 2" [ref=e110] [cursor=pointer]:
+            - /url: plugins.php
+            - generic [ref=e111]: 
+            - generic [ref=e112]:
+              - text: Plugins
+              - generic [ref=e113]: "2"
+          - list [ref=e114]:
+            - listitem [ref=e115]:
+              - link "Installed Plugins" [ref=e116] [cursor=pointer]:
+                - /url: plugins.php
+            - listitem [ref=e117]:
+              - link "Add Plugin" [ref=e118] [cursor=pointer]:
+                - /url: plugin-install.php
+            - listitem [ref=e119]:
+              - link "Plugin File Editor" [ref=e120] [cursor=pointer]:
+                - /url: plugin-editor.php
+            - listitem [ref=e121]:
+              - link "Install Plugins" [ref=e122] [cursor=pointer]:
+                - /url: plugins.php?page=install-plugins
+        - listitem [ref=e123]:
+          - link "Users" [ref=e124] [cursor=pointer]:
+            - /url: users.php
+            - generic [ref=e125]: 
+            - generic [ref=e126]: Users
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - link "All Users" [ref=e129] [cursor=pointer]:
+                - /url: users.php
+            - listitem [ref=e130]:
+              - link "Add User" [ref=e131] [cursor=pointer]:
+                - /url: user-new.php
+            - listitem [ref=e132]:
+              - link "Profile" [ref=e133] [cursor=pointer]:
+                - /url: profile.php
+        - listitem [ref=e134]:
+          - link "Tools" [ref=e135] [cursor=pointer]:
+            - /url: tools.php
+            - generic [ref=e136]: 
+            - generic [ref=e137]: Tools
+          - list [ref=e138]:
+            - listitem [ref=e139]:
+              - link "Available Tools" [ref=e140] [cursor=pointer]:
+                - /url: tools.php
+            - listitem [ref=e141]:
+              - link "Import" [ref=e142] [cursor=pointer]:
+                - /url: import.php
+            - listitem [ref=e143]:
+              - link "Export" [ref=e144] [cursor=pointer]:
+                - /url: export.php
+            - listitem [ref=e145]:
+              - link "Site Health 1" [ref=e146] [cursor=pointer]:
+                - /url: site-health.php
+                - text: Site Health
+                - generic [ref=e147]: "1"
+            - listitem [ref=e148]:
+              - link "Export Personal Data" [ref=e149] [cursor=pointer]:
+                - /url: export-personal-data.php
+            - listitem [ref=e150]:
+              - link "Erase Personal Data" [ref=e151] [cursor=pointer]:
+                - /url: erase-personal-data.php
+            - listitem [ref=e152]:
+              - link "Yoast Redirects" [ref=e153] [cursor=pointer]:
+                - /url: tools.php?page=wpseo_redirects_tools
+        - listitem [ref=e154]:
+          - link "All-in-One WP Migration" [ref=e155] [cursor=pointer]:
+            - /url: admin.php?page=ai1wm_export
+            - generic [ref=e157]: All-in-One WP Migration
+          - list [ref=e158]:
+            - listitem [ref=e159]:
+              - link "Export" [ref=e160] [cursor=pointer]:
+                - /url: admin.php?page=ai1wm_export
+            - listitem [ref=e161]:
+              - link "Import" [ref=e162] [cursor=pointer]:
+                - /url: admin.php?page=ai1wm_import
+            - listitem [ref=e163]:
+              - link "Backups 4" [ref=e164] [cursor=pointer]:
+                - /url: admin.php?page=ai1wm_backups
+                - text: Backups
+                - generic "You have 4 backups" [ref=e165]: "4"
+            - listitem [ref=e166]:
+              - link "Reset Hub Premium" [ref=e167] [cursor=pointer]:
+                - /url: admin.php?page=ai1wm_reset
+                - text: Reset Hub
+                - generic [ref=e168]: Premium
+            - listitem [ref=e169]:
+              - link "Schedules Premium" [ref=e170] [cursor=pointer]:
+                - /url: admin.php?page=ai1wm_schedules
+                - text: Schedules
+                - generic [ref=e171]: Premium
+        - listitem [ref=e172]:
+          - link "Settings" [ref=e173] [cursor=pointer]:
+            - /url: options-general.php
+            - generic [ref=e174]: 
+            - generic [ref=e175]: Settings
+          - list [ref=e176]:
+            - listitem [ref=e177]:
+              - link "General" [ref=e178] [cursor=pointer]:
+                - /url: options-general.php
+            - listitem [ref=e179]:
+              - link "Writing" [ref=e180] [cursor=pointer]:
+                - /url: options-writing.php
+            - listitem [ref=e181]:
+              - link "Reading" [ref=e182] [cursor=pointer]:
+                - /url: options-reading.php
+            - listitem [ref=e183]:
+              - link "Discussion" [ref=e184] [cursor=pointer]:
+                - /url: options-discussion.php
+            - listitem [ref=e185]:
+              - link "Media" [ref=e186] [cursor=pointer]:
+                - /url: options-media.php
+            - listitem [ref=e187]:
+              - link "Permalinks" [ref=e188] [cursor=pointer]:
+                - /url: options-permalink.php
+            - listitem [ref=e189]:
+              - link "Privacy" [ref=e190] [cursor=pointer]:
+                - /url: options-privacy.php
+        - listitem [ref=e191]:
+          - link "ACF" [ref=e192] [cursor=pointer]:
+            - /url: edit.php?post_type=acf-field-group
+            - generic [ref=e193]: 
+            - generic [ref=e194]: ACF
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - link "Field Groups" [ref=e197] [cursor=pointer]:
+                - /url: edit.php?post_type=acf-field-group
+            - listitem [ref=e198]:
+              - link "Post Types" [ref=e199] [cursor=pointer]:
+                - /url: edit.php?post_type=acf-post-type
+            - listitem [ref=e200]:
+              - link "Taxonomies" [ref=e201] [cursor=pointer]:
+                - /url: edit.php?post_type=acf-taxonomy
+            - listitem [ref=e202]:
+              - link "Options Pages" [ref=e203] [cursor=pointer]:
+                - /url: edit.php?post_type=acf-ui-options-page
+            - listitem [ref=e204]:
+              - link "Tools" [ref=e205] [cursor=pointer]:
+                - /url: edit.php?post_type=acf-field-group&page=acf-tools
+            - listitem [ref=e206]:
+              - link "Updates" [ref=e207] [cursor=pointer]:
+                - /url: edit.php?post_type=acf-field-group&page=acf-settings-updates
+        - listitem [ref=e208]:
+          - link "Theme Settings" [ref=e209] [cursor=pointer]:
+            - /url: admin.php?page=theme-general-settings
+            - generic [ref=e210]: 
+            - generic [ref=e211]: Theme Settings
+        - listitem [ref=e212]
+        - listitem [ref=e214]:
+          - link "Yoast SEO" [ref=e215] [cursor=pointer]:
+            - /url: admin.php?page=wpseo_dashboard
+            - generic [ref=e217]: Yoast SEO
+          - list [ref=e218]:
+            - listitem [ref=e219]:
+              - link "General" [ref=e220] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_dashboard
+            - listitem [ref=e221]:
+              - link "Settings" [ref=e222] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_settings
+            - listitem [ref=e223]:
+              - link "Integrations" [ref=e224] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_integrations
+            - listitem [ref=e225]:
+              - link "Tools" [ref=e226] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_tools
+            - listitem [ref=e227]:
+              - link "Academy" [ref=e228] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_academy
+            - listitem [ref=e229]:
+              - link "Plans" [ref=e230] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_licenses
+            - listitem [ref=e231]:
+              - link "Workouts Premium" [ref=e232] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_workouts
+                - text: Workouts
+                - generic [ref=e233]: Premium
+            - listitem [ref=e234]:
+              - link "Redirects Premium" [ref=e235] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_redirects
+                - text: Redirects
+                - generic [ref=e236]: Premium
+            - listitem [ref=e237]:
+              - link "Support" [ref=e238] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_support
+            - listitem [ref=e239]:
+              - link "Upgrade" [ref=e240] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_upgrade_sidebar
+                - generic [ref=e242]: Upgrade
+            - listitem [ref=e243]:
+              - link "AI Brand Insights" [ref=e244] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_brand_insights
+                - generic [ref=e246]: AI Brand Insights
+        - listitem [ref=e248]:
+          - link "UpdraftPlus" [ref=e249] [cursor=pointer]:
+            - /url: options-general.php?page=updraftplus
+            - generic [ref=e251]: UpdraftPlus
+        - listitem [ref=e252]:
+          - button "Collapse Main menu" [expanded] [ref=e253] [cursor=pointer]:
+            - generic [ref=e255]: Collapse Menu
+    - generic [ref=e256]:
+      - generic [ref=e257]:
+        - navigation "Toolbar":
+          - menu:
+            - group [ref=e258]:
+              - menuitem "About WordPress" [ref=e259] [cursor=pointer]:
+                - generic [ref=e261]: About WordPress
+            - group [ref=e262]:
+              - menuitem "Projects - My Work & Projects Portfo…" [ref=e263] [cursor=pointer]
+            - group [ref=e264]:
+              - menuitem "3 updates available" [ref=e265] [cursor=pointer]:
+                - generic [ref=e267]: "3"
+                - generic [ref=e268]: 3 updates available
+            - group [ref=e269]:
+              - menuitem "0 Comments in moderation" [ref=e270] [cursor=pointer]:
+                - generic [ref=e272]: "0"
+                - generic [ref=e273]: 0 Comments in moderation
+            - group [ref=e274]:
+              - menuitem "New" [ref=e275] [cursor=pointer]:
+                - generic [ref=e277]: New
+            - group [ref=e278]:
+              - menuitem "View Page" [ref=e279] [cursor=pointer]
+            - group [ref=e280]:
+              - menuitem "Forms" [ref=e281] [cursor=pointer]:
+                - generic [ref=e283]: Forms
+            - group [ref=e284]:
+              - menuitem "UpdraftPlus" [ref=e285]
+          - menu [ref=e286]:
+            - group [ref=e287]:
+              - menuitem "Howdy, admin" [ref=e288] [cursor=pointer]
+      - main [ref=e289]:
+        - generic:
+          - generic:
+            - heading "Edit Page" [level=1] [ref=e290]
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - region "Editor top bar" [ref=e294]:
+                  - generic [ref=e295]:
+                    - toolbar "Document tools" [ref=e297]:
+                      - generic [ref=e298]:
+                        - button "Block Inserter" [expanded] [pressed] [ref=e299] [cursor=pointer]:
+                          - img [ref=e300]
+                        - button "Undo" [disabled] [ref=e302]:
+                          - img [ref=e303]
+                        - button "Redo" [disabled] [ref=e305]:
+                          - img [ref=e306]
+                        - button "Document Overview" [ref=e308] [cursor=pointer]:
+                          - img [ref=e309]
+                    - button "test page · Page Ctrl+K" [ref=e313] [cursor=pointer]:
+                      - heading "test page · Page" [level=1] [ref=e315]:
+                        - generic [ref=e316]: test page
+                        - generic [ref=e317]: · Page
+                      - generic [ref=e318]: Ctrl+K
+                    - generic [ref=e319]:
+                      - link "View Page" [ref=e320] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/test-page/
+                        - img [ref=e321]
+                      - button "View" [ref=e324] [cursor=pointer]:
+                        - img [ref=e325]
+                      - generic [ref=e327]:
+                        - button "Yoast SEO" [ref=e328] [cursor=pointer]:
+                          - img [ref=e329]
+                        - button "Settings" [ref=e334] [cursor=pointer]:
+                          - img [ref=e335]
+                      - button "Save" [ref=e337] [cursor=pointer]
+                      - button "Options" [ref=e339] [cursor=pointer]:
+                        - img [ref=e340]
+                - generic [ref=e342]:
+                  - region "Block Library" [ref=e629]:
+                    - generic [ref=e635]:
+                      - generic [ref=e636]:
+                        - button "Close Block Inserter" [ref=e637] [cursor=pointer]:
+                          - img [ref=e638]
+                        - tablist [ref=e640]:
+                          - tab "Blocks" [active] [selected] [ref=e641] [cursor=pointer]:
+                            - generic [ref=e642]: Blocks
+                          - tab "Patterns" [ref=e643] [cursor=pointer]:
+                            - generic [ref=e644]: Patterns
+                          - tab "Media" [ref=e645] [cursor=pointer]:
+                            - generic [ref=e646]: Media
+                      - tabpanel "Blocks" [ref=e647]:
+                        - generic [ref=e650]:
+                          - generic [ref=e651]: Search
+                          - generic [ref=e652]:
+                            - img [ref=e655]
+                            - searchbox "Search" [ref=e657]
+                        - generic [ref=e659]:
+                          - generic [ref=e660]:
+                            - heading "Custom" [level=2] [ref=e662]
+                            - listbox "Custom" [ref=e664]:
+                              - option " Accordion" [ref=e666] [cursor=pointer]:
+                                - generic [ref=e669]: 
+                                - generic [ref=e671]: Accordion
+                              - text: 
+                              - option "Example" [ref=e673] [cursor=pointer]:
+                                - img [ref=e676]
+                                - generic [ref=e679]: Example
+                              - option " Hero Slider" [ref=e681] [cursor=pointer]:
+                                - generic [ref=e684]: 
+                                - generic [ref=e686]: Hero Slider
+                              - text: 
+                              - option " Popup Button" [ref=e688] [cursor=pointer]:
+                                - generic [ref=e691]: 
+                                - generic [ref=e693]: Popup Button
+                              - text: 
+                              - option " Tabs" [ref=e695] [cursor=pointer]:
+                                - generic [ref=e698]: 
+                                - generic [ref=e700]: Tabs
+                              - text: 
+                              - option " Two Images" [ref=e702] [cursor=pointer]:
+                                - generic [ref=e705]: 
+                                - generic [ref=e707]: Two Images
+                              - text: 
+                            - heading "Text" [level=2] [ref=e709]
+                            - listbox "Text" [ref=e711]:
+                              - option "Paragraph" [ref=e713] [cursor=pointer]:
+                                - img [ref=e716]
+                                - generic [ref=e719]: Paragraph
+                              - option "Heading" [ref=e721] [cursor=pointer]:
+                                - img [ref=e724]
+                                - generic [ref=e727]: Heading
+                              - option "List" [ref=e729] [cursor=pointer]:
+                                - img [ref=e732]
+                                - generic [ref=e735]: List
+                              - option "Quote" [ref=e737] [cursor=pointer]:
+                                - img [ref=e740]
+                                - generic [ref=e743]: Quote
+                              - option "Code" [ref=e745] [cursor=pointer]:
+                                - img [ref=e748]
+                                - generic [ref=e751]: Code
+                              - option "Details" [ref=e753] [cursor=pointer]:
+                                - img [ref=e756]
+                                - generic [ref=e760]: Details
+                              - option "Math" [ref=e762] [cursor=pointer]:
+                                - img [ref=e765]
+                                - generic [ref=e768]: Math
+                              - option "Preformatted" [ref=e770] [cursor=pointer]:
+                                - img [ref=e773]
+                                - generic [ref=e776]: Preformatted
+                              - option "Pullquote" [ref=e778] [cursor=pointer]:
+                                - img [ref=e781]
+                                - generic [ref=e784]: Pullquote
+                              - option "Table" [ref=e786] [cursor=pointer]:
+                                - img [ref=e789]
+                                - generic [ref=e792]: Table
+                              - option "Verse" [ref=e794] [cursor=pointer]:
+                                - img [ref=e797]
+                                - generic [ref=e800]: Verse
+                              - option "Classic" [ref=e802] [cursor=pointer]:
+                                - img [ref=e805]
+                                - generic [ref=e808]: Classic
+                              - option "Stretchy Paragraph" [ref=e810] [cursor=pointer]:
+                                - img [ref=e813]
+                                - generic [ref=e816]: Stretchy Paragraph
+                              - option "Stretchy Heading" [ref=e818] [cursor=pointer]:
+                                - img [ref=e821]
+                                - generic [ref=e824]: Stretchy Heading
+                            - heading "Media" [level=2] [ref=e826]
+                            - listbox "Media" [ref=e828]:
+                              - option "Image" [ref=e830] [cursor=pointer]:
+                                - img [ref=e833]
+                                - generic [ref=e836]: Image
+                              - option "Gallery" [ref=e838] [cursor=pointer]:
+                                - img [ref=e841]
+                                - generic [ref=e844]: Gallery
+                              - option "Audio" [ref=e846] [cursor=pointer]:
+                                - img [ref=e849]
+                                - generic [ref=e852]: Audio
+                              - option "Cover" [ref=e854] [cursor=pointer]:
+                                - img [ref=e857]
+                                - generic [ref=e860]: Cover
+                              - option "File" [ref=e862] [cursor=pointer]:
+                                - img [ref=e865]
+                                - generic [ref=e868]: File
+                              - option "Media & Text" [ref=e870] [cursor=pointer]:
+                                - img [ref=e873]
+                                - generic [ref=e876]: Media & Text
+                              - option "Video" [ref=e878] [cursor=pointer]:
+                                - img [ref=e881]
+                                - generic [ref=e884]: Video
+                            - heading "Design" [level=2] [ref=e886]
+                            - listbox "Design" [ref=e888]:
+                              - option "Accordion" [ref=e890] [cursor=pointer]:
+                                - img [ref=e893]
+                                - generic [ref=e899]: Accordion
+                              - option "Buttons" [ref=e901] [cursor=pointer]:
+                                - img [ref=e904]
+                                - generic [ref=e907]: Buttons
+                              - option "Columns" [ref=e909] [cursor=pointer]:
+                                - img [ref=e912]
+                                - generic [ref=e915]: Columns
+                              - option "Group" [ref=e917] [cursor=pointer]:
+                                - img [ref=e920]
+                                - generic [ref=e923]: Group
+                              - option "Row" [ref=e925] [cursor=pointer]:
+                                - img [ref=e928]
+                                - generic [ref=e931]: Row
+                              - option "Stack" [ref=e933] [cursor=pointer]:
+                                - img [ref=e936]
+                                - generic [ref=e939]: Stack
+                              - option "Grid" [ref=e941] [cursor=pointer]:
+                                - img [ref=e944]
+                                - generic [ref=e947]: Grid
+                              - option "More" [ref=e949] [cursor=pointer]:
+                                - img [ref=e952]
+                                - generic [ref=e955]: More
+                              - option "Page Break" [ref=e957] [cursor=pointer]:
+                                - img [ref=e960]
+                                - generic [ref=e963]: Page Break
+                              - option "Separator" [ref=e965] [cursor=pointer]:
+                                - img [ref=e968]
+                                - generic [ref=e971]: Separator
+                              - option "Spacer" [ref=e973] [cursor=pointer]:
+                                - img [ref=e976]
+                                - generic [ref=e979]: Spacer
+                            - heading "Widgets" [level=2] [ref=e981]
+                            - listbox "Widgets" [ref=e983]:
+                              - option "Archives" [ref=e985] [cursor=pointer]:
+                                - img [ref=e988]
+                                - generic [ref=e991]: Archives
+                              - option "Calendar" [ref=e993] [cursor=pointer]:
+                                - img [ref=e996]
+                                - generic [ref=e999]: Calendar
+                              - option "Terms List" [ref=e1001] [cursor=pointer]:
+                                - img [ref=e1004]
+                                - generic [ref=e1007]: Terms List
+                              - option "Categories List" [ref=e1009] [cursor=pointer]:
+                                - img [ref=e1012]
+                                - generic [ref=e1015]: Categories List
+                              - option "Custom HTML" [ref=e1017] [cursor=pointer]:
+                                - img [ref=e1020]
+                                - generic [ref=e1023]: Custom HTML
+                              - option "Latest Comments" [ref=e1025] [cursor=pointer]:
+                                - img [ref=e1028]
+                                - generic [ref=e1031]: Latest Comments
+                              - option "Latest Posts" [ref=e1033] [cursor=pointer]:
+                                - img [ref=e1036]
+                                - generic [ref=e1039]: Latest Posts
+                              - option "Page List" [ref=e1041] [cursor=pointer]:
+                                - img [ref=e1044]
+                                - generic [ref=e1049]: Page List
+                              - option "RSS" [ref=e1051] [cursor=pointer]:
+                                - img [ref=e1054]
+                                - generic [ref=e1057]: RSS
+                              - option "Search" [ref=e1059] [cursor=pointer]:
+                                - img [ref=e1062]
+                                - generic [ref=e1065]: Search
+                              - option "Shortcode" [ref=e1067] [cursor=pointer]:
+                                - img [ref=e1070]
+                                - generic [ref=e1073]: Shortcode
+                              - option "Social Icons" [ref=e1075] [cursor=pointer]:
+                                - img [ref=e1078]
+                                - generic [ref=e1081]: Social Icons
+                              - option "Tag Cloud" [ref=e1083] [cursor=pointer]:
+                                - img [ref=e1086]
+                                - generic [ref=e1089]: Tag Cloud
+                            - heading "Theme" [level=2] [ref=e1091]
+                            - listbox "Theme" [ref=e1093]:
+                              - option "Navigation" [ref=e1095] [cursor=pointer]:
+                                - img [ref=e1098]
+                                - generic [ref=e1101]: Navigation
+                              - option "Site Logo" [ref=e1103] [cursor=pointer]:
+                                - img [ref=e1106]
+                                - generic [ref=e1109]: Site Logo
+                              - option "Site Title" [ref=e1111] [cursor=pointer]:
+                                - img [ref=e1114]
+                                - generic [ref=e1117]: Site Title
+                              - option "Site Tagline" [ref=e1119] [cursor=pointer]:
+                                - img [ref=e1122]
+                                - generic [ref=e1125]: Site Tagline
+                              - option "Query Loop" [ref=e1127] [cursor=pointer]:
+                                - img [ref=e1130]
+                                - generic [ref=e1133]: Query Loop
+                              - option "Avatar" [ref=e1135] [cursor=pointer]:
+                                - img [ref=e1138]
+                                - generic [ref=e1141]: Avatar
+                              - option "Title" [ref=e1143] [cursor=pointer]:
+                                - img [ref=e1146]
+                                - generic [ref=e1149]: Title
+                              - option "Excerpt" [ref=e1151] [cursor=pointer]:
+                                - img [ref=e1154]
+                                - generic [ref=e1157]: Excerpt
+                              - option "Featured Image" [ref=e1159] [cursor=pointer]:
+                                - img [ref=e1162]
+                                - generic [ref=e1165]: Featured Image
+                              - option "Author" [ref=e1167] [cursor=pointer]:
+                                - img [ref=e1170]
+                                - generic [ref=e1173]: Author
+                              - option "Author Name" [ref=e1175] [cursor=pointer]:
+                                - img [ref=e1178]
+                                - generic [ref=e1181]: Author Name
+                              - option "Comments Count" [ref=e1183] [cursor=pointer]:
+                                - img [ref=e1186]
+                                - generic [ref=e1189]: Comments Count
+                              - option "Comments Link" [ref=e1191] [cursor=pointer]:
+                                - img [ref=e1194]
+                                - generic [ref=e1197]: Comments Link
+                              - option "Date" [ref=e1199] [cursor=pointer]:
+                                - img [ref=e1202]
+                                - generic [ref=e1206]: Date
+                              - option "Post Date" [ref=e1208] [cursor=pointer]:
+                                - img [ref=e1211]
+                                - generic [ref=e1215]: Post Date
+                              - option "Modified Date" [ref=e1217] [cursor=pointer]:
+                                - img [ref=e1220]
+                                - generic [ref=e1224]: Modified Date
+                              - option "Categories" [ref=e1226] [cursor=pointer]:
+                                - img [ref=e1229]
+                                - generic [ref=e1232]: Categories
+                              - option "Tags" [ref=e1234] [cursor=pointer]:
+                                - img [ref=e1237]
+                                - generic [ref=e1240]: Tags
+                              - option "Example taxonomies" [ref=e1242] [cursor=pointer]:
+                                - img [ref=e1245]
+                                - generic [ref=e1248]: Example taxonomies
+                              - option "Previous Post" [ref=e1250] [cursor=pointer]:
+                                - img [ref=e1253]
+                                - generic [ref=e1256]: Previous Post
+                              - option "Next Post" [ref=e1258] [cursor=pointer]:
+                                - img [ref=e1261]
+                                - generic [ref=e1264]: Next Post
+                              - option "Time to Read" [ref=e1266] [cursor=pointer]:
+                                - img [ref=e1269]
+                                - generic [ref=e1272]: Time to Read
+                              - option "Word Count" [ref=e1274] [cursor=pointer]:
+                                - img [ref=e1277]
+                                - generic [ref=e1280]: Word Count
+                              - option "Read More" [ref=e1282] [cursor=pointer]:
+                                - img [ref=e1285]
+                                - generic [ref=e1288]: Read More
+                              - option "Comments" [ref=e1290] [cursor=pointer]:
+                                - img [ref=e1293]
+                                - generic [ref=e1296]: Comments
+                              - option "Comments Form" [ref=e1298] [cursor=pointer]:
+                                - img [ref=e1301]
+                                - generic [ref=e1304]: Comments Form
+                              - option "Login/out" [ref=e1306] [cursor=pointer]:
+                                - img [ref=e1309]
+                                - generic [ref=e1312]: Login/out
+                              - option "Term Count" [ref=e1314] [cursor=pointer]:
+                                - img [ref=e1317]
+                                - generic [ref=e1321]: Term Count
+                              - option "Term Description" [ref=e1323] [cursor=pointer]:
+                                - img [ref=e1326]
+                                - generic [ref=e1329]: Term Description
+                              - option "Term Name" [ref=e1331] [cursor=pointer]:
+                                - img [ref=e1334]
+                                - generic [ref=e1338]: Term Name
+                              - option "Terms Query" [ref=e1340] [cursor=pointer]:
+                                - img [ref=e1343]
+                                - generic [ref=e1346]: Terms Query
+                              - option "Archive Title" [ref=e1348] [cursor=pointer]:
+                                - img [ref=e1351]
+                                - generic [ref=e1354]: Archive Title
+                              - option "Search Results Title" [ref=e1356] [cursor=pointer]:
+                                - img [ref=e1359]
+                                - generic [ref=e1362]: Search Results Title
+                              - option "Post Type Label" [ref=e1364] [cursor=pointer]:
+                                - img [ref=e1367]
+                                - generic [ref=e1370]: Post Type Label
+                              - option "Author Biography" [ref=e1372] [cursor=pointer]:
+                                - img [ref=e1375]
+                                - generic [ref=e1378]: Author Biography
+                            - heading "Embeds" [level=2] [ref=e1380]
+                            - listbox "Embeds" [ref=e1382]:
+                              - option "Embed" [ref=e1384] [cursor=pointer]:
+                                - img [ref=e1387]
+                                - generic [ref=e1390]: Embed
+                              - option "Twitter Embed" [ref=e1392] [cursor=pointer]:
+                                - img [ref=e1395]
+                                - generic [ref=e1399]: Twitter Embed
+                              - option "YouTube Embed" [ref=e1401] [cursor=pointer]:
+                                - img [ref=e1404]
+                                - generic [ref=e1407]: YouTube Embed
+                              - option "WordPress Embed" [ref=e1409] [cursor=pointer]:
+                                - img [ref=e1412]
+                                - generic [ref=e1416]: WordPress Embed
+                              - option "SoundCloud Embed" [ref=e1418] [cursor=pointer]:
+                                - img [ref=e1421]
+                                - generic [ref=e1424]: SoundCloud Embed
+                              - option "Spotify Embed" [ref=e1426] [cursor=pointer]:
+                                - img [ref=e1429]
+                                - generic [ref=e1432]: Spotify Embed
+                              - option "Flickr Embed" [ref=e1434] [cursor=pointer]:
+                                - img [ref=e1437]
+                                - generic [ref=e1440]: Flickr Embed
+                              - option "Vimeo Embed" [ref=e1442] [cursor=pointer]:
+                                - img [ref=e1445]
+                                - generic [ref=e1449]: Vimeo Embed
+                              - option "Animoto Embed" [ref=e1451] [cursor=pointer]:
+                                - img [ref=e1454]
+                                - generic [ref=e1462]: Animoto Embed
+                              - option "Cloudup Embed" [ref=e1464] [cursor=pointer]:
+                                - img [ref=e1467]
+                                - generic [ref=e1470]: Cloudup Embed
+                              - option "Crowdsignal Embed" [ref=e1472] [cursor=pointer]:
+                                - img [ref=e1475]
+                                - generic [ref=e1478]: Crowdsignal Embed
+                              - option "Dailymotion Embed" [ref=e1480] [cursor=pointer]:
+                                - img [ref=e1483]
+                                - generic [ref=e1486]: Dailymotion Embed
+                              - option "Imgur Embed" [ref=e1488] [cursor=pointer]:
+                                - img [ref=e1491]
+                                - generic [ref=e1494]: Imgur Embed
+                              - option "Issuu Embed" [ref=e1496] [cursor=pointer]:
+                                - img [ref=e1499]
+                                - generic [ref=e1502]: Issuu Embed
+                              - option "Kickstarter Embed" [ref=e1504] [cursor=pointer]:
+                                - img [ref=e1507]
+                                - generic [ref=e1510]: Kickstarter Embed
+                              - option "Mixcloud Embed" [ref=e1512] [cursor=pointer]:
+                                - img [ref=e1515]
+                                - generic [ref=e1518]: Mixcloud Embed
+                              - option "Pocket Casts Embed" [ref=e1520] [cursor=pointer]:
+                                - img [ref=e1523]
+                                - generic [ref=e1527]: Pocket Casts Embed
+                              - option "Reddit Embed" [ref=e1529] [cursor=pointer]:
+                                - img [ref=e1532]
+                                - generic [ref=e1535]: Reddit Embed
+                              - option "ReverbNation Embed" [ref=e1537] [cursor=pointer]:
+                                - img [ref=e1540]
+                                - generic [ref=e1543]: ReverbNation Embed
+                              - option "Scribd Embed" [ref=e1545] [cursor=pointer]:
+                                - img [ref=e1548]
+                                - generic [ref=e1551]: Scribd Embed
+                              - option "SmugMug Embed" [ref=e1553] [cursor=pointer]:
+                                - img [ref=e1556]
+                                - generic [ref=e1559]: SmugMug Embed
+                              - option "Speaker Deck Embed" [ref=e1561] [cursor=pointer]:
+                                - img [ref=e1564]
+                                - generic [ref=e1567]: Speaker Deck Embed
+                              - option "TikTok Embed" [ref=e1569] [cursor=pointer]:
+                                - img [ref=e1572]
+                                - generic [ref=e1575]: TikTok Embed
+                              - option "TED Embed" [ref=e1577] [cursor=pointer]:
+                                - img [ref=e1580]
+                                - generic [ref=e1583]: TED Embed
+                              - option "Tumblr Embed" [ref=e1585] [cursor=pointer]:
+                                - img [ref=e1588]
+                                - generic [ref=e1591]: Tumblr Embed
+                              - option "VideoPress Embed" [ref=e1593] [cursor=pointer]:
+                                - img [ref=e1596]
+                                - generic [ref=e1599]: VideoPress Embed
+                              - option "WordPress.tv Embed" [ref=e1601] [cursor=pointer]:
+                                - img [ref=e1604]
+                                - generic [ref=e1607]: WordPress.tv Embed
+                              - option "Amazon Kindle Embed" [ref=e1609] [cursor=pointer]:
+                                - img [ref=e1612]
+                                - generic [ref=e1617]: Amazon Kindle Embed
+                              - option "Pinterest Embed" [ref=e1619] [cursor=pointer]:
+                                - img [ref=e1622]
+                                - generic [ref=e1625]: Pinterest Embed
+                              - option "Wolfram Embed" [ref=e1627] [cursor=pointer]:
+                                - img [ref=e1630]
+                                - generic [ref=e1633]: Wolfram Embed
+                              - option "Bluesky Embed" [ref=e1635] [cursor=pointer]:
+                                - img [ref=e1638]
+                                - generic [ref=e1641]: Bluesky Embed
+                              - option "Form" [ref=e1643] [cursor=pointer]:
+                                - img [ref=e1646]
+                                - generic [ref=e1650]: Form
+                            - generic [ref=e1651]:
+                              - heading "Yoast Structured Data Blocks" [level=2] [ref=e1652]
+                              - img [ref=e1653]
+                            - listbox "Yoast Structured Data Blocks" [ref=e1657]:
+                              - option " Yoast FAQ" [ref=e1659] [cursor=pointer]:
+                                - generic [ref=e1662]: 
+                                - generic [ref=e1664]: Yoast FAQ
+                              - text: 
+                              - option " Yoast How-to" [ref=e1666] [cursor=pointer]:
+                                - generic [ref=e1669]: 
+                                - generic [ref=e1671]: Yoast How-to
+                              - text: 
+                            - generic [ref=e1672]:
+                              - heading "Yoast Internal Linking Blocks" [level=2] [ref=e1673]
+                              - img [ref=e1674]
+                            - listbox "Yoast Internal Linking Blocks" [ref=e1678]:
+                              - option " Yoast Breadcrumbs" [ref=e1680] [cursor=pointer]:
+                                - generic [ref=e1683]: 
+                                - generic [ref=e1685]: Yoast Breadcrumbs
+                              - text: 
+                          - generic [ref=e1686]:
+                            - heading "Theme" [level=2] [ref=e1688]
+                            - listbox "Theme" [ref=e1690]:
+                              - option "Template Part" [ref=e1692] [cursor=pointer]:
+                                - img [ref=e1695]
+                                - generic [ref=e1698]: Template Part
+                              - option "Header" [ref=e1700] [cursor=pointer]:
+                                - img [ref=e1703]
+                                - generic [ref=e1706]: Header
+                              - option "Footer" [ref=e1708] [cursor=pointer]:
+                                - img [ref=e1711]
+                                - generic [ref=e1714]: Footer
+                              - option "Content" [ref=e1716] [cursor=pointer]:
+                                - img [ref=e1719]
+                                - generic [ref=e1722]: Content
+                        - generic [ref=e1723]:
+                          - heading "A tip for using the block editor" [level=2] [ref=e1724]
+                          - generic [ref=e1725]:
+                            - img [ref=e1726]
+                            - paragraph [ref=e1728]: Change a block's type by pressing the block icon on the toolbar.
+                  - region "Editor content" [ref=e343]:
+                    - generic [ref=e347]:
+                      - textbox "Add title" [ref=e349]: "Title:"
+                      - generic [ref=e350]:
+                        - 'document "Block: Accordion" [ref=e351]':
+                          - 'document "Block: Accordion Item" [ref=e609]':
+                            - generic [ref=e613]:
+                              - generic [ref=e614] [cursor=pointer]:
+                                - text: Item title
+                                - img
+                              - document "Empty block; start writing or type forward slash to choose a block" [ref=e619]:
+                                - generic: Add item content...
+                        - 'document "Block: Example" [ref=e356]':
+                          - generic [ref=e622]:
+                            - heading "Example Block" [level=2] [ref=e623]
+                            - generic [ref=e624]:
+                              - link "Test Button" [ref=e626] [cursor=pointer]:
+                                - /url: "#"
+                              - link "Test Button 2" [ref=e628] [cursor=pointer]:
+                                - /url: "#"
+                    - generic [ref=e365]:
+                      - generic [ref=e366]:
+                        - heading "Yoast SEO" [level=2] [ref=e367]
+                        - generic [ref=e368]:
+                          - button "Move up" [disabled] [ref=e369]:
+                            - generic [ref=e370]: Move up
+                          - button "Move down" [ref=e372] [cursor=pointer]:
+                            - generic [ref=e373]: Move down
+                          - 'button "Toggle panel: Yoast SEO" [expanded] [ref=e375] [cursor=pointer]':
+                            - generic [ref=e376]: "Toggle panel: Yoast SEO"
+                      - generic [ref=e379]:
+                        - tablist "Yoast SEO" [ref=e381]:
+                          - tab "SEO" [selected] [ref=e382] [cursor=pointer]:
+                            - img [ref=e384]
+                            - text: SEO
+                          - tab "Readability" [ref=e386] [cursor=pointer]:
+                            - img [ref=e603]
+                            - generic [ref=e390]: Readability
+                          - tab "Schema" [ref=e391] [cursor=pointer]: Schema
+                          - tab " Social" [ref=e393] [cursor=pointer]:
+                            - generic [ref=e394]: 
+                            - text: Social
+                        - tabpanel "SEO" [ref=e395]:
+                          - generic [ref=e396]:
+                            - generic [ref=e398]:
+                              - img [ref=e399]
+                              - paragraph [ref=e401]: Optimize your content for discovery.
+                            - generic [ref=e404]:
+                              - generic [ref=e405]:
+                                - generic [ref=e406]:
+                                  - text: Focus keyphrase
+                                  - link " Help on choosing the perfect focus keyphrase (Opens in a new browser tab)" [ref=e407] [cursor=pointer]:
+                                    - /url: https://yoa.st/focus-keyword?php_version=8.3&platform=wordpress&platform_version=6.9&software=free&software_version=27.6&days_active=10&user_language=en_US
+                                    - text: 
+                                    - generic [ref=e408]: Help on choosing the perfect focus keyphrase
+                                    - generic [ref=e409]: (Opens in a new browser tab)
+                                - textbox "Focus keyphrase" [ref=e411]
+                              - link "Get related keyphrases (Opens in a new browser tab)" [ref=e414] [cursor=pointer]:
+                                - /url: https://oauth.semrush.com/oauth2/authorize?ref=1513012826&client_id=yoast&redirect_uri=https%3A%2F%2Foauth.semrush.com%2Foauth2%2Fyoast%2Fsuccess&response_type=code&scope=user.id
+                                - text: Get related keyphrases
+                                - generic [ref=e415]: (Opens in a new browser tab)
+                            - generic [ref=e417]:
+                              - heading "Search appearance" [level=2] [ref=e418]:
+                                - button "Search appearance" [expanded] [ref=e419] [cursor=pointer]:
+                                  - generic [ref=e421]: Search appearance
+                                  - img [ref=e422]
+                              - generic [ref=e429]:
+                                - generic [ref=e430]: Determine how your post should look in the search results.
+                                - generic [ref=e432]:
+                                  - generic [ref=e433]: Google preview
+                                  - group [ref=e434]:
+                                    - generic [ref=e435]: Mobile
+                                    - 'switch "Google preview: Switch to desktop preview. Currently showing mobile preview." [ref=e436] [cursor=pointer]':
+                                      - generic [ref=e437]: "Google preview: Switch to desktop preview. Currently showing mobile preview."
+                                      - generic:
+                                        - generic:
+                                          - img
+                                    - generic [ref=e438]: Desktop
+                                - generic [ref=e440]:
+                                  - generic [ref=e441]:
+                                    - generic [ref=e442]: "Url preview:"
+                                    - generic [ref=e444] [cursor=pointer]:
+                                      - generic [ref=e446]:
+                                        - generic [ref=e447]: Projects - My Work &amp; Projects Portfolio
+                                        - text: devcraft.synergize.co
+                                      - img [ref=e448]
+                                    - generic [ref=e450]: "SEO title preview:"
+                                    - generic [ref=e453] [cursor=pointer]: test page - Projects - My Work & Projects Portfolio
+                                  - generic [ref=e454]:
+                                    - generic [ref=e455]: "Meta description preview:"
+                                    - generic [ref=e457] [cursor=pointer]:
+                                      - generic [ref=e458]: May 15, 2026 －
+                                      - text: Please provide a meta description by editing the snippet below. If you don’t, Google will try to find a relevant part of your post to show in the search results.
+                                - generic [ref=e459]:
+                                  - generic [ref=e460]:
+                                    - generic [ref=e461] [cursor=pointer]: SEO title
+                                    - generic [ref=e463]:
+                                      - button "Insert variable" [ref=e464] [cursor=pointer]
+                                      - button "Generate SEO title" [ref=e466] [cursor=pointer]:
+                                        - img [ref=e467]
+                                        - text: Generate SEO title
+                                    - combobox "SEO title" [ref=e472]:
+                                      - generic [ref=e475]:
+                                        - generic [ref=e477] [cursor=pointer]: Title
+                                        - generic [ref=e480] [cursor=pointer]: Page
+                                        - generic [ref=e483] [cursor=pointer]: Separator
+                                        - generic [ref=e486] [cursor=pointer]: Site title
+                                  - progressbar [ref=e488]
+                                  - generic [ref=e489] [cursor=pointer]: Slug
+                                  - textbox "Slug" [ref=e491]: test-page
+                                  - generic [ref=e492]:
+                                    - generic [ref=e493] [cursor=pointer]: Meta description
+                                    - generic [ref=e495]:
+                                      - button "Insert variable" [ref=e496] [cursor=pointer]
+                                      - button "Generate meta description" [ref=e498] [cursor=pointer]:
+                                        - img [ref=e499]
+                                        - text: Generate meta description
+                                    - combobox "Meta description" [ref=e504]
+                                  - progressbar [ref=e508]
+                            - heading "SEO analysis Enter a focus keyphrase to calculate the SEO score" [level=2] [ref=e511]:
+                              - button "SEO analysis Enter a focus keyphrase to calculate the SEO score" [ref=e512] [cursor=pointer]:
+                                - img [ref=e513]
+                                - generic [ref=e516]:
+                                  - text: SEO analysis
+                                  - generic [ref=e517]: Enter a focus keyphrase to calculate the SEO score
+                                - img [ref=e518]
+                            - button "Add related keyphrase Premium" [ref=e525] [cursor=pointer]:
+                              - img [ref=e526]
+                              - generic [ref=e528]: Add related keyphrase
+                              - generic [ref=e529]:
+                                - img [ref=e530]
+                                - generic [ref=e532]: Premium
+                            - button "Track SEO performance" [ref=e535] [cursor=pointer]:
+                              - generic [ref=e536]: Track SEO performance
+                              - img [ref=e537]
+                            - heading "Content blocks New" [level=2] [ref=e541]:
+                              - button "Content blocks New" [ref=e542] [cursor=pointer]:
+                                - generic [ref=e543]:
+                                  - generic [ref=e545]: Content blocks
+                                  - generic [ref=e547]: New
+                                - img [ref=e548]
+                            - button "Internal linking suggestions Premium" [ref=e555] [cursor=pointer]:
+                              - generic [ref=e556]: Internal linking suggestions
+                              - generic [ref=e557]:
+                                - img [ref=e558]
+                                - generic [ref=e560]: Premium
+                            - heading "Cornerstone content" [level=2] [ref=e563]:
+                              - button "Cornerstone content" [ref=e564] [cursor=pointer]:
+                                - generic [ref=e566]: Cornerstone content
+                                - img [ref=e567]
+                            - heading "Advanced" [level=2] [ref=e574]:
+                              - button "Advanced" [ref=e575] [cursor=pointer]:
+                                - generic [ref=e577]: Advanced
+                                - img [ref=e578]
+                            - heading "Insights" [level=2] [ref=e585]:
+                              - button "Insights" [ref=e586] [cursor=pointer]:
+                                - generic [ref=e588]: Insights
+                                - img [ref=e589]
+                        - text: 
+                  - region "Editor settings"
+                  - region "Editor publish":
+                    - button "Open save panel" [disabled] [ref=e595]
+              - region "Editor footer" [ref=e596]:
+                - list "Block breadcrumb" [ref=e597]:
+                  - listitem [ref=e598]:
+                    - generic [ref=e599]: Page
+  - text: 
+  - generic: test page - Projects - My Work & Projects Portfolio
+  - text:          
+  - status [ref=e602]
+  - text:  

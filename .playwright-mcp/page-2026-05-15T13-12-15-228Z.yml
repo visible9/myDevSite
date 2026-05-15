@@ -1,0 +1,600 @@
+- generic [ref=e2]:
+  - navigation "Main menu":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#wpbody-content"
+    - link "Skip to toolbar" [ref=e4] [cursor=pointer]:
+      - /url: "#wp-toolbar"
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: index.php
+          - generic [ref=e10]: 
+          - generic [ref=e11]: Dashboard
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "Home" [ref=e14] [cursor=pointer]:
+              - /url: index.php
+          - listitem [ref=e15]:
+            - link "Updates 3" [ref=e16] [cursor=pointer]:
+              - /url: update-core.php
+              - text: Updates
+              - generic [ref=e17]: "3"
+      - listitem [ref=e18]
+      - listitem [ref=e20]:
+        - link "Posts" [ref=e21] [cursor=pointer]:
+          - /url: edit.php
+          - generic [ref=e22]: 
+          - generic [ref=e23]: Posts
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - link "All Posts" [ref=e26] [cursor=pointer]:
+              - /url: edit.php
+          - listitem [ref=e27]:
+            - link "Add Post" [ref=e28] [cursor=pointer]:
+              - /url: post-new.php
+          - listitem [ref=e29]:
+            - link "Categories" [ref=e30] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=category
+          - listitem [ref=e31]:
+            - link "Tags" [ref=e32] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=post_tag
+      - listitem [ref=e33]:
+        - link "Media" [ref=e34] [cursor=pointer]:
+          - /url: upload.php
+          - generic [ref=e35]: 
+          - generic [ref=e36]: Media
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link "Library" [ref=e39] [cursor=pointer]:
+              - /url: upload.php
+          - listitem [ref=e40]:
+            - link "Add Media File" [ref=e41] [cursor=pointer]:
+              - /url: media-new.php
+      - listitem [ref=e42]:
+        - link "Forms 1" [ref=e43] [cursor=pointer]:
+          - /url: admin.php?page=gf_edit_forms
+          - generic [ref=e45]:
+            - text: Forms
+            - generic "Update Available" [ref=e46]: "1"
+        - list [ref=e47]:
+          - listitem [ref=e48]:
+            - link "Forms" [ref=e49] [cursor=pointer]:
+              - /url: admin.php?page=gf_edit_forms
+          - listitem [ref=e50]:
+            - link "New Form" [ref=e51] [cursor=pointer]:
+              - /url: admin.php?page=gf_new_form
+          - listitem [ref=e52]:
+            - link "Entries" [ref=e53] [cursor=pointer]:
+              - /url: admin.php?page=gf_entries
+          - listitem [ref=e54]:
+            - link "Settings" [ref=e55] [cursor=pointer]:
+              - /url: admin.php?page=gf_settings
+          - listitem [ref=e56]:
+            - link "Import/Export" [ref=e57] [cursor=pointer]:
+              - /url: admin.php?page=gf_export
+          - listitem [ref=e58]:
+            - link "Add-Ons" [ref=e59] [cursor=pointer]:
+              - /url: admin.php?page=gf_addons
+          - listitem [ref=e60]:
+            - link "System Status" [ref=e61] [cursor=pointer]:
+              - /url: admin.php?page=gf_system_status
+          - listitem [ref=e62]:
+            - link "Help" [ref=e63] [cursor=pointer]:
+              - /url: admin.php?page=gf_help
+      - listitem [ref=e64]:
+        - link "Pages" [ref=e65] [cursor=pointer]:
+          - /url: edit.php?post_type=page
+          - generic [ref=e66]: 
+          - generic [ref=e67]: Pages
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - link "All Pages" [ref=e70] [cursor=pointer]:
+              - /url: edit.php?post_type=page
+          - listitem [ref=e71]:
+            - link "Add Page" [ref=e72] [cursor=pointer]:
+              - /url: post-new.php?post_type=page
+      - listitem [ref=e73]:
+        - link "Comments" [ref=e74] [cursor=pointer]:
+          - /url: edit-comments.php
+          - generic [ref=e75]: 
+          - generic [ref=e76]: Comments
+      - listitem [ref=e77]:
+        - link "Examples posttype" [ref=e78] [cursor=pointer]:
+          - /url: edit.php?post_type=example-posttype
+          - generic [ref=e79]: 
+          - generic [ref=e80]: Examples posttype
+        - list [ref=e81]:
+          - listitem [ref=e82]:
+            - link "Examples posttype" [ref=e83] [cursor=pointer]:
+              - /url: edit.php?post_type=example-posttype
+          - listitem [ref=e84]:
+            - link "Add New Example posttype" [ref=e85] [cursor=pointer]:
+              - /url: post-new.php?post_type=example-posttype
+          - listitem [ref=e86]:
+            - link "Example taxonomies" [ref=e87] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=example-taxonomy&post_type=example-posttype
+      - listitem [ref=e88]
+      - listitem [ref=e90]:
+        - link "Appearance" [ref=e91] [cursor=pointer]:
+          - /url: themes.php
+          - generic [ref=e92]: 
+          - generic [ref=e93]: Appearance
+        - list [ref=e94]:
+          - listitem [ref=e95]:
+            - link "Themes" [ref=e96] [cursor=pointer]:
+              - /url: themes.php
+          - listitem [ref=e97]:
+            - link "Design" [ref=e98] [cursor=pointer]:
+              - /url: site-editor.php
+          - listitem [ref=e99]:
+            - link "Customize" [ref=e100] [cursor=pointer]:
+              - /url: customize.php?return=%2Fwp-admin%2Fedit.php
+          - listitem [ref=e101]:
+            - link "Widgets" [ref=e102] [cursor=pointer]:
+              - /url: widgets.php
+          - listitem [ref=e103]:
+            - link "Menus" [ref=e104] [cursor=pointer]:
+              - /url: nav-menus.php
+          - listitem [ref=e105]:
+            - link "Background" [ref=e106] [cursor=pointer]:
+              - /url: customize.php?return=%2Fwp-admin%2Fedit.php&autofocus%5Bcontrol%5D=background_image
+          - listitem
+          - listitem [ref=e107]:
+            - link "Theme File Editor" [ref=e108] [cursor=pointer]:
+              - /url: theme-editor.php
+      - listitem [ref=e109]:
+        - link "Plugins 2" [ref=e110] [cursor=pointer]:
+          - /url: plugins.php
+          - generic [ref=e111]: 
+          - generic [ref=e112]:
+            - text: Plugins
+            - generic [ref=e113]: "2"
+        - list [ref=e114]:
+          - listitem [ref=e115]:
+            - link "Installed Plugins" [ref=e116] [cursor=pointer]:
+              - /url: plugins.php
+          - listitem [ref=e117]:
+            - link "Add Plugin" [ref=e118] [cursor=pointer]:
+              - /url: plugin-install.php
+          - listitem [ref=e119]:
+            - link "Plugin File Editor" [ref=e120] [cursor=pointer]:
+              - /url: plugin-editor.php
+          - listitem [ref=e121]:
+            - link "Install Plugins" [ref=e122] [cursor=pointer]:
+              - /url: plugins.php?page=install-plugins
+      - listitem [ref=e123]:
+        - link "Users" [ref=e124] [cursor=pointer]:
+          - /url: users.php
+          - generic [ref=e125]: 
+          - generic [ref=e126]: Users
+        - list [ref=e127]:
+          - listitem [ref=e128]:
+            - link "All Users" [ref=e129] [cursor=pointer]:
+              - /url: users.php
+          - listitem [ref=e130]:
+            - link "Add User" [ref=e131] [cursor=pointer]:
+              - /url: user-new.php
+          - listitem [ref=e132]:
+            - link "Profile" [ref=e133] [cursor=pointer]:
+              - /url: profile.php
+      - listitem [ref=e134]:
+        - link "Tools" [ref=e135] [cursor=pointer]:
+          - /url: tools.php
+          - generic [ref=e136]: 
+          - generic [ref=e137]: Tools
+        - list [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Available Tools" [ref=e140] [cursor=pointer]:
+              - /url: tools.php
+          - listitem [ref=e141]:
+            - link "Import" [ref=e142] [cursor=pointer]:
+              - /url: import.php
+          - listitem [ref=e143]:
+            - link "Export" [ref=e144] [cursor=pointer]:
+              - /url: export.php
+          - listitem [ref=e145]:
+            - link "Site Health 1" [ref=e146] [cursor=pointer]:
+              - /url: site-health.php
+              - text: Site Health
+              - generic [ref=e147]: "1"
+          - listitem [ref=e148]:
+            - link "Export Personal Data" [ref=e149] [cursor=pointer]:
+              - /url: export-personal-data.php
+          - listitem [ref=e150]:
+            - link "Erase Personal Data" [ref=e151] [cursor=pointer]:
+              - /url: erase-personal-data.php
+          - listitem [ref=e152]:
+            - link "Yoast Redirects" [ref=e153] [cursor=pointer]:
+              - /url: tools.php?page=wpseo_redirects_tools
+      - listitem [ref=e154]:
+        - link "All-in-One WP Migration" [ref=e155] [cursor=pointer]:
+          - /url: admin.php?page=ai1wm_export
+          - generic [ref=e157]: All-in-One WP Migration
+        - list [ref=e158]:
+          - listitem [ref=e159]:
+            - link "Export" [ref=e160] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_export
+          - listitem [ref=e161]:
+            - link "Import" [ref=e162] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_import
+          - listitem [ref=e163]:
+            - link "Backups 4" [ref=e164] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_backups
+              - text: Backups
+              - generic "You have 4 backups" [ref=e165]: "4"
+          - listitem [ref=e166]:
+            - link "Reset Hub Premium" [ref=e167] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_reset
+              - text: Reset Hub
+              - generic [ref=e168]: Premium
+          - listitem [ref=e169]:
+            - link "Schedules Premium" [ref=e170] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_schedules
+              - text: Schedules
+              - generic [ref=e171]: Premium
+      - listitem [ref=e172]:
+        - link "Settings" [ref=e173] [cursor=pointer]:
+          - /url: options-general.php
+          - generic [ref=e174]: 
+          - generic [ref=e175]: Settings
+        - list [ref=e176]:
+          - listitem [ref=e177]:
+            - link "General" [ref=e178] [cursor=pointer]:
+              - /url: options-general.php
+          - listitem [ref=e179]:
+            - link "Writing" [ref=e180] [cursor=pointer]:
+              - /url: options-writing.php
+          - listitem [ref=e181]:
+            - link "Reading" [ref=e182] [cursor=pointer]:
+              - /url: options-reading.php
+          - listitem [ref=e183]:
+            - link "Discussion" [ref=e184] [cursor=pointer]:
+              - /url: options-discussion.php
+          - listitem [ref=e185]:
+            - link "Media" [ref=e186] [cursor=pointer]:
+              - /url: options-media.php
+          - listitem [ref=e187]:
+            - link "Permalinks" [ref=e188] [cursor=pointer]:
+              - /url: options-permalink.php
+          - listitem [ref=e189]:
+            - link "Privacy" [ref=e190] [cursor=pointer]:
+              - /url: options-privacy.php
+      - listitem [ref=e191]:
+        - link "ACF" [ref=e192] [cursor=pointer]:
+          - /url: edit.php?post_type=acf-field-group
+          - generic [ref=e193]: 
+          - generic [ref=e194]: ACF
+        - list [ref=e195]:
+          - listitem [ref=e196]:
+            - link "Field Groups" [ref=e197] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group
+          - listitem [ref=e198]:
+            - link "Post Types" [ref=e199] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-post-type
+          - listitem [ref=e200]:
+            - link "Taxonomies" [ref=e201] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-taxonomy
+          - listitem [ref=e202]:
+            - link "Options Pages" [ref=e203] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-ui-options-page
+          - listitem [ref=e204]:
+            - link "Tools" [ref=e205] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group&page=acf-tools
+          - listitem [ref=e206]:
+            - link "Updates" [ref=e207] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group&page=acf-settings-updates
+      - listitem [ref=e208]:
+        - link "Theme Settings" [ref=e209] [cursor=pointer]:
+          - /url: admin.php?page=theme-general-settings
+          - generic [ref=e210]: 
+          - generic [ref=e211]: Theme Settings
+      - listitem [ref=e212]
+      - listitem [ref=e214]:
+        - link "Yoast SEO 2 notifications" [ref=e215] [cursor=pointer]:
+          - /url: admin.php?page=wpseo_dashboard
+          - generic [ref=e217]:
+            - text: Yoast SEO
+            - generic [ref=e218]:
+              - text: "2"
+              - generic [ref=e219]: 2 notifications
+        - list [ref=e220]:
+          - listitem [ref=e221]:
+            - link "General" [ref=e222] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_dashboard
+          - listitem [ref=e223]:
+            - link "Settings" [ref=e224] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_settings
+          - listitem [ref=e225]:
+            - link "Integrations" [ref=e226] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_integrations
+          - listitem [ref=e227]:
+            - link "Tools" [ref=e228] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_tools
+          - listitem [ref=e229]:
+            - link "Academy" [ref=e230] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_academy
+          - listitem [ref=e231]:
+            - link "Plans" [ref=e232] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_licenses
+          - listitem [ref=e233]:
+            - link "Workouts Premium" [ref=e234] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_workouts
+              - text: Workouts
+              - generic [ref=e235]: Premium
+          - listitem [ref=e236]:
+            - link "Redirects Premium" [ref=e237] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_redirects
+              - text: Redirects
+              - generic [ref=e238]: Premium
+          - listitem [ref=e239]:
+            - link "Support" [ref=e240] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_support
+          - listitem [ref=e241]:
+            - link "Upgrade" [ref=e242] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_upgrade_sidebar
+              - generic [ref=e244]: Upgrade
+          - listitem [ref=e245]:
+            - link "AI Brand Insights" [ref=e246] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_brand_insights
+              - generic [ref=e248]: AI Brand Insights
+      - listitem [ref=e250]:
+        - link "UpdraftPlus" [ref=e251] [cursor=pointer]:
+          - /url: options-general.php?page=updraftplus
+          - generic [ref=e253]: UpdraftPlus
+      - listitem [ref=e254]:
+        - button "Collapse Main menu" [expanded] [ref=e255] [cursor=pointer]:
+          - generic [ref=e257]: Collapse Menu
+  - generic [ref=e258]:
+    - generic [ref=e259]:
+      - navigation "Toolbar":
+        - menu:
+          - group [ref=e260]:
+            - menuitem "About WordPress" [ref=e261] [cursor=pointer]:
+              - generic [ref=e263]: About WordPress
+          - group [ref=e264]:
+            - menuitem "Projects - My Work & Projects Portfo…" [ref=e265] [cursor=pointer]
+          - group [ref=e266]:
+            - menuitem "3 updates available" [ref=e267] [cursor=pointer]:
+              - generic [ref=e269]: "3"
+              - generic [ref=e270]: 3 updates available
+          - group [ref=e271]:
+            - menuitem "0 Comments in moderation" [ref=e272] [cursor=pointer]:
+              - generic [ref=e274]: "0"
+              - generic [ref=e275]: 0 Comments in moderation
+          - group [ref=e276]:
+            - menuitem "New" [ref=e277] [cursor=pointer]:
+              - generic [ref=e279]: New
+          - group [ref=e280]:
+            - menuitem "View Posts" [ref=e281] [cursor=pointer]
+          - group [ref=e282]:
+            - menuitem "SEO 2 notifications" [ref=e283] [cursor=pointer]:
+              - generic [ref=e285]: SEO
+              - generic [ref=e286]:
+                - text: "2"
+                - generic [ref=e287]: 2 notifications
+            - text: Premium Premium
+          - group [ref=e288]:
+            - menuitem "Forms" [ref=e289] [cursor=pointer]:
+              - generic [ref=e291]: Forms
+          - group [ref=e292]:
+            - menuitem "UpdraftPlus" [ref=e293]
+        - menu [ref=e294]:
+          - group [ref=e295]:
+            - menuitem "Howdy, admin" [ref=e296] [cursor=pointer]
+    - main [ref=e297]:
+      - generic [ref=e298]:
+        - text: 
+        - generic [ref=e299]:
+          - button "Screen Options" [ref=e301] [cursor=pointer]
+          - button "Help" [ref=e303] [cursor=pointer]
+        - generic [ref=e304]:
+          - link "WordPress 6.9.4" [ref=e305] [cursor=pointer]:
+            - /url: https://wordpress.org/documentation/wordpress-version/version-6-9-4/
+          - text: is available!
+          - link "Please update WordPress now" [ref=e306] [cursor=pointer]:
+            - /url: https://devcraft.synergize.co/wp-admin/update-core.php
+            - text: Please update now
+          - text: .
+        - generic [ref=e307]:
+          - heading "Posts" [level=1] [ref=e308]
+          - link "Add Post" [ref=e309] [cursor=pointer]:
+            - /url: https://devcraft.synergize.co/wp-admin/post-new.php
+          - heading "Filter posts list" [level=2] [ref=e310]
+          - list [ref=e311]:
+            - listitem [ref=e312]:
+              - link "All (1)" [ref=e313] [cursor=pointer]:
+                - /url: edit.php?post_type=post
+              - text: "|"
+            - listitem [ref=e314]:
+              - link "Published (1)" [ref=e315] [cursor=pointer]:
+                - /url: edit.php?post_status=publish&post_type=post
+              - text: "|"
+            - listitem [ref=e316]:
+              - link "Cornerstone content" [ref=e317] [cursor=pointer]:
+                - /url: edit.php?yoast_filter=cornerstone&post_type=post
+              - text: (0)
+          - generic [ref=e318]:
+            - paragraph [ref=e319]:
+              - generic [ref=e320]: "Search Posts:"
+              - searchbox "Search Posts:" [ref=e321]
+              - button "Search Posts" [ref=e322] [cursor=pointer]
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - generic [ref=e325]: Select bulk action
+                - combobox "Select bulk action" [ref=e326] [cursor=pointer]:
+                  - option "Bulk actions" [selected]
+                  - option "Edit"
+                  - option "Move to Trash"
+                - button "Apply" [ref=e327] [cursor=pointer]
+              - generic [ref=e328]:
+                - generic [ref=e329]: Filter by date
+                - combobox "Filter by date" [ref=e330] [cursor=pointer]:
+                  - option "All dates" [selected]
+                  - option "May 2026"
+                - generic [ref=e331]: Filter by category
+                - combobox "Filter by category" [ref=e332] [cursor=pointer]:
+                  - option "All Categories" [selected]
+                  - option "Uncategorized"
+                - generic [ref=e333]: Filter by SEO Score
+                - combobox "Filter by SEO Score" [ref=e334] [cursor=pointer]:
+                  - option "All SEO Scores" [selected]
+                  - 'option "SEO: Needs improvement"'
+                  - 'option "SEO: OK"'
+                  - 'option "SEO: Good"'
+                  - 'option "SEO: No Focus Keyphrase"'
+                  - 'option "SEO: Post Noindexed"'
+                - generic [ref=e335]: Filter by Readability Score
+                - combobox "Filter by Readability Score" [ref=e336] [cursor=pointer]:
+                  - option "All Readability Scores" [selected]
+                  - 'option "Readability: Needs improvement"'
+                  - 'option "Readability: OK"'
+                  - 'option "Readability: Good"'
+                  - 'option "Readability: Not analyzed"'
+                - button "Filter" [ref=e337] [cursor=pointer]
+              - generic [ref=e339]: 1 item
+            - heading "Posts list" [level=2] [ref=e340]
+            - table "Table ordered by Date. Descending." [ref=e341]:
+              - caption [ref=e342]: Table ordered by Date. Descending.
+              - rowgroup [ref=e343]:
+                - row "Select All Title Sort ascending. Author Categories Tags Comments Sort ascending. Date SEO score Readability score Outgoing internal links" [ref=e344]:
+                  - cell "Select All" [ref=e345]:
+                    - checkbox "Select All" [ref=e346] [cursor=pointer]
+                    - generic [ref=e348]: Select All
+                  - columnheader "Title Sort ascending." [ref=e349]:
+                    - link "Title Sort ascending." [ref=e350] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=title&order=asc
+                      - generic [ref=e351]: Title
+                      - generic [ref=e355]: Sort ascending.
+                  - columnheader "Author" [ref=e356]
+                  - columnheader "Categories" [ref=e357]
+                  - columnheader "Tags" [ref=e358]
+                  - columnheader "Comments Sort ascending." [ref=e359]:
+                    - link "Comments Sort ascending." [ref=e360] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=comment_count&order=asc
+                      - generic [ref=e363]: Comments
+                      - generic [ref=e367]: Sort ascending.
+                  - columnheader "Date" [ref=e368]:
+                    - link "Date" [ref=e369] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=date&order=asc
+                      - generic [ref=e370]: Date
+                  - columnheader "SEO score" [ref=e374]:
+                    - link "SEO score" [ref=e375] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=wpseo-score&order=asc
+                      - generic [ref=e378]: SEO score
+                      - generic [ref=e382]: Sort ascending.
+                  - columnheader "Readability score" [ref=e383]:
+                    - link "Readability score" [ref=e384] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=wpseo-score-readability&order=asc
+                      - generic [ref=e387]: Readability score
+                      - generic [ref=e391]: Sort ascending.
+                  - columnheader "Outgoing internal links" [ref=e392]:
+                    - link "Outgoing internal links" [ref=e393] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=wpseo-links&order=asc
+                      - generic [ref=e396]: Outgoing internal links
+                      - generic [ref=e400]: Sort ascending.
+              - rowgroup [ref=e401]:
+                - row "Select Hello world! “Hello world!” (Edit) Edit “Hello world!” | Quick edit “Hello world!” inline | Move “Hello world!” to the Trash | View “Hello world!” admin Uncategorized No tags 1 comment Published 2026/05/05 at 7:26 am 0" [ref=e402]:
+                  - rowheader "Select Hello world!" [ref=e403]:
+                    - checkbox "Select Hello world!" [ref=e404] [cursor=pointer]
+                    - generic [ref=e406]: Select Hello world!
+                  - cell "“Hello world!” (Edit) Edit “Hello world!” | Quick edit “Hello world!” inline | Move “Hello world!” to the Trash | View “Hello world!”" [ref=e407]:
+                    - strong [ref=e408]:
+                      - link "“Hello world!” (Edit)" [ref=e409] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/post.php?post=1&action=edit
+                        - text: Hello world!
+                    - generic [ref=e410]:
+                      - generic [ref=e411]:
+                        - link "Edit “Hello world!”" [ref=e412] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/post.php?post=1&action=edit
+                          - text: Edit
+                        - text: "|"
+                      - generic [ref=e413]:
+                        - button "Quick edit “Hello world!” inline" [ref=e414] [cursor=pointer]: Quick Edit
+                        - text: "|"
+                      - generic [ref=e415]:
+                        - link "Move “Hello world!” to the Trash" [ref=e416] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/post.php?post=1&action=trash&_wpnonce=fce908f8d7
+                          - text: Trash
+                        - text: "|"
+                      - link "View “Hello world!”" [ref=e418] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/2026/05/05/hello-world/
+                        - text: View
+                  - cell "admin" [ref=e419]:
+                    - link "admin" [ref=e420] [cursor=pointer]:
+                      - /url: edit.php?post_type=post&author=1
+                  - cell "Uncategorized" [ref=e421]:
+                    - link "Uncategorized" [ref=e422] [cursor=pointer]:
+                      - /url: edit.php?category_name=uncategorized
+                  - cell "No tags" [ref=e423]:
+                    - text: —
+                    - generic [ref=e424]: No tags
+                  - cell "1 comment" [ref=e425]:
+                    - link "1 comment" [ref=e427] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit-comments.php?p=1&comment_status=approved
+                      - generic [ref=e428]: "1"
+                      - generic [ref=e429]: 1 comment
+                  - cell "Published 2026/05/05 at 7:26 am" [ref=e430]:
+                    - text: Published
+                    - text: 2026/05/05 at 7:26 am
+                  - cell [ref=e431]:
+                    - generic [ref=e433]: Focus keyphrase not set
+                  - cell [ref=e434]:
+                    - generic [ref=e436]: Not available
+                  - cell "0" [ref=e437]
+              - rowgroup [ref=e438]:
+                - row "Select All Title Sort ascending. Author Categories Tags Comments Sort ascending. Date SEO score Readability score Outgoing internal links" [ref=e439]:
+                  - cell "Select All" [ref=e440]:
+                    - checkbox "Select All" [ref=e441] [cursor=pointer]
+                    - generic [ref=e443]: Select All
+                  - columnheader "Title Sort ascending." [ref=e444]:
+                    - link "Title Sort ascending." [ref=e445] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=title&order=asc
+                      - generic [ref=e446]: Title
+                      - generic [ref=e450]: Sort ascending.
+                  - columnheader "Author" [ref=e451]
+                  - columnheader "Categories" [ref=e452]
+                  - columnheader "Tags" [ref=e453]
+                  - columnheader "Comments Sort ascending." [ref=e454]:
+                    - link "Comments Sort ascending." [ref=e455] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=comment_count&order=asc
+                      - generic [ref=e458]: Comments
+                      - generic [ref=e462]: Sort ascending.
+                  - columnheader "Date" [ref=e463]:
+                    - link "Date" [ref=e464] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=date&order=asc
+                      - generic [ref=e465]: Date
+                  - columnheader "SEO score" [ref=e469]:
+                    - link "SEO score" [ref=e470] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=wpseo-score&order=asc
+                      - generic [ref=e473]: SEO score
+                      - generic [ref=e477]: Sort ascending.
+                  - columnheader "Readability score" [ref=e478]:
+                    - link "Readability score" [ref=e479] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=wpseo-score-readability&order=asc
+                      - generic [ref=e482]: Readability score
+                      - generic [ref=e486]: Sort ascending.
+                  - columnheader "Outgoing internal links" [ref=e487]:
+                    - link "Outgoing internal links" [ref=e488] [cursor=pointer]:
+                      - /url: https://devcraft.synergize.co/wp-admin/edit.php?orderby=wpseo-links&order=asc
+                      - generic [ref=e491]: Outgoing internal links
+                      - generic [ref=e495]: Sort ascending.
+            - generic [ref=e496]:
+              - generic [ref=e497]:
+                - generic [ref=e498]: Select bulk action
+                - combobox "Select bulk action" [ref=e499] [cursor=pointer]:
+                  - option "Bulk actions" [selected]
+                  - option "Edit"
+                  - option "Move to Trash"
+                - button "Apply" [ref=e500] [cursor=pointer]
+              - generic [ref=e502]: 1 item
+  - contentinfo [ref=e503]:
+    - paragraph [ref=e504]:
+      - generic [ref=e505]:
+        - text: Thank you for creating with
+        - link "WordPress" [ref=e506] [cursor=pointer]:
+          - /url: https://wordpress.org/
+        - text: .
+    - paragraph [ref=e507]:
+      - strong [ref=e508]:
+        - link "Get Version 6.9.4" [ref=e509] [cursor=pointer]:
+          - /url: https://devcraft.synergize.co/wp-admin/update-core.php

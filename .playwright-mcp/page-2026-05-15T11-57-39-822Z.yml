@@ -1,0 +1,1529 @@
+- generic [ref=e2]:
+  - navigation "Main menu":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#wpbody-content"
+    - link "Skip to toolbar" [ref=e4] [cursor=pointer]:
+      - /url: "#wp-toolbar"
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: index.php
+          - generic [ref=e10]: 
+          - generic [ref=e11]: Dashboard
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "Home" [ref=e14] [cursor=pointer]:
+              - /url: index.php
+          - listitem [ref=e15]:
+            - link "Updates 3" [ref=e16] [cursor=pointer]:
+              - /url: update-core.php
+              - text: Updates
+              - generic [ref=e17]: "3"
+      - listitem [ref=e18]
+      - listitem [ref=e20]:
+        - link "Posts" [ref=e21] [cursor=pointer]:
+          - /url: edit.php
+          - generic [ref=e22]: 
+          - generic [ref=e23]: Posts
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - link "All Posts" [ref=e26] [cursor=pointer]:
+              - /url: edit.php
+          - listitem [ref=e27]:
+            - link "Add Post" [ref=e28] [cursor=pointer]:
+              - /url: post-new.php
+          - listitem [ref=e29]:
+            - link "Categories" [ref=e30] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=category
+          - listitem [ref=e31]:
+            - link "Tags" [ref=e32] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=post_tag
+      - listitem [ref=e33]:
+        - link "Media" [ref=e34] [cursor=pointer]:
+          - /url: upload.php
+          - generic [ref=e35]: 
+          - generic [ref=e36]: Media
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link "Library" [ref=e39] [cursor=pointer]:
+              - /url: upload.php
+          - listitem [ref=e40]:
+            - link "Add Media File" [ref=e41] [cursor=pointer]:
+              - /url: media-new.php
+      - listitem [ref=e42]:
+        - link "Forms 1" [ref=e43] [cursor=pointer]:
+          - /url: admin.php?page=gf_edit_forms
+          - generic [ref=e45]:
+            - text: Forms
+            - generic "Update Available" [ref=e46]: "1"
+        - list [ref=e47]:
+          - listitem [ref=e48]:
+            - link "Forms" [ref=e49] [cursor=pointer]:
+              - /url: admin.php?page=gf_edit_forms
+          - listitem [ref=e50]:
+            - link "New Form" [ref=e51] [cursor=pointer]:
+              - /url: admin.php?page=gf_new_form
+          - listitem [ref=e52]:
+            - link "Entries" [ref=e53] [cursor=pointer]:
+              - /url: admin.php?page=gf_entries
+          - listitem [ref=e54]:
+            - link "Settings" [ref=e55] [cursor=pointer]:
+              - /url: admin.php?page=gf_settings
+          - listitem [ref=e56]:
+            - link "Import/Export" [ref=e57] [cursor=pointer]:
+              - /url: admin.php?page=gf_export
+          - listitem [ref=e58]:
+            - link "Add-Ons" [ref=e59] [cursor=pointer]:
+              - /url: admin.php?page=gf_addons
+          - listitem [ref=e60]:
+            - link "System Status" [ref=e61] [cursor=pointer]:
+              - /url: admin.php?page=gf_system_status
+          - listitem [ref=e62]:
+            - link "Help" [ref=e63] [cursor=pointer]:
+              - /url: admin.php?page=gf_help
+      - listitem [ref=e64]:
+        - link "Pages" [ref=e65] [cursor=pointer]:
+          - /url: edit.php?post_type=page
+          - generic [ref=e66]: 
+          - generic [ref=e67]: Pages
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - link "All Pages" [ref=e70] [cursor=pointer]:
+              - /url: edit.php?post_type=page
+          - listitem [ref=e71]:
+            - link "Add Page" [ref=e72] [cursor=pointer]:
+              - /url: post-new.php?post_type=page
+      - listitem [ref=e73]:
+        - link "Comments" [ref=e74] [cursor=pointer]:
+          - /url: edit-comments.php
+          - generic [ref=e75]: 
+          - generic [ref=e76]: Comments
+      - listitem [ref=e77]:
+        - link "Examples posttype" [ref=e78] [cursor=pointer]:
+          - /url: edit.php?post_type=example-posttype
+          - generic [ref=e79]: 
+          - generic [ref=e80]: Examples posttype
+        - list [ref=e81]:
+          - listitem [ref=e82]:
+            - link "Examples posttype" [ref=e83] [cursor=pointer]:
+              - /url: edit.php?post_type=example-posttype
+          - listitem [ref=e84]:
+            - link "Add New Example posttype" [ref=e85] [cursor=pointer]:
+              - /url: post-new.php?post_type=example-posttype
+          - listitem [ref=e86]:
+            - link "Example taxonomies" [ref=e87] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=example-taxonomy&post_type=example-posttype
+      - listitem [ref=e88]
+      - listitem [ref=e90]:
+        - link "Appearance" [ref=e91] [cursor=pointer]:
+          - /url: themes.php
+          - generic [ref=e92]: 
+          - generic [ref=e93]: Appearance
+        - list [ref=e94]:
+          - listitem [ref=e95]:
+            - link "Themes" [ref=e96] [cursor=pointer]:
+              - /url: themes.php
+          - listitem [ref=e97]:
+            - link "Design" [ref=e98] [cursor=pointer]:
+              - /url: site-editor.php
+          - listitem [ref=e99]:
+            - link "Customize" [ref=e100] [cursor=pointer]:
+              - /url: customize.php?return=%2Fwp-admin%2Fplugin-install.php%3Fs%3Dall%2Bin%2Bone%2Bwp%2Bmigration%26tab%3Dsearch%26type%3Dterm
+          - listitem [ref=e101]:
+            - link "Widgets" [ref=e102] [cursor=pointer]:
+              - /url: widgets.php
+          - listitem [ref=e103]:
+            - link "Menus" [ref=e104] [cursor=pointer]:
+              - /url: nav-menus.php
+          - listitem [ref=e105]:
+            - link "Background" [ref=e106] [cursor=pointer]:
+              - /url: customize.php?return=%2Fwp-admin%2Fplugin-install.php%3Fs%3Dall%2Bin%2Bone%2Bwp%2Bmigration%26tab%3Dsearch%26type%3Dterm&autofocus%5Bcontrol%5D=background_image
+          - listitem
+          - listitem [ref=e107]:
+            - link "Theme File Editor" [ref=e108] [cursor=pointer]:
+              - /url: theme-editor.php
+      - listitem [ref=e109]:
+        - link "Plugins 2" [ref=e110] [cursor=pointer]:
+          - /url: plugins.php
+          - generic [ref=e111]: 
+          - generic [ref=e112]:
+            - text: Plugins
+            - generic [ref=e113]: "2"
+        - list [ref=e114]:
+          - listitem [ref=e115]:
+            - link "Installed Plugins" [ref=e116] [cursor=pointer]:
+              - /url: plugins.php
+          - listitem [ref=e117]:
+            - link "Add Plugin" [ref=e118] [cursor=pointer]:
+              - /url: plugin-install.php
+          - listitem [ref=e119]:
+            - link "Plugin File Editor" [ref=e120] [cursor=pointer]:
+              - /url: plugin-editor.php
+          - listitem [ref=e121]:
+            - link "Install Plugins" [ref=e122] [cursor=pointer]:
+              - /url: plugins.php?page=install-plugins
+      - listitem [ref=e123]:
+        - link "Users" [ref=e124] [cursor=pointer]:
+          - /url: users.php
+          - generic [ref=e125]: 
+          - generic [ref=e126]: Users
+        - list [ref=e127]:
+          - listitem [ref=e128]:
+            - link "All Users" [ref=e129] [cursor=pointer]:
+              - /url: users.php
+          - listitem [ref=e130]:
+            - link "Add User" [ref=e131] [cursor=pointer]:
+              - /url: user-new.php
+          - listitem [ref=e132]:
+            - link "Profile" [ref=e133] [cursor=pointer]:
+              - /url: profile.php
+      - listitem [ref=e134]:
+        - link "Tools" [ref=e135] [cursor=pointer]:
+          - /url: tools.php
+          - generic [ref=e136]: 
+          - generic [ref=e137]: Tools
+        - list [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Available Tools" [ref=e140] [cursor=pointer]:
+              - /url: tools.php
+          - listitem [ref=e141]:
+            - link "Import" [ref=e142] [cursor=pointer]:
+              - /url: import.php
+          - listitem [ref=e143]:
+            - link "Export" [ref=e144] [cursor=pointer]:
+              - /url: export.php
+          - listitem [ref=e145]:
+            - link "Site Health 1" [ref=e146] [cursor=pointer]:
+              - /url: site-health.php
+              - text: Site Health
+              - generic [ref=e147]: "1"
+          - listitem [ref=e148]:
+            - link "Export Personal Data" [ref=e149] [cursor=pointer]:
+              - /url: export-personal-data.php
+          - listitem [ref=e150]:
+            - link "Erase Personal Data" [ref=e151] [cursor=pointer]:
+              - /url: erase-personal-data.php
+          - listitem [ref=e152]:
+            - link "Yoast Redirects" [ref=e153] [cursor=pointer]:
+              - /url: tools.php?page=wpseo_redirects_tools
+      - listitem [ref=e154]:
+        - link "Settings" [ref=e155] [cursor=pointer]:
+          - /url: options-general.php
+          - generic [ref=e156]: 
+          - generic [ref=e157]: Settings
+        - list [ref=e158]:
+          - listitem [ref=e159]:
+            - link "General" [ref=e160] [cursor=pointer]:
+              - /url: options-general.php
+          - listitem [ref=e161]:
+            - link "Writing" [ref=e162] [cursor=pointer]:
+              - /url: options-writing.php
+          - listitem [ref=e163]:
+            - link "Reading" [ref=e164] [cursor=pointer]:
+              - /url: options-reading.php
+          - listitem [ref=e165]:
+            - link "Discussion" [ref=e166] [cursor=pointer]:
+              - /url: options-discussion.php
+          - listitem [ref=e167]:
+            - link "Media" [ref=e168] [cursor=pointer]:
+              - /url: options-media.php
+          - listitem [ref=e169]:
+            - link "Permalinks" [ref=e170] [cursor=pointer]:
+              - /url: options-permalink.php
+          - listitem [ref=e171]:
+            - link "Privacy" [ref=e172] [cursor=pointer]:
+              - /url: options-privacy.php
+      - listitem [ref=e173]:
+        - link "ACF" [ref=e174] [cursor=pointer]:
+          - /url: edit.php?post_type=acf-field-group
+          - generic [ref=e175]: 
+          - generic [ref=e176]: ACF
+        - list [ref=e177]:
+          - listitem [ref=e178]:
+            - link "Field Groups" [ref=e179] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group
+          - listitem [ref=e180]:
+            - link "Post Types" [ref=e181] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-post-type
+          - listitem [ref=e182]:
+            - link "Taxonomies" [ref=e183] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-taxonomy
+          - listitem [ref=e184]:
+            - link "Options Pages" [ref=e185] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-ui-options-page
+          - listitem [ref=e186]:
+            - link "Tools" [ref=e187] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group&page=acf-tools
+          - listitem [ref=e188]:
+            - link "Updates" [ref=e189] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group&page=acf-settings-updates
+      - listitem [ref=e190]:
+        - link "Theme Settings" [ref=e191] [cursor=pointer]:
+          - /url: admin.php?page=theme-general-settings
+          - generic [ref=e192]: 
+          - generic [ref=e193]: Theme Settings
+      - listitem [ref=e194]
+      - listitem [ref=e196]:
+        - link "Yoast SEO 2 notifications" [ref=e197] [cursor=pointer]:
+          - /url: admin.php?page=wpseo_dashboard
+          - generic [ref=e199]:
+            - text: Yoast SEO
+            - generic [ref=e200]:
+              - text: "2"
+              - generic [ref=e201]: 2 notifications
+        - list [ref=e202]:
+          - listitem [ref=e203]:
+            - link "General" [ref=e204] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_dashboard
+          - listitem [ref=e205]:
+            - link "Settings" [ref=e206] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_settings
+          - listitem [ref=e207]:
+            - link "Integrations" [ref=e208] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_integrations
+          - listitem [ref=e209]:
+            - link "Tools" [ref=e210] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_tools
+          - listitem [ref=e211]:
+            - link "Academy" [ref=e212] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_academy
+          - listitem [ref=e213]:
+            - link "Plans" [ref=e214] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_licenses
+          - listitem [ref=e215]:
+            - link "Workouts Premium" [ref=e216] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_workouts
+              - text: Workouts
+              - generic [ref=e217]: Premium
+          - listitem [ref=e218]:
+            - link "Redirects Premium" [ref=e219] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_redirects
+              - text: Redirects
+              - generic [ref=e220]: Premium
+          - listitem [ref=e221]:
+            - link "Support" [ref=e222] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_support
+          - listitem [ref=e223]:
+            - link "Upgrade" [ref=e224] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_upgrade_sidebar
+              - generic [ref=e226]: Upgrade
+          - listitem [ref=e227]:
+            - link "AI Brand Insights" [ref=e228] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_brand_insights
+              - generic [ref=e230]: AI Brand Insights
+      - listitem [ref=e232]:
+        - link "UpdraftPlus" [ref=e233] [cursor=pointer]:
+          - /url: options-general.php?page=updraftplus
+          - generic [ref=e235]: UpdraftPlus
+      - listitem [ref=e236]:
+        - button "Collapse Main menu" [expanded] [ref=e237] [cursor=pointer]:
+          - generic [ref=e239]: Collapse Menu
+  - generic [ref=e240]:
+    - generic [ref=e241]:
+      - navigation "Toolbar":
+        - menu:
+          - group [ref=e242]:
+            - menuitem "About WordPress" [ref=e243] [cursor=pointer]:
+              - generic [ref=e245]: About WordPress
+          - group [ref=e246]:
+            - menuitem "Projects - My Work & Projects Portfo…" [ref=e247] [cursor=pointer]
+          - group [ref=e248]:
+            - menuitem "3 updates available" [ref=e249] [cursor=pointer]:
+              - generic [ref=e251]: "3"
+              - generic [ref=e252]: 3 updates available
+          - group [ref=e253]:
+            - menuitem "0 Comments in moderation" [ref=e254] [cursor=pointer]:
+              - generic [ref=e256]: "0"
+              - generic [ref=e257]: 0 Comments in moderation
+          - group [ref=e258]:
+            - menuitem "New" [ref=e259] [cursor=pointer]:
+              - generic [ref=e261]: New
+          - group [ref=e262]:
+            - menuitem "SEO 2 notifications" [ref=e263] [cursor=pointer]:
+              - generic [ref=e265]: SEO
+              - generic [ref=e266]:
+                - text: "2"
+                - generic [ref=e267]: 2 notifications
+            - text: Premium Premium
+          - group [ref=e268]:
+            - menuitem "Forms" [ref=e269] [cursor=pointer]:
+              - generic [ref=e271]: Forms
+          - group [ref=e272]:
+            - menuitem "UpdraftPlus" [ref=e273]
+        - menu [ref=e274]:
+          - group [ref=e275]:
+            - menuitem "Howdy, admin" [ref=e276] [cursor=pointer]
+    - main [ref=e277]:
+      - generic [ref=e278]:
+        - button "Help" [ref=e281] [cursor=pointer]
+        - generic [ref=e282]:
+          - link "WordPress 6.9.4" [ref=e283] [cursor=pointer]:
+            - /url: https://wordpress.org/documentation/wordpress-version/version-6-9-4/
+          - text: is available!
+          - link "Please update WordPress now" [ref=e284] [cursor=pointer]:
+            - /url: https://devcraft.synergize.co/wp-admin/update-core.php
+            - text: Please update now
+          - text: .
+        - generic [ref=e285]:
+          - heading "Add Plugins" [level=1] [ref=e286]
+          - button "Upload Plugin" [ref=e287] [cursor=pointer]
+          - heading "Filter plugins list" [level=2] [ref=e288]
+          - paragraph [ref=e289]:
+            - text: Plugins extend and expand the functionality of WordPress. You may install plugins from the
+            - link "WordPress Plugin Directory" [ref=e290] [cursor=pointer]:
+              - /url: https://wordpress.org/plugins/
+            - text: right on this page, or upload a plugin in .zip format by clicking the button above.
+          - generic [ref=e291]:
+            - list [ref=e292]:
+              - listitem [ref=e293]:
+                - link "Search Results" [ref=e294] [cursor=pointer]:
+                  - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=search
+              - listitem [ref=e295]:
+                - link "Featured" [ref=e296] [cursor=pointer]:
+                  - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=featured
+              - listitem [ref=e297]:
+                - link "Popular" [ref=e298] [cursor=pointer]:
+                  - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=popular
+              - listitem [ref=e299]:
+                - link "Recommended" [ref=e300] [cursor=pointer]:
+                  - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=recommended
+              - listitem [ref=e301]:
+                - link "Favorites" [ref=e302] [cursor=pointer]:
+                  - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=favorites
+            - generic [ref=e303]:
+              - generic [ref=e304]: Search Plugins
+              - searchbox "Search Plugins" [ref=e305]: all in one wp migration
+              - generic [ref=e306]: "Search plugins by:"
+              - combobox "Search plugins by:" [ref=e307] [cursor=pointer]:
+                - option "Keyword" [selected]
+                - option "Author"
+                - option "Tag"
+          - generic [ref=e308]:
+            - generic [ref=e309]:
+              - heading "Plugins list navigation" [level=2] [ref=e310]
+              - generic [ref=e311]:
+                - text: 1,056 items
+                - generic [ref=e312]:
+                  - generic [ref=e313]: «
+                  - generic [ref=e314]: ‹
+                  - generic [ref=e315]:
+                    - generic [ref=e316]: Current Page
+                    - textbox "Current Page" [ref=e317]: "1"
+                    - generic [ref=e318]: of 30
+                  - link "Next page" [ref=e319] [cursor=pointer]:
+                    - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?s=all+in+one+wp+migration&tab=search&type=term&paged=2
+                    - generic [ref=e320]: Next page
+                    - text: ›
+                  - link "Last page" [ref=e321] [cursor=pointer]:
+                    - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?s=all+in+one+wp+migration&tab=search&type=term&paged=30
+                    - generic [ref=e322]: Last page
+                    - text: »
+            - generic [ref=e323]:
+              - heading "Plugins list" [level=2] [ref=e324]
+              - generic [ref=e325]:
+                - generic [ref=e326]:
+                  - generic [ref=e327]:
+                    - heading "All-in-One WP Migration and Backup" [level=3] [ref=e329]:
+                      - link "All-in-One WP Migration and Backup" [ref=e330] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=all-in-one-wp-migration&TB_iframe=true&width=600&height=550
+                    - list [ref=e332]:
+                      - listitem [ref=e333]:
+                        - button "Activate All-in-One WP Migration and Backup 7.105" [ref=e334] [cursor=pointer]: Activate
+                      - listitem [ref=e335]:
+                        - link "More information about All-in-One WP Migration and Backup 7.105" [ref=e336] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=all-in-one-wp-migration&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e337]:
+                      - paragraph [ref=e338]: "Trusted by 60M+ sites: The gold standard for WordPress migration and backup. Migrate, backup, and restore your WordPress site with one click."
+                      - paragraph [ref=e339]:
+                        - generic [ref=e340]:
+                          - text: By
+                          - link "ServMask" [ref=e341] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/servmask/
+                  - generic [ref=e342]:
+                    - generic [ref=e343]:
+                      - generic [ref=e345]: 4.5 rating based on 7,647 ratings
+                      - text: (7,647)
+                    - generic [ref=e351]:
+                      - strong [ref=e352]: "Last Updated:"
+                      - text: 1 month ago
+                    - generic [ref=e353]: 5+ Million Active Installations
+                    - generic [ref=e355]:
+                      - strong [ref=e356]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e357]:
+                  - generic [ref=e358]:
+                    - heading "All in One SEO – Powerful SEO Plugin to Boost SEO Rankings & Increase Traffic" [level=3] [ref=e360]:
+                      - link "All in One SEO – Powerful SEO Plugin to Boost SEO Rankings & Increase Traffic" [ref=e361] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=all-in-one-seo-pack&TB_iframe=true&width=600&height=550
+                    - list [ref=e363]:
+                      - listitem [ref=e364]:
+                        - button "Install All in One SEO – Powerful SEO Plugin to Boost SEO Rankings & Increase Traffic 4.9.7.1 now" [ref=e365] [cursor=pointer]: Install Now
+                      - listitem [ref=e366]:
+                        - link "More information about All in One SEO – Powerful SEO Plugin to Boost SEO Rankings & Increase Traffic 4.9.7.1" [ref=e367] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=all-in-one-seo-pack&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e368]:
+                      - paragraph [ref=e369]: AIOSEO is the most powerful WordPress SEO plugin. Improve SEO rankings and traffic with comprehensive SEO tools and smart AI SEO optimizations!
+                      - paragraph [ref=e370]:
+                        - generic [ref=e371]:
+                          - text: By
+                          - link "Syed Balkhi" [ref=e372] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/smub/
+                  - generic [ref=e373]:
+                    - generic [ref=e374]:
+                      - generic [ref=e376]: 4.5 rating based on 5,115 ratings
+                      - text: (5,115)
+                    - generic [ref=e382]:
+                      - strong [ref=e383]: "Last Updated:"
+                      - text: 19 hours ago
+                    - generic [ref=e384]: 3+ Million Active Installations
+                    - generic [ref=e386]:
+                      - strong [ref=e387]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e388]:
+                  - generic [ref=e389]:
+                    - 'heading "UpdraftPlus: WP Backup & Migration Plugin" [level=3] [ref=e391]':
+                      - 'link "UpdraftPlus: WP Backup & Migration Plugin" [ref=e392] [cursor=pointer]':
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=updraftplus&TB_iframe=true&width=600&height=550
+                    - list [ref=e394]:
+                      - listitem [ref=e395]:
+                        - button "Active" [disabled] [ref=e396]
+                      - listitem [ref=e397]:
+                        - 'link "More information about UpdraftPlus: WP Backup & Migration Plugin 1.26.4" [ref=e398] [cursor=pointer]':
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=updraftplus&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e399]:
+                      - paragraph [ref=e400]: Backup, restore or migrate your WordPress website to another host or domain. Schedule backups or run manually. Migrate in minutes.
+                      - paragraph [ref=e401]:
+                        - generic [ref=e402]:
+                          - text: By
+                          - link "David Anderson / Team Updraft" [ref=e403] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/davidanderson/
+                  - generic [ref=e404]:
+                    - generic [ref=e405]:
+                      - generic [ref=e407]: 5.0 rating based on 8,484 ratings
+                      - text: (8,484)
+                    - generic [ref=e413]:
+                      - strong [ref=e414]: "Last Updated:"
+                      - text: 1 week ago
+                    - generic [ref=e415]: 3+ Million Active Installations
+                    - generic [ref=e417]:
+                      - strong [ref=e418]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e419]:
+                  - generic [ref=e420]:
+                    - heading "WP STAGING – WordPress Backup, Restore & Migration" [level=3] [ref=e422]:
+                      - link "WP STAGING – WordPress Backup, Restore & Migration" [ref=e423] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-staging&TB_iframe=true&width=600&height=550
+                    - list [ref=e425]:
+                      - listitem [ref=e426]:
+                        - button "Install WP STAGING – WordPress Backup, Restore & Migration 4.8.0 now" [ref=e427] [cursor=pointer]: Install Now
+                      - listitem [ref=e428]:
+                        - link "More information about WP STAGING – WordPress Backup, Restore & Migration 4.8.0" [ref=e429] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-staging&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e430]:
+                      - paragraph [ref=e431]: Backup, restore, staging, and migration for WordPress. Create full-site backups and test updates safely. 100% Unit Tested.
+                      - paragraph [ref=e432]:
+                        - generic [ref=e433]:
+                          - text: By
+                          - link "Rene Hermenau" [ref=e434] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/renehermi/
+                  - generic [ref=e435]:
+                    - generic [ref=e436]:
+                      - generic [ref=e438]: 5.0 rating based on 2,458 ratings
+                      - text: (2,458)
+                    - generic [ref=e444]:
+                      - strong [ref=e445]: "Last Updated:"
+                      - text: 2 weeks ago
+                    - generic [ref=e446]: 100,000+ Active Installations
+                    - generic [ref=e448]:
+                      - strong [ref=e449]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e450]:
+                  - generic [ref=e451]:
+                    - heading "WP-Optimize – Cache, Compress images, Minify & Clean database to boost page speed & performance" [level=3] [ref=e453]:
+                      - link "WP-Optimize – Cache, Compress images, Minify & Clean database to boost page speed & performance" [ref=e454] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-optimize&TB_iframe=true&width=600&height=550
+                    - list [ref=e456]:
+                      - listitem [ref=e457]:
+                        - button "Install WP-Optimize – Cache, Compress images, Minify & Clean database to boost page speed & performance 4.5.3 now" [ref=e458] [cursor=pointer]: Install Now
+                      - listitem [ref=e459]:
+                        - link "More information about WP-Optimize – Cache, Compress images, Minify & Clean database to boost page speed & performance 4.5.3" [ref=e460] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-optimize&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e461]:
+                      - paragraph [ref=e462]: Get caching and more with this powerful cache plugin. Cache, optimize images, clean your database and minify for maximum performance.
+                      - paragraph [ref=e463]:
+                        - generic [ref=e464]:
+                          - text: By
+                          - link "David Anderson / Team Updraft" [ref=e465] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/davidanderson/
+                  - generic [ref=e466]:
+                    - generic [ref=e467]:
+                      - generic [ref=e469]: 5.0 rating based on 2,574 ratings
+                      - text: (2,574)
+                    - generic [ref=e475]:
+                      - strong [ref=e476]: "Last Updated:"
+                      - text: 2 weeks ago
+                    - generic [ref=e477]: 1+ Million Active Installations
+                    - generic [ref=e479]:
+                      - strong [ref=e480]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e481]:
+                  - generic [ref=e482]:
+                    - heading "WP Mail SMTP by WPForms – The Most Popular SMTP and Email Log Plugin" [level=3] [ref=e484]:
+                      - link "WP Mail SMTP by WPForms – The Most Popular SMTP and Email Log Plugin" [ref=e485] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-mail-smtp&TB_iframe=true&width=600&height=550
+                    - list [ref=e487]:
+                      - listitem [ref=e488]:
+                        - button "Install WP Mail SMTP by WPForms – The Most Popular SMTP and Email Log Plugin 4.8.0 now" [ref=e489] [cursor=pointer]: Install Now
+                      - listitem [ref=e490]:
+                        - link "More information about WP Mail SMTP by WPForms – The Most Popular SMTP and Email Log Plugin 4.8.0" [ref=e491] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-mail-smtp&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e492]:
+                      - paragraph [ref=e493]: "Make email delivery easy for WordPress. Connect with SMTP, Gmail, Outlook, SendGrid, Mailgun, SES, Zoho, + more. Rated #1 WordPress SMTP Email plugin."
+                      - paragraph [ref=e494]:
+                        - generic [ref=e495]:
+                          - text: By
+                          - link "Syed Balkhi" [ref=e496] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/smub/
+                  - generic [ref=e497]:
+                    - generic [ref=e498]:
+                      - generic [ref=e500]: 5.0 rating based on 5,120 ratings
+                      - text: (5,120)
+                    - generic [ref=e506]:
+                      - strong [ref=e507]: "Last Updated:"
+                      - text: 4 weeks ago
+                    - generic [ref=e508]: 4+ Million Active Installations
+                    - generic [ref=e510]:
+                      - strong [ref=e511]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e512]:
+                  - generic [ref=e513]:
+                    - heading "WPvivid — Backup, Migration & Staging" [level=3] [ref=e515]:
+                      - link "WPvivid — Backup, Migration & Staging" [ref=e516] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wpvivid-backuprestore&TB_iframe=true&width=600&height=550
+                    - list [ref=e518]:
+                      - listitem [ref=e519]:
+                        - button "Install WPvivid — Backup, Migration & Staging 0.9.127 now" [ref=e520] [cursor=pointer]: Install Now
+                      - listitem [ref=e521]:
+                        - link "More information about WPvivid — Backup, Migration & Staging 0.9.127" [ref=e522] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wpvivid-backuprestore&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e523]:
+                      - paragraph [ref=e524]: Migrate, staging, backup WordPress, all in one.
+                      - paragraph [ref=e525]:
+                        - generic [ref=e526]:
+                          - text: By
+                          - link "wpvividplugins" [ref=e527] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wpvividplugins/
+                  - generic [ref=e528]:
+                    - generic [ref=e529]:
+                      - generic [ref=e531]: 5.0 rating based on 1,480 ratings
+                      - text: (1,480)
+                    - generic [ref=e537]:
+                      - strong [ref=e538]: "Last Updated:"
+                      - text: 1 day ago
+                    - generic [ref=e539]: 900,000+ Active Installations
+                    - generic [ref=e541]:
+                      - strong [ref=e542]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e543]:
+                  - generic [ref=e544]:
+                    - heading "WP Fastest Cache – WordPress Cache Plugin" [level=3] [ref=e546]:
+                      - link "WP Fastest Cache – WordPress Cache Plugin" [ref=e547] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-fastest-cache&TB_iframe=true&width=600&height=550
+                    - list [ref=e549]:
+                      - listitem [ref=e550]:
+                        - button "Install WP Fastest Cache – WordPress Cache Plugin 1.4.8 now" [ref=e551] [cursor=pointer]: Install Now
+                      - listitem [ref=e552]:
+                        - link "More information about WP Fastest Cache – WordPress Cache Plugin 1.4.8" [ref=e553] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-fastest-cache&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e554]:
+                      - paragraph [ref=e555]: The simplest and fastest WP Cache system
+                      - paragraph [ref=e556]:
+                        - generic [ref=e557]:
+                          - text: By
+                          - link "Emre Vona" [ref=e558] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/emrevona/
+                  - generic [ref=e559]:
+                    - generic [ref=e560]:
+                      - generic [ref=e562]: 5.0 rating based on 4,216 ratings
+                      - text: (4,216)
+                    - generic [ref=e568]:
+                      - strong [ref=e569]: "Last Updated:"
+                      - text: 1 week ago
+                    - generic [ref=e570]: 1+ Million Active Installations
+                    - generic [ref=e572]:
+                      - strong [ref=e573]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e574]:
+                  - generic [ref=e575]:
+                    - heading "Backup Migration" [level=3] [ref=e577]:
+                      - link "Backup Migration" [ref=e578] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=backup-backup&TB_iframe=true&width=600&height=550
+                    - list [ref=e580]:
+                      - listitem [ref=e581]:
+                        - button "Install Backup Migration 2.1.5.1 now" [ref=e582] [cursor=pointer]: Install Now
+                      - listitem [ref=e583]:
+                        - link "More information about Backup Migration 2.1.5.1" [ref=e584] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=backup-backup&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e585]:
+                      - paragraph [ref=e586]: Backup, migrate, and create staging sites with free cloud storage and support.
+                      - paragraph [ref=e587]:
+                        - generic [ref=e588]:
+                          - text: By
+                          - link "Inisev" [ref=e589] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/inisev/
+                  - generic [ref=e590]:
+                    - generic [ref=e591]:
+                      - generic [ref=e593]: 5.0 rating based on 1,311 ratings
+                      - text: (1,311)
+                    - generic [ref=e599]:
+                      - strong [ref=e600]: "Last Updated:"
+                      - text: 3 weeks ago
+                    - generic [ref=e601]: 90,000+ Active Installations
+                    - generic [ref=e603]:
+                      - strong [ref=e604]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e605]:
+                  - generic [ref=e606]:
+                    - heading "Duplicator – Backups & Migration Plugin – Cloud Backups, Scheduled Backups, & More" [level=3] [ref=e608]:
+                      - link "Duplicator – Backups & Migration Plugin – Cloud Backups, Scheduled Backups, & More" [ref=e609] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=duplicator&TB_iframe=true&width=600&height=550
+                    - list [ref=e611]:
+                      - listitem [ref=e612]:
+                        - button "Install Duplicator – Backups & Migration Plugin – Cloud Backups, Scheduled Backups, & More 1.5.16 now" [ref=e613] [cursor=pointer]: Install Now
+                      - listitem [ref=e614]:
+                        - link "More information about Duplicator – Backups & Migration Plugin – Cloud Backups, Scheduled Backups, & More 1.5.16" [ref=e615] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=duplicator&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e616]:
+                      - paragraph [ref=e617]: The best WordPress backup and migration plugin. Quickly and easily backup ,migrate, copy, move, or clone your site from one location to another.
+                      - paragraph [ref=e618]:
+                        - generic [ref=e619]:
+                          - text: By
+                          - link "Syed Balkhi" [ref=e620] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/smub/
+                  - generic [ref=e621]:
+                    - generic [ref=e622]:
+                      - generic [ref=e624]: 5.0 rating based on 4,887 ratings
+                      - text: (4,887)
+                    - generic [ref=e630]:
+                      - strong [ref=e631]: "Last Updated:"
+                      - text: 2 months ago
+                    - generic [ref=e632]: 1+ Million Active Installations
+                    - generic [ref=e634]:
+                      - strong [ref=e635]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e636]:
+                  - generic [ref=e637]:
+                    - heading "SEOPress – AI SEO Plugin & On-site SEO" [level=3] [ref=e639]:
+                      - link "SEOPress – AI SEO Plugin & On-site SEO" [ref=e640] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-seopress&TB_iframe=true&width=600&height=550
+                    - list [ref=e642]:
+                      - listitem [ref=e643]:
+                        - button "Install SEOPress – AI SEO Plugin & On-site SEO 9.8.5 now" [ref=e644] [cursor=pointer]: Install Now
+                      - listitem [ref=e645]:
+                        - link "More information about SEOPress – AI SEO Plugin & On-site SEO 9.8.5" [ref=e646] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-seopress&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e647]:
+                      - paragraph [ref=e648]: WordPress SEO plugin with AI SEO metadata, schema, XML sitemap, redirections & Search Console. Privacy-first, white-label SEO. Now AI-ready.
+                      - paragraph [ref=e649]:
+                        - generic [ref=e650]:
+                          - text: By
+                          - link "Benjamin Denis" [ref=e651] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/rainbowgeek/
+                  - generic [ref=e652]:
+                    - generic [ref=e653]:
+                      - generic [ref=e655]: 5.0 rating based on 1,227 ratings
+                      - text: (1,227)
+                    - generic [ref=e661]:
+                      - strong [ref=e662]: "Last Updated:"
+                      - text: 6 days ago
+                    - generic [ref=e663]: 300,000+ Active Installations
+                    - generic [ref=e665]:
+                      - strong [ref=e666]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e667]:
+                  - generic [ref=e668]:
+                    - heading "LiteSpeed Cache" [level=3] [ref=e670]:
+                      - link "LiteSpeed Cache" [ref=e671] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=litespeed-cache&TB_iframe=true&width=600&height=550
+                    - list [ref=e673]:
+                      - listitem [ref=e674]:
+                        - button "Install LiteSpeed Cache 7.8.1 now" [ref=e675] [cursor=pointer]: Install Now
+                      - listitem [ref=e676]:
+                        - link "More information about LiteSpeed Cache 7.8.1" [ref=e677] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=litespeed-cache&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e678]:
+                      - paragraph [ref=e679]: "All-in-one unbeatable acceleration & PageSpeed improvement: caching, image/CSS/JS optimization..."
+                      - paragraph [ref=e680]:
+                        - generic [ref=e681]:
+                          - text: By
+                          - link "LiteSpeed Technologies" [ref=e682] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/litespeedtech/
+                  - generic [ref=e683]:
+                    - generic [ref=e684]:
+                      - generic [ref=e686]: 5.0 rating based on 2,747 ratings
+                      - text: (2,747)
+                    - generic [ref=e692]:
+                      - strong [ref=e693]: "Last Updated:"
+                      - text: 1 month ago
+                    - generic [ref=e694]: 7+ Million Active Installations
+                    - generic [ref=e696]:
+                      - strong [ref=e697]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e698]:
+                  - generic [ref=e699]:
+                    - heading "Jetpack – WP Security, Backup, Speed, & Growth" [level=3] [ref=e701]:
+                      - link "Jetpack – WP Security, Backup, Speed, & Growth" [ref=e702] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=jetpack&TB_iframe=true&width=600&height=550
+                    - list [ref=e704]:
+                      - listitem [ref=e705]:
+                        - button "Install Jetpack – WP Security, Backup, Speed, & Growth 15.8 now" [ref=e706] [cursor=pointer]: Install Now
+                      - listitem [ref=e707]:
+                        - link "More information about Jetpack – WP Security, Backup, Speed, & Growth 15.8" [ref=e708] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=jetpack&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e709]:
+                      - paragraph [ref=e710]: Improve your WP security with powerful one-click tools like backup, WAF, and malware scan. Includes free tools like stats, CDN and social sharing.
+                      - paragraph [ref=e711]:
+                        - generic [ref=e712]:
+                          - text: By
+                          - link "Automattic" [ref=e713] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/automattic/
+                  - generic [ref=e714]:
+                    - generic [ref=e715]:
+                      - generic [ref=e717]: 4.0 rating based on 2,397 ratings
+                      - text: (2,397)
+                    - generic [ref=e723]:
+                      - strong [ref=e724]: "Last Updated:"
+                      - text: 1 week ago
+                    - generic [ref=e725]: 3+ Million Active Installations
+                    - generic [ref=e727]:
+                      - strong [ref=e728]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e729]:
+                  - generic [ref=e730]:
+                    - heading "WP Migrate Lite – Migration Made Easy" [level=3] [ref=e732]:
+                      - link "WP Migrate Lite – Migration Made Easy" [ref=e733] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-migrate-db&TB_iframe=true&width=600&height=550
+                    - list [ref=e735]:
+                      - listitem [ref=e736]:
+                        - button "Install WP Migrate Lite – Migration Made Easy 2.7.7 now" [ref=e737] [cursor=pointer]: Install Now
+                      - listitem [ref=e738]:
+                        - link "More information about WP Migrate Lite – Migration Made Easy 2.7.7" [ref=e739] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-migrate-db&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e740]:
+                      - paragraph [ref=e741]: Migrate your database. Export full sites including media, themes, and plugins. Find and replace content with support for serialized data.
+                      - paragraph [ref=e742]:
+                        - generic [ref=e743]:
+                          - text: By
+                          - link "WP Engine" [ref=e744] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wpengine/
+                  - generic [ref=e745]:
+                    - generic [ref=e746]:
+                      - generic [ref=e748]: 4.5 rating based on 314 ratings
+                      - text: (314)
+                    - generic [ref=e754]:
+                      - strong [ref=e755]: "Last Updated:"
+                      - text: 5 months ago
+                    - generic [ref=e756]: 200,000+ Active Installations
+                    - generic [ref=e758]:
+                      - strong [ref=e759]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e760]:
+                  - generic [ref=e761]:
+                    - heading "Migrate Guru – Site Migration & Cloning" [level=3] [ref=e763]:
+                      - link "Migrate Guru – Site Migration & Cloning" [ref=e764] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=migrate-guru&TB_iframe=true&width=600&height=550
+                    - list [ref=e766]:
+                      - listitem [ref=e767]:
+                        - button "Install Migrate Guru – Site Migration & Cloning 6.28 now" [ref=e768] [cursor=pointer]: Install Now
+                      - listitem [ref=e769]:
+                        - link "More information about Migrate Guru – Site Migration & Cloning 6.28" [ref=e770] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=migrate-guru&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e771]:
+                      - paragraph [ref=e772]: Effortlessly migrate, clone, or transfer your WordPress site to over 5,000 web hosts with Migrate Guru, trusted by Cloudways, Pantheon, and Dreamhost.
+                      - paragraph [ref=e773]:
+                        - generic [ref=e774]:
+                          - text: By
+                          - link "migrateguru" [ref=e775] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/migrateguru/
+                  - generic [ref=e776]:
+                    - generic [ref=e777]:
+                      - generic [ref=e779]: 5.0 rating based on 1,616 ratings
+                      - text: (1,616)
+                    - generic [ref=e785]:
+                      - strong [ref=e786]: "Last Updated:"
+                      - text: 4 weeks ago
+                    - generic [ref=e787]: 200,000+ Active Installations
+                    - generic [ref=e789]:
+                      - strong [ref=e790]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e791]:
+                  - generic [ref=e792]:
+                    - heading "BackWPup – WordPress Backup & Restore Plugin" [level=3] [ref=e794]:
+                      - link "BackWPup – WordPress Backup & Restore Plugin" [ref=e795] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=backwpup&TB_iframe=true&width=600&height=550
+                    - list [ref=e797]:
+                      - listitem [ref=e798]:
+                        - button "Install BackWPup – WordPress Backup & Restore Plugin 5.6.9 now" [ref=e799] [cursor=pointer]: Install Now
+                      - listitem [ref=e800]:
+                        - link "More information about BackWPup – WordPress Backup & Restore Plugin 5.6.9" [ref=e801] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=backwpup&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e802]:
+                      - paragraph [ref=e803]: Create a complete WordPress backup easily. Schedule automatic backups, store securely, and restore effortlessly with the best WordPress backup plugin!
+                      - paragraph [ref=e804]:
+                        - generic [ref=e805]:
+                          - text: By
+                          - link "WP Media" [ref=e806] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wp_media/
+                  - generic [ref=e807]:
+                    - generic [ref=e808]:
+                      - generic [ref=e810]: 4.0 rating based on 1,318 ratings
+                      - text: (1,318)
+                    - generic [ref=e816]:
+                      - strong [ref=e817]: "Last Updated:"
+                      - text: 3 weeks ago
+                    - generic [ref=e818]: 500,000+ Active Installations
+                    - generic [ref=e820]:
+                      - strong [ref=e821]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e822]:
+                  - generic [ref=e823]:
+                    - heading "Rank Math SEO – AI SEO Tools to Dominate SEO Rankings" [level=3] [ref=e825]:
+                      - link "Rank Math SEO – AI SEO Tools to Dominate SEO Rankings" [ref=e826] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=seo-by-rank-math&TB_iframe=true&width=600&height=550
+                    - list [ref=e828]:
+                      - listitem [ref=e829]:
+                        - button "Install Rank Math SEO – AI SEO Tools to Dominate SEO Rankings 1.0.270 now" [ref=e830] [cursor=pointer]: Install Now
+                      - listitem [ref=e831]:
+                        - link "More information about Rank Math SEO – AI SEO Tools to Dominate SEO Rankings 1.0.270" [ref=e832] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=seo-by-rank-math&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e833]:
+                      - paragraph [ref=e834]: Grow your organic traffic and AI visibility with powerful SEO tools, Schema automation, actionable insights, and built-in AI SEO, all in one place.
+                      - paragraph [ref=e835]:
+                        - generic [ref=e836]:
+                          - text: By
+                          - link "Rank Math SEO" [ref=e837] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/rankmath/
+                  - generic [ref=e838]:
+                    - generic [ref=e839]:
+                      - generic [ref=e841]: 5.0 rating based on 7,424 ratings
+                      - text: (7,424)
+                    - generic [ref=e847]:
+                      - strong [ref=e848]: "Last Updated:"
+                      - text: 1 day ago
+                    - generic [ref=e849]: 4+ Million Active Installations
+                    - generic [ref=e851]:
+                      - strong [ref=e852]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e853]:
+                  - generic [ref=e854]:
+                    - heading "WebToffee WP Backup and Migration" [level=3] [ref=e856]:
+                      - link "WebToffee WP Backup and Migration" [ref=e857] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-migration-duplicator&TB_iframe=true&width=600&height=550
+                    - list [ref=e859]:
+                      - listitem [ref=e860]:
+                        - button "Install WebToffee WP Backup and Migration 1.5.9 now" [ref=e861] [cursor=pointer]: Install Now
+                      - listitem [ref=e862]:
+                        - link "More information about WebToffee WP Backup and Migration 1.5.9" [ref=e863] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-migration-duplicator&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e864]:
+                      - paragraph [ref=e865]: Easily backup, restore, or migrate. Supports one-click backup and scheduled backup. Backup selected content to Amazon S3, Google Drive, FTP/SFTP, etc.
+                      - paragraph [ref=e866]:
+                        - generic [ref=e867]:
+                          - text: By
+                          - link "WebToffee" [ref=e868] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/webtoffee/
+                  - generic [ref=e869]:
+                    - generic [ref=e870]:
+                      - generic [ref=e872]: 4.5 rating based on 49 ratings
+                      - text: (49)
+                    - generic [ref=e878]:
+                      - strong [ref=e879]: "Last Updated:"
+                      - text: 2 months ago
+                    - generic [ref=e880]: 6,000+ Active Installations
+                    - generic [ref=e882]:
+                      - strong [ref=e883]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e884]:
+                  - generic [ref=e885]:
+                    - heading "WP Ghost (Hide My WP Ghost) – Security & Firewall" [level=3] [ref=e887]:
+                      - link "WP Ghost (Hide My WP Ghost) – Security & Firewall" [ref=e888] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=hide-my-wp&TB_iframe=true&width=600&height=550
+                    - list [ref=e890]:
+                      - listitem [ref=e891]:
+                        - button "Install WP Ghost (Hide My WP Ghost) – Security & Firewall 7.0.02 now" [ref=e892] [cursor=pointer]: Install Now
+                      - listitem [ref=e893]:
+                        - link "More information about WP Ghost (Hide My WP Ghost) – Security & Firewall 7.0.02" [ref=e894] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=hide-my-wp&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e895]:
+                      - paragraph [ref=e896]: Hide and Secure WP paths with the complete WP security suite for Site Hardening. Includes 8G Firewall, Brute Force protection, and Passkeys.
+                      - paragraph [ref=e897]:
+                        - generic [ref=e898]:
+                          - text: By
+                          - link "John Darrel" [ref=e899] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/johndarrel/
+                  - generic [ref=e900]:
+                    - generic [ref=e901]:
+                      - generic [ref=e903]: 4.5 rating based on 371 ratings
+                      - text: (371)
+                    - generic [ref=e909]:
+                      - strong [ref=e910]: "Last Updated:"
+                      - text: 1 day ago
+                    - generic [ref=e911]: 100,000+ Active Installations
+                    - generic [ref=e913]:
+                      - strong [ref=e914]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e915]:
+                  - generic [ref=e916]:
+                    - heading "FluentSMTP – WP SMTP Plugin with Amazon SES, SendGrid, MailGun, Postmark, Google and Any SMTP Provider" [level=3] [ref=e918]:
+                      - link "FluentSMTP – WP SMTP Plugin with Amazon SES, SendGrid, MailGun, Postmark, Google and Any SMTP Provider" [ref=e919] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=fluent-smtp&TB_iframe=true&width=600&height=550
+                    - list [ref=e921]:
+                      - listitem [ref=e922]:
+                        - button "Install FluentSMTP – WP SMTP Plugin with Amazon SES, SendGrid, MailGun, Postmark, Google and Any SMTP Provider 2.2.95 now" [ref=e923] [cursor=pointer]: Install Now
+                      - listitem [ref=e924]:
+                        - link "More information about FluentSMTP – WP SMTP Plugin with Amazon SES, SendGrid, MailGun, Postmark, Google and Any SMTP Provider 2.2.95" [ref=e925] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=fluent-smtp&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e926]:
+                      - paragraph [ref=e927]: The Ultimate Forever Free Mail SMTP Plugin for WordPress. Connect with any SMTP, SendGrid, Mailgun, Amazon SES, Brevo, Postmark, Sparkpost, Google...
+                      - paragraph [ref=e928]:
+                        - generic [ref=e929]:
+                          - text: By
+                          - link "Shahjahan Jewel" [ref=e930] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/techjewel/
+                  - generic [ref=e931]:
+                    - generic [ref=e932]:
+                      - generic [ref=e934]: 5.0 rating based on 371 ratings
+                      - text: (371)
+                    - generic [ref=e940]:
+                      - strong [ref=e941]: "Last Updated:"
+                      - text: 5 months ago
+                    - generic [ref=e942]: 500,000+ Active Installations
+                    - generic [ref=e944]:
+                      - strong [ref=e945]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e946]:
+                  - generic [ref=e947]:
+                    - heading "Pressable Automated Migration" [level=3] [ref=e949]:
+                      - link "Pressable Automated Migration" [ref=e950] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=pressable-automated-migration&TB_iframe=true&width=600&height=550
+                    - list [ref=e952]:
+                      - listitem [ref=e953]:
+                        - button "Install Pressable Automated Migration 5.88 now" [ref=e954] [cursor=pointer]: Install Now
+                      - listitem [ref=e955]:
+                        - link "More information about Pressable Automated Migration 5.88" [ref=e956] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=pressable-automated-migration&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e957]:
+                      - paragraph [ref=e958]: Effortlessly migrate your WordPress site to the Pressable platform with an automated process.
+                      - paragraph [ref=e959]:
+                        - generic [ref=e960]:
+                          - text: By
+                          - link "Pressable" [ref=e961] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/pressable/
+                  - generic [ref=e962]:
+                    - generic [ref=e963]:
+                      - generic [ref=e965]: 5.0 rating based on 10 ratings
+                      - text: (10)
+                    - generic [ref=e971]:
+                      - strong [ref=e972]: "Last Updated:"
+                      - text: 4 weeks ago
+                    - generic [ref=e973]: 3,000+ Active Installations
+                    - generic [ref=e975]:
+                      - strong [ref=e976]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e977]:
+                  - generic [ref=e978]:
+                    - heading "Schema & Structured Data for WP & AMP" [level=3] [ref=e980]:
+                      - link "Schema & Structured Data for WP & AMP" [ref=e981] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=schema-and-structured-data-for-wp&TB_iframe=true&width=600&height=550
+                    - list [ref=e983]:
+                      - listitem [ref=e984]:
+                        - button "Install Schema & Structured Data for WP & AMP 1.60 now" [ref=e985] [cursor=pointer]: Install Now
+                      - listitem [ref=e986]:
+                        - link "More information about Schema & Structured Data for WP & AMP 1.60" [ref=e987] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=schema-and-structured-data-for-wp&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e988]:
+                      - paragraph [ref=e989]: Schema & Structured Data adds Google Rich Snippets markup according to Schema.org guidelines to structure your site for SEO.
+                      - paragraph [ref=e990]:
+                        - generic [ref=e991]:
+                          - text: By
+                          - link "Magazine3" [ref=e992] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/magazine3/
+                  - generic [ref=e993]:
+                    - generic [ref=e994]:
+                      - generic [ref=e996]: 4.5 rating based on 252 ratings
+                      - text: (252)
+                    - generic [ref=e1002]:
+                      - strong [ref=e1003]: "Last Updated:"
+                      - text: 1 day ago
+                    - generic [ref=e1004]: 100,000+ Active Installations
+                    - generic [ref=e1006]:
+                      - strong [ref=e1007]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1008]:
+                  - generic [ref=e1009]:
+                    - heading "hCaptcha for WP" [level=3] [ref=e1011]:
+                      - link "hCaptcha for WP" [ref=e1012] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=hcaptcha-for-forms-and-more&TB_iframe=true&width=600&height=550
+                    - list [ref=e1014]:
+                      - listitem [ref=e1015]:
+                        - button "Install hCaptcha for WP 4.26.0 now" [ref=e1016] [cursor=pointer]: Install Now
+                      - listitem [ref=e1017]:
+                        - link "More information about hCaptcha for WP 4.26.0" [ref=e1018] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=hcaptcha-for-forms-and-more&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1019]:
+                      - paragraph [ref=e1020]: "The strongest CAPTCHA. Switch from reCAPTCHA and Turnstile for free. Works with 60+ integrations: Contact Form 7, Elementor, WooCommerce, Divi, etc."
+                      - paragraph [ref=e1021]:
+                        - generic [ref=e1022]:
+                          - text: By
+                          - link "hcaptcha" [ref=e1023] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/hcaptcha/
+                  - generic [ref=e1024]:
+                    - generic [ref=e1025]:
+                      - generic [ref=e1027]: 4.5 rating based on 85 ratings
+                      - text: (85)
+                    - generic [ref=e1033]:
+                      - strong [ref=e1034]: "Last Updated:"
+                      - text: 1 week ago
+                    - generic [ref=e1035]: 70,000+ Active Installations
+                    - generic [ref=e1037]:
+                      - strong [ref=e1038]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1039]:
+                  - generic [ref=e1040]:
+                    - heading "WP Go Maps (formerly WP Google Maps)" [level=3] [ref=e1042]:
+                      - link "WP Go Maps (formerly WP Google Maps)" [ref=e1043] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-google-maps&TB_iframe=true&width=600&height=550
+                    - list [ref=e1045]:
+                      - listitem [ref=e1046]:
+                        - button "Install WP Go Maps (formerly WP Google Maps) 10.0.10 now" [ref=e1047] [cursor=pointer]: Install Now
+                      - listitem [ref=e1048]:
+                        - link "More information about WP Go Maps (formerly WP Google Maps) 10.0.10" [ref=e1049] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-google-maps&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1050]:
+                      - paragraph [ref=e1051]: The easiest to use Google maps plugin! Create a custom Google map, map block, store locator or map widget with high quality markers containing categor …
+                      - paragraph [ref=e1052]:
+                        - generic [ref=e1053]:
+                          - text: By
+                          - link "WPGMaps" [ref=e1054] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wpgmaps/
+                  - generic [ref=e1055]:
+                    - generic [ref=e1056]:
+                      - generic [ref=e1058]: 5.0 rating based on 3,018 ratings
+                      - text: (3,018)
+                    - generic [ref=e1064]:
+                      - strong [ref=e1065]: "Last Updated:"
+                      - text: 2 days ago
+                    - generic [ref=e1066]: 300,000+ Active Installations
+                    - generic [ref=e1068]:
+                      - strong [ref=e1069]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1070]:
+                  - generic [ref=e1071]:
+                    - heading "Really Simple Security – Simple and Performant Security (formerly Really Simple SSL)" [level=3] [ref=e1073]:
+                      - link "Really Simple Security – Simple and Performant Security (formerly Really Simple SSL)" [ref=e1074] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=really-simple-ssl&TB_iframe=true&width=600&height=550
+                    - list [ref=e1076]:
+                      - listitem [ref=e1077]:
+                        - button "Install Really Simple Security – Simple and Performant Security (formerly Really Simple SSL) 9.5.11 now" [ref=e1078] [cursor=pointer]: Install Now
+                      - listitem [ref=e1079]:
+                        - link "More information about Really Simple Security – Simple and Performant Security (formerly Really Simple SSL) 9.5.11" [ref=e1080] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=really-simple-ssl&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1081]:
+                      - paragraph [ref=e1082]: Easily improve site security with WordPress Hardening, Two-Factor Authentication (2FA), Login Protection, Vulnerability Detection and SSL certificate.
+                      - paragraph [ref=e1083]:
+                        - generic [ref=e1084]:
+                          - text: By
+                          - link "Really Simple Plugins" [ref=e1085] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/reallysimpleplugins/
+                  - generic [ref=e1086]:
+                    - generic [ref=e1087]:
+                      - generic [ref=e1089]: 5.0 rating based on 8,830 ratings
+                      - text: (8,830)
+                    - generic [ref=e1095]:
+                      - strong [ref=e1096]: "Last Updated:"
+                      - text: 1 week ago
+                    - generic [ref=e1097]: 3+ Million Active Installations
+                    - generic [ref=e1099]:
+                      - strong [ref=e1100]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1101]:
+                  - generic [ref=e1102]:
+                    - heading "WP Synchro – The Ultimate WordPress Migration Tool" [level=3] [ref=e1104]:
+                      - link "WP Synchro – The Ultimate WordPress Migration Tool" [ref=e1105] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wpsynchro&TB_iframe=true&width=600&height=550
+                    - list [ref=e1107]:
+                      - listitem [ref=e1108]:
+                        - button "Install WP Synchro – The Ultimate WordPress Migration Tool 1.14.0 now" [ref=e1109] [cursor=pointer]: Install Now
+                      - listitem [ref=e1110]:
+                        - link "More information about WP Synchro – The Ultimate WordPress Migration Tool 1.14.0" [ref=e1111] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wpsynchro&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1112]:
+                      - paragraph [ref=e1113]: WordPress migration plugin to easily migrate, clone, backup, and synchronize your WordPress site, including database, media, plugins, themes, and file …
+                      - paragraph [ref=e1114]:
+                        - generic [ref=e1115]:
+                          - text: By
+                          - link "WP Synchro" [ref=e1116] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wpsynchro/
+                  - generic [ref=e1117]:
+                    - generic [ref=e1118]:
+                      - generic [ref=e1120]: 5.0 rating based on 28 ratings
+                      - text: (28)
+                    - generic [ref=e1126]:
+                      - strong [ref=e1127]: "Last Updated:"
+                      - text: 5 months ago
+                    - generic [ref=e1128]: 2,000+ Active Installations
+                    - generic [ref=e1130]:
+                      - strong [ref=e1131]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1132]:
+                  - generic [ref=e1133]:
+                    - heading "WP Database Backup – Unlimited Database & Files Backup by Backup for WP" [level=3] [ref=e1135]:
+                      - link "WP Database Backup – Unlimited Database & Files Backup by Backup for WP" [ref=e1136] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-database-backup&TB_iframe=true&width=600&height=550
+                    - list [ref=e1138]:
+                      - listitem [ref=e1139]:
+                        - button "Install WP Database Backup – Unlimited Database & Files Backup by Backup for WP 7.10 now" [ref=e1140] [cursor=pointer]: Install Now
+                      - listitem [ref=e1141]:
+                        - link "More information about WP Database Backup – Unlimited Database & Files Backup by Backup for WP 7.10" [ref=e1142] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-database-backup&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1143]:
+                      - paragraph [ref=e1144]: Create & Restore Database Backup easily on single click. Manual or automated backups (backup to Dropbox, Google drive, Amazon s3,FTP,Email).
+                      - paragraph [ref=e1145]:
+                        - generic [ref=e1146]:
+                          - text: By
+                          - link "Backup For WP" [ref=e1147] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/databasebackup/
+                  - generic [ref=e1148]:
+                    - generic [ref=e1149]:
+                      - generic [ref=e1151]: 4.5 rating based on 102 ratings
+                      - text: (102)
+                    - generic [ref=e1157]:
+                      - strong [ref=e1158]: "Last Updated:"
+                      - text: 2 months ago
+                    - generic [ref=e1159]: 30,000+ Active Installations
+                    - generic [ref=e1161]:
+                      - strong [ref=e1162]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1163]:
+                  - generic [ref=e1164]:
+                    - heading "InstaWP Connect – 1-click WP Staging & Migration" [level=3] [ref=e1166]:
+                      - link "InstaWP Connect – 1-click WP Staging & Migration" [ref=e1167] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=instawp-connect&TB_iframe=true&width=600&height=550
+                    - list [ref=e1169]:
+                      - listitem [ref=e1170]:
+                        - button "Install InstaWP Connect – 1-click WP Staging & Migration 0.1.3.2 now" [ref=e1171] [cursor=pointer]: Install Now
+                      - listitem [ref=e1172]:
+                        - link "More information about InstaWP Connect – 1-click WP Staging & Migration 0.1.3.2" [ref=e1173] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=instawp-connect&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1174]:
+                      - paragraph [ref=e1175]: Create a staging WordPress site from production (live site). Ideal for testing updates, version change or re-write. Sync back only the changes.
+                      - paragraph [ref=e1176]:
+                        - generic [ref=e1177]:
+                          - text: By
+                          - link "InstaWP" [ref=e1178] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/instawp/
+                  - generic [ref=e1179]:
+                    - generic [ref=e1180]:
+                      - generic [ref=e1182]: 4.5 rating based on 11 ratings
+                      - text: (11)
+                    - generic [ref=e1188]:
+                      - strong [ref=e1189]: "Last Updated:"
+                      - text: 2 days ago
+                    - generic [ref=e1190]: 40,000+ Active Installations
+                    - generic [ref=e1192]:
+                      - strong [ref=e1193]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1194]:
+                  - generic [ref=e1195]:
+                    - heading "SlimStat Analytics" [level=3] [ref=e1197]:
+                      - link "SlimStat Analytics" [ref=e1198] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-slimstat&TB_iframe=true&width=600&height=550
+                    - list [ref=e1200]:
+                      - listitem [ref=e1201]:
+                        - button "Install SlimStat Analytics 5.4.12 now" [ref=e1202] [cursor=pointer]: Install Now
+                      - listitem [ref=e1203]:
+                        - link "More information about SlimStat Analytics 5.4.12" [ref=e1204] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-slimstat&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1205]:
+                      - paragraph [ref=e1206]: The leading web analytics plugin for WordPress
+                      - paragraph [ref=e1207]:
+                        - generic [ref=e1208]:
+                          - text: By
+                          - link "VeronaLabs" [ref=e1209] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/veronalabs/
+                  - generic [ref=e1210]:
+                    - generic [ref=e1211]:
+                      - generic [ref=e1213]: 5.0 rating based on 817 ratings
+                      - text: (817)
+                    - generic [ref=e1219]:
+                      - strong [ref=e1220]: "Last Updated:"
+                      - text: 2 days ago
+                    - generic [ref=e1221]: 80,000+ Active Installations
+                    - generic [ref=e1223]:
+                      - strong [ref=e1224]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1225]:
+                  - generic [ref=e1226]:
+                    - heading "Modula Image Gallery – Photo Grid & Video Gallery" [level=3] [ref=e1228]:
+                      - link "Modula Image Gallery – Photo Grid & Video Gallery" [ref=e1229] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=modula-best-grid-gallery&TB_iframe=true&width=600&height=550
+                    - list [ref=e1231]:
+                      - listitem [ref=e1232]:
+                        - button "Install Modula Image Gallery – Photo Grid & Video Gallery 2.14.27 now" [ref=e1233] [cursor=pointer]: Install Now
+                      - listitem [ref=e1234]:
+                        - link "More information about Modula Image Gallery – Photo Grid & Video Gallery 2.14.27" [ref=e1235] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=modula-best-grid-gallery&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1236]:
+                      - paragraph [ref=e1237]: Create responsive image galleries with drag-and-drop grid builder. Custom layouts, video support, AI optimization. Works with any theme.
+                      - paragraph [ref=e1238]:
+                        - generic [ref=e1239]:
+                          - text: By
+                          - link "WP Chill" [ref=e1240] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wpchill/
+                  - generic [ref=e1241]:
+                    - generic [ref=e1242]:
+                      - generic [ref=e1244]: 4.5 rating based on 608 ratings
+                      - text: (608)
+                    - generic [ref=e1250]:
+                      - strong [ref=e1251]: "Last Updated:"
+                      - text: 3 days ago
+                    - generic [ref=e1252]: 100,000+ Active Installations
+                    - generic [ref=e1254]:
+                      - strong [ref=e1255]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1256]:
+                  - generic [ref=e1257]:
+                    - heading "ShopEngine Elementor WooCommerce Builder Addon – All in One WooCommerce Solution" [level=3] [ref=e1259]:
+                      - link "ShopEngine Elementor WooCommerce Builder Addon – All in One WooCommerce Solution" [ref=e1260] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=shopengine&TB_iframe=true&width=600&height=550
+                    - list [ref=e1262]:
+                      - listitem [ref=e1263]:
+                        - button "Install ShopEngine Elementor WooCommerce Builder Addon – All in One WooCommerce Solution 4.8.9 now" [ref=e1264] [cursor=pointer]: Install Now
+                      - listitem [ref=e1265]:
+                        - link "More information about ShopEngine Elementor WooCommerce Builder Addon – All in One WooCommerce Solution 4.8.9" [ref=e1266] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=shopengine&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1267]:
+                      - paragraph [ref=e1268]: WooCommerce builder for Elementor and Gutenberg. It offers product templates, product sliders, shopping cart, quick view, Woo wishlist, product filter …
+                      - paragraph [ref=e1269]:
+                        - generic [ref=e1270]:
+                          - text: By
+                          - link "Roxnor" [ref=e1271] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/roxnor/
+                  - generic [ref=e1272]:
+                    - generic [ref=e1273]:
+                      - generic [ref=e1275]: 4.5 rating based on 209 ratings
+                      - text: (209)
+                    - generic [ref=e1281]:
+                      - strong [ref=e1282]: "Last Updated:"
+                      - text: 3 weeks ago
+                    - generic [ref=e1283]: 100,000+ Active Installations
+                    - generic [ref=e1285]:
+                      - strong [ref=e1286]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1287]:
+                  - generic [ref=e1288]:
+                    - heading "Royal WordPress Backup, Restore & Migration Plugin – Backup WordPress Sites Safely" [level=3] [ref=e1290]:
+                      - link "Royal WordPress Backup, Restore & Migration Plugin – Backup WordPress Sites Safely" [ref=e1291] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=royal-backup-reset&TB_iframe=true&width=600&height=550
+                    - list [ref=e1293]:
+                      - listitem [ref=e1294]:
+                        - button "Install Royal WordPress Backup, Restore & Migration Plugin – Backup WordPress Sites Safely 1.0.25 now" [ref=e1295] [cursor=pointer]: Install Now
+                      - listitem [ref=e1296]:
+                        - link "More information about Royal WordPress Backup, Restore & Migration Plugin – Backup WordPress Sites Safely 1.0.25" [ref=e1297] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=royal-backup-reset&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1298]:
+                      - paragraph [ref=e1299]: WordPress backup plugin to create full website backups and restore them easily. Built in migration to easily migrate your website, smart pre-update ba …
+                      - paragraph [ref=e1300]:
+                        - generic [ref=e1301]:
+                          - text: By
+                          - link "WP Royal" [ref=e1302] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wproyal/
+                  - generic [ref=e1303]:
+                    - generic [ref=e1304]:
+                      - generic [ref=e1306]: 5.0 rating based on 4 ratings
+                      - text: (4)
+                    - generic [ref=e1312]:
+                      - strong [ref=e1313]: "Last Updated:"
+                      - text: 4 weeks ago
+                    - generic [ref=e1314]: 20,000+ Active Installations
+                    - generic [ref=e1316]:
+                      - strong [ref=e1317]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1318]:
+                  - generic [ref=e1319]:
+                    - heading "WP All Export – User Export Add-On" [level=3] [ref=e1321]:
+                      - link "WP All Export – User Export Add-On" [ref=e1322] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=export-wp-users-xml-csv&TB_iframe=true&width=600&height=550
+                    - list [ref=e1324]:
+                      - listitem [ref=e1325]:
+                        - button "Install WP All Export – User Export Add-On 1.0.2 now" [ref=e1326] [cursor=pointer]: Install Now
+                      - listitem [ref=e1327]:
+                        - link "More information about WP All Export – User Export Add-On 1.0.2" [ref=e1328] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=export-wp-users-xml-csv&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1329]:
+                      - paragraph [ref=e1330]: Drag & drop to export users and all user data to a completely custom CSV, Excel, or XML of any format. Supports roles, metadata, custom fields, wi …
+                      - paragraph [ref=e1331]:
+                        - generic [ref=e1332]:
+                          - text: By
+                          - link "WP All Import" [ref=e1333] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wpallimport/
+                  - generic [ref=e1334]:
+                    - generic [ref=e1335]:
+                      - generic [ref=e1337]: 3.5 rating based on 7 ratings
+                      - text: (7)
+                    - generic [ref=e1343]:
+                      - strong [ref=e1344]: "Last Updated:"
+                      - text: 3 months ago
+                    - generic [ref=e1345]: 2,000+ Active Installations
+                    - generic [ref=e1347]:
+                      - strong [ref=e1348]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1349]:
+                  - generic [ref=e1350]:
+                    - 'heading "Easy WP SMTP – WordPress SMTP and Email Logs: Gmail, Office 365, Outlook, Custom SMTP, and more" [level=3] [ref=e1352]':
+                      - 'link "Easy WP SMTP – WordPress SMTP and Email Logs: Gmail, Office 365, Outlook, Custom SMTP, and more" [ref=e1353] [cursor=pointer]':
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=easy-wp-smtp&TB_iframe=true&width=600&height=550
+                    - list [ref=e1355]:
+                      - listitem [ref=e1356]:
+                        - 'button "Install Easy WP SMTP – WordPress SMTP and Email Logs: Gmail, Office 365, Outlook, Custom SMTP, and more 2.14.0 now" [ref=e1357] [cursor=pointer]': Install Now
+                      - listitem [ref=e1358]:
+                        - 'link "More information about Easy WP SMTP – WordPress SMTP and Email Logs: Gmail, Office 365, Outlook, Custom SMTP, and more 2.14.0" [ref=e1359] [cursor=pointer]':
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=easy-wp-smtp&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1360]:
+                      - paragraph [ref=e1361]: Make SMTP email sending and delivery easy. Configure Gmail, Outlook, Brevo, SendGrid, Mailgun, SendLayer or connect to any SMTP server.
+                      - paragraph [ref=e1362]:
+                        - generic [ref=e1363]:
+                          - text: By
+                          - link "Syed Balkhi" [ref=e1364] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/smub/
+                  - generic [ref=e1365]:
+                    - generic [ref=e1366]:
+                      - generic [ref=e1368]: 4.5 rating based on 700 ratings
+                      - text: (700)
+                    - generic [ref=e1374]:
+                      - strong [ref=e1375]: "Last Updated:"
+                      - text: 1 month ago
+                    - generic [ref=e1376]: 500,000+ Active Installations
+                    - generic [ref=e1378]:
+                      - strong [ref=e1379]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1380]:
+                  - generic [ref=e1381]:
+                    - heading "WP Popular Posts" [level=3] [ref=e1383]:
+                      - link "WP Popular Posts" [ref=e1384] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wordpress-popular-posts&TB_iframe=true&width=600&height=550
+                    - list [ref=e1386]:
+                      - listitem [ref=e1387]:
+                        - button "Install WP Popular Posts 7.3.8 now" [ref=e1388] [cursor=pointer]: Install Now
+                      - listitem [ref=e1389]:
+                        - link "More information about WP Popular Posts 7.3.8" [ref=e1390] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wordpress-popular-posts&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1391]:
+                      - paragraph [ref=e1392]: A highly customizable, easy-to-use popular posts plugin!
+                      - paragraph [ref=e1393]:
+                        - generic [ref=e1394]:
+                          - text: By
+                          - link "Hector Cabrera" [ref=e1395] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/hcabrera/
+                  - generic [ref=e1396]:
+                    - generic [ref=e1397]:
+                      - generic [ref=e1399]: 4.5 rating based on 248 ratings
+                      - text: (248)
+                    - generic [ref=e1405]:
+                      - strong [ref=e1406]: "Last Updated:"
+                      - text: 3 months ago
+                    - generic [ref=e1407]: 100,000+ Active Installations
+                    - generic [ref=e1409]:
+                      - strong [ref=e1410]: Compatible
+                      - text: with your version of WordPress
+                - generic [ref=e1411]:
+                  - generic [ref=e1412]:
+                    - heading "Cloudways WordPress Migrator" [level=3] [ref=e1414]:
+                      - link "Cloudways WordPress Migrator" [ref=e1415] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=bv-cloudways-automated-migration&TB_iframe=true&width=600&height=550
+                    - list [ref=e1417]:
+                      - listitem [ref=e1418]:
+                        - button "Install Cloudways WordPress Migrator 5.88 now" [ref=e1419] [cursor=pointer]: Install Now
+                      - listitem [ref=e1420]:
+                        - link "More information about Cloudways WordPress Migrator 5.88" [ref=e1421] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=bv-cloudways-automated-migration&TB_iframe=true&width=600&height=550
+                          - text: More Details
+                    - generic [ref=e1422]:
+                      - paragraph [ref=e1423]: The easiest way to migrate your site to Cloudways
+                      - paragraph [ref=e1424]:
+                        - generic [ref=e1425]:
+                          - text: By
+                          - link "Cloudways" [ref=e1426] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/cloudways/
+                  - generic [ref=e1427]:
+                    - generic [ref=e1428]:
+                      - generic [ref=e1430]: 4.0 rating based on 36 ratings
+                      - text: (36)
+                    - generic [ref=e1436]:
+                      - strong [ref=e1437]: "Last Updated:"
+                      - text: 4 weeks ago
+                    - generic [ref=e1438]: 20,000+ Active Installations
+                    - generic [ref=e1440]:
+                      - strong [ref=e1441]: Compatible
+                      - text: with your version of WordPress
+            - generic [ref=e1443]:
+              - text: 1,056 items
+              - generic [ref=e1444]:
+                - generic [ref=e1445]: «
+                - generic [ref=e1446]: ‹
+                - generic [ref=e1447]: Current Page
+                - generic [ref=e1449]: 1 of 30
+                - link "Next page" [ref=e1450] [cursor=pointer]:
+                  - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?s=all+in+one+wp+migration&tab=search&type=term&paged=2
+                  - generic [ref=e1451]: Next page
+                  - text: ›
+                - link "Last page" [ref=e1452] [cursor=pointer]:
+                  - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?s=all+in+one+wp+migration&tab=search&type=term&paged=30
+                  - generic [ref=e1453]: Last page
+                  - text: »
+  - contentinfo [ref=e1454]:
+    - paragraph [ref=e1455]:
+      - generic [ref=e1456]:
+        - text: Thank you for creating with
+        - link "WordPress" [ref=e1457] [cursor=pointer]:
+          - /url: https://wordpress.org/
+        - text: .
+    - paragraph [ref=e1458]:
+      - strong [ref=e1459]:
+        - link "Get Version 6.9.4" [ref=e1460] [cursor=pointer]:
+          - /url: https://devcraft.synergize.co/wp-admin/update-core.php

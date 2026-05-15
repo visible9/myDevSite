@@ -1,0 +1,688 @@
+- generic [ref=e2]:
+  - navigation "Main menu":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#wpbody-content"
+    - link "Skip to toolbar" [ref=e4] [cursor=pointer]:
+      - /url: "#wp-toolbar"
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: index.php
+          - generic [ref=e10]: 
+          - generic [ref=e11]: Dashboard
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "Home" [ref=e14] [cursor=pointer]:
+              - /url: index.php
+          - listitem [ref=e15]:
+            - link "Updates 3" [ref=e16] [cursor=pointer]:
+              - /url: update-core.php
+              - text: Updates
+              - generic [ref=e17]: "3"
+      - listitem [ref=e18]
+      - listitem [ref=e20]:
+        - link "Posts" [ref=e21] [cursor=pointer]:
+          - /url: edit.php
+          - generic [ref=e22]: 
+          - generic [ref=e23]: Posts
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - link "All Posts" [ref=e26] [cursor=pointer]:
+              - /url: edit.php
+          - listitem [ref=e27]:
+            - link "Add Post" [ref=e28] [cursor=pointer]:
+              - /url: post-new.php
+          - listitem [ref=e29]:
+            - link "Categories" [ref=e30] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=category
+          - listitem [ref=e31]:
+            - link "Tags" [ref=e32] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=post_tag
+      - listitem [ref=e33]:
+        - link "Media" [ref=e34] [cursor=pointer]:
+          - /url: upload.php
+          - generic [ref=e35]: 
+          - generic [ref=e36]: Media
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link "Library" [ref=e39] [cursor=pointer]:
+              - /url: upload.php
+          - listitem [ref=e40]:
+            - link "Add Media File" [ref=e41] [cursor=pointer]:
+              - /url: media-new.php
+      - listitem [ref=e42]:
+        - link "Forms 1" [ref=e43] [cursor=pointer]:
+          - /url: admin.php?page=gf_edit_forms
+          - generic [ref=e45]:
+            - text: Forms
+            - generic "Update Available" [ref=e46]: "1"
+        - list [ref=e47]:
+          - listitem [ref=e48]:
+            - link "Forms" [ref=e49] [cursor=pointer]:
+              - /url: admin.php?page=gf_edit_forms
+          - listitem [ref=e50]:
+            - link "New Form" [ref=e51] [cursor=pointer]:
+              - /url: admin.php?page=gf_new_form
+          - listitem [ref=e52]:
+            - link "Entries" [ref=e53] [cursor=pointer]:
+              - /url: admin.php?page=gf_entries
+          - listitem [ref=e54]:
+            - link "Settings" [ref=e55] [cursor=pointer]:
+              - /url: admin.php?page=gf_settings
+          - listitem [ref=e56]:
+            - link "Import/Export" [ref=e57] [cursor=pointer]:
+              - /url: admin.php?page=gf_export
+          - listitem [ref=e58]:
+            - link "Add-Ons" [ref=e59] [cursor=pointer]:
+              - /url: admin.php?page=gf_addons
+          - listitem [ref=e60]:
+            - link "System Status" [ref=e61] [cursor=pointer]:
+              - /url: admin.php?page=gf_system_status
+          - listitem [ref=e62]:
+            - link "Help" [ref=e63] [cursor=pointer]:
+              - /url: admin.php?page=gf_help
+      - listitem [ref=e64]:
+        - link "Pages" [ref=e65] [cursor=pointer]:
+          - /url: edit.php?post_type=page
+          - generic [ref=e66]: 
+          - generic [ref=e67]: Pages
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - link "All Pages" [ref=e70] [cursor=pointer]:
+              - /url: edit.php?post_type=page
+          - listitem [ref=e71]:
+            - link "Add Page" [ref=e72] [cursor=pointer]:
+              - /url: post-new.php?post_type=page
+      - listitem [ref=e73]:
+        - link "Comments" [ref=e74] [cursor=pointer]:
+          - /url: edit-comments.php
+          - generic [ref=e75]: 
+          - generic [ref=e76]: Comments
+      - listitem [ref=e77]:
+        - link "Examples posttype" [ref=e78] [cursor=pointer]:
+          - /url: edit.php?post_type=example-posttype
+          - generic [ref=e79]: 
+          - generic [ref=e80]: Examples posttype
+        - list [ref=e81]:
+          - listitem [ref=e82]:
+            - link "Examples posttype" [ref=e83] [cursor=pointer]:
+              - /url: edit.php?post_type=example-posttype
+          - listitem [ref=e84]:
+            - link "Add New Example posttype" [ref=e85] [cursor=pointer]:
+              - /url: post-new.php?post_type=example-posttype
+          - listitem [ref=e86]:
+            - link "Example taxonomies" [ref=e87] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=example-taxonomy&post_type=example-posttype
+      - listitem [ref=e88]
+      - listitem [ref=e90]:
+        - link "Appearance" [ref=e91] [cursor=pointer]:
+          - /url: themes.php
+          - generic [ref=e92]: 
+          - generic [ref=e93]: Appearance
+        - list [ref=e94]:
+          - listitem [ref=e95]:
+            - link "Themes" [ref=e96] [cursor=pointer]:
+              - /url: themes.php
+          - listitem [ref=e97]:
+            - link "Design" [ref=e98] [cursor=pointer]:
+              - /url: site-editor.php
+          - listitem [ref=e99]:
+            - link "Customize" [ref=e100] [cursor=pointer]:
+              - /url: customize.php?return=%2Fwp-admin%2Fplugins.php%3Fplugin_status%3Dall%26paged%3D1%26s
+          - listitem [ref=e101]:
+            - link "Widgets" [ref=e102] [cursor=pointer]:
+              - /url: widgets.php
+          - listitem [ref=e103]:
+            - link "Menus" [ref=e104] [cursor=pointer]:
+              - /url: nav-menus.php
+          - listitem [ref=e105]:
+            - link "Background" [ref=e106] [cursor=pointer]:
+              - /url: customize.php?return=%2Fwp-admin%2Fplugins.php%3Fplugin_status%3Dall%26paged%3D1%26s&autofocus%5Bcontrol%5D=background_image
+          - listitem
+          - listitem [ref=e107]:
+            - link "Theme File Editor" [ref=e108] [cursor=pointer]:
+              - /url: theme-editor.php
+      - listitem [ref=e109]:
+        - link "Plugins 2" [ref=e110] [cursor=pointer]:
+          - /url: plugins.php
+          - generic [ref=e111]: 
+          - generic [ref=e112]:
+            - text: Plugins
+            - generic [ref=e113]: "2"
+        - list [ref=e114]:
+          - listitem [ref=e115]:
+            - link "Installed Plugins" [ref=e116] [cursor=pointer]:
+              - /url: plugins.php
+          - listitem [ref=e117]:
+            - link "Add Plugin" [ref=e118] [cursor=pointer]:
+              - /url: plugin-install.php
+          - listitem [ref=e119]:
+            - link "Plugin File Editor" [ref=e120] [cursor=pointer]:
+              - /url: plugin-editor.php
+          - listitem [ref=e121]:
+            - link "Install Plugins" [ref=e122] [cursor=pointer]:
+              - /url: plugins.php?page=install-plugins
+      - listitem [ref=e123]:
+        - link "Users" [ref=e124] [cursor=pointer]:
+          - /url: users.php
+          - generic [ref=e125]: 
+          - generic [ref=e126]: Users
+        - list [ref=e127]:
+          - listitem [ref=e128]:
+            - link "All Users" [ref=e129] [cursor=pointer]:
+              - /url: users.php
+          - listitem [ref=e130]:
+            - link "Add User" [ref=e131] [cursor=pointer]:
+              - /url: user-new.php
+          - listitem [ref=e132]:
+            - link "Profile" [ref=e133] [cursor=pointer]:
+              - /url: profile.php
+      - listitem [ref=e134]:
+        - link "Tools" [ref=e135] [cursor=pointer]:
+          - /url: tools.php
+          - generic [ref=e136]: 
+          - generic [ref=e137]: Tools
+        - list [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Available Tools" [ref=e140] [cursor=pointer]:
+              - /url: tools.php
+          - listitem [ref=e141]:
+            - link "Import" [ref=e142] [cursor=pointer]:
+              - /url: import.php
+          - listitem [ref=e143]:
+            - link "Export" [ref=e144] [cursor=pointer]:
+              - /url: export.php
+          - listitem [ref=e145]:
+            - link "Site Health 1" [ref=e146] [cursor=pointer]:
+              - /url: site-health.php
+              - text: Site Health
+              - generic [ref=e147]: "1"
+          - listitem [ref=e148]:
+            - link "Export Personal Data" [ref=e149] [cursor=pointer]:
+              - /url: export-personal-data.php
+          - listitem [ref=e150]:
+            - link "Erase Personal Data" [ref=e151] [cursor=pointer]:
+              - /url: erase-personal-data.php
+          - listitem [ref=e152]:
+            - link "Yoast Redirects" [ref=e153] [cursor=pointer]:
+              - /url: tools.php?page=wpseo_redirects_tools
+      - listitem [ref=e154]:
+        - link "All-in-One WP Migration" [ref=e155] [cursor=pointer]:
+          - /url: admin.php?page=ai1wm_export
+          - generic [ref=e157]: All-in-One WP Migration
+        - list [ref=e158]:
+          - listitem [ref=e159]:
+            - link "Export" [ref=e160] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_export
+          - listitem [ref=e161]:
+            - link "Import" [ref=e162] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_import
+          - listitem [ref=e163]:
+            - link "Backups 4" [ref=e164] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_backups
+              - text: Backups
+              - generic "You have 4 backups" [ref=e165]: "4"
+          - listitem [ref=e166]:
+            - link "Reset Hub Premium" [ref=e167] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_reset
+              - text: Reset Hub
+              - generic [ref=e168]: Premium
+          - listitem [ref=e169]:
+            - link "Schedules Premium" [ref=e170] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_schedules
+              - text: Schedules
+              - generic [ref=e171]: Premium
+      - listitem [ref=e172]:
+        - link "Settings" [ref=e173] [cursor=pointer]:
+          - /url: options-general.php
+          - generic [ref=e174]: 
+          - generic [ref=e175]: Settings
+        - list [ref=e176]:
+          - listitem [ref=e177]:
+            - link "General" [ref=e178] [cursor=pointer]:
+              - /url: options-general.php
+          - listitem [ref=e179]:
+            - link "Writing" [ref=e180] [cursor=pointer]:
+              - /url: options-writing.php
+          - listitem [ref=e181]:
+            - link "Reading" [ref=e182] [cursor=pointer]:
+              - /url: options-reading.php
+          - listitem [ref=e183]:
+            - link "Discussion" [ref=e184] [cursor=pointer]:
+              - /url: options-discussion.php
+          - listitem [ref=e185]:
+            - link "Media" [ref=e186] [cursor=pointer]:
+              - /url: options-media.php
+          - listitem [ref=e187]:
+            - link "Permalinks" [ref=e188] [cursor=pointer]:
+              - /url: options-permalink.php
+          - listitem [ref=e189]:
+            - link "Privacy" [ref=e190] [cursor=pointer]:
+              - /url: options-privacy.php
+      - listitem [ref=e191]:
+        - link "ACF" [ref=e192] [cursor=pointer]:
+          - /url: edit.php?post_type=acf-field-group
+          - generic [ref=e193]: 
+          - generic [ref=e194]: ACF
+        - list [ref=e195]:
+          - listitem [ref=e196]:
+            - link "Field Groups" [ref=e197] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group
+          - listitem [ref=e198]:
+            - link "Post Types" [ref=e199] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-post-type
+          - listitem [ref=e200]:
+            - link "Taxonomies" [ref=e201] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-taxonomy
+          - listitem [ref=e202]:
+            - link "Options Pages" [ref=e203] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-ui-options-page
+          - listitem [ref=e204]:
+            - link "Tools" [ref=e205] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group&page=acf-tools
+          - listitem [ref=e206]:
+            - link "Updates" [ref=e207] [cursor=pointer]:
+              - /url: edit.php?post_type=acf-field-group&page=acf-settings-updates
+      - listitem [ref=e208]:
+        - link "Theme Settings" [ref=e209] [cursor=pointer]:
+          - /url: admin.php?page=theme-general-settings
+          - generic [ref=e210]: 
+          - generic [ref=e211]: Theme Settings
+      - listitem [ref=e212]
+      - listitem [ref=e214]:
+        - link "Yoast SEO 2 notifications" [ref=e215] [cursor=pointer]:
+          - /url: admin.php?page=wpseo_dashboard
+          - generic [ref=e217]:
+            - text: Yoast SEO
+            - generic [ref=e218]:
+              - text: "2"
+              - generic [ref=e219]: 2 notifications
+        - list [ref=e220]:
+          - listitem [ref=e221]:
+            - link "General" [ref=e222] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_dashboard
+          - listitem [ref=e223]:
+            - link "Settings" [ref=e224] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_settings
+          - listitem [ref=e225]:
+            - link "Integrations" [ref=e226] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_integrations
+          - listitem [ref=e227]:
+            - link "Tools" [ref=e228] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_tools
+          - listitem [ref=e229]:
+            - link "Academy" [ref=e230] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_academy
+          - listitem [ref=e231]:
+            - link "Plans" [ref=e232] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_licenses
+          - listitem [ref=e233]:
+            - link "Workouts Premium" [ref=e234] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_workouts
+              - text: Workouts
+              - generic [ref=e235]: Premium
+          - listitem [ref=e236]:
+            - link "Redirects Premium" [ref=e237] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_redirects
+              - text: Redirects
+              - generic [ref=e238]: Premium
+          - listitem [ref=e239]:
+            - link "Support" [ref=e240] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_page_support
+          - listitem [ref=e241]:
+            - link "Upgrade" [ref=e242] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_upgrade_sidebar
+              - generic [ref=e244]: Upgrade
+          - listitem [ref=e245]:
+            - link "AI Brand Insights" [ref=e246] [cursor=pointer]:
+              - /url: admin.php?page=wpseo_brand_insights
+              - generic [ref=e248]: AI Brand Insights
+      - listitem [ref=e250]:
+        - link "UpdraftPlus" [ref=e251] [cursor=pointer]:
+          - /url: options-general.php?page=updraftplus
+          - generic [ref=e253]: UpdraftPlus
+      - listitem [ref=e254]:
+        - button "Collapse Main menu" [expanded] [ref=e255] [cursor=pointer]:
+          - generic [ref=e257]: Collapse Menu
+  - generic [ref=e258]:
+    - generic [ref=e259]:
+      - navigation "Toolbar":
+        - menu:
+          - group [ref=e260]:
+            - menuitem "About WordPress" [ref=e261] [cursor=pointer]:
+              - generic [ref=e263]: About WordPress
+          - group [ref=e264]:
+            - menuitem "Projects - My Work & Projects Portfo…" [ref=e265] [cursor=pointer]
+          - group [ref=e266]:
+            - menuitem "3 updates available" [ref=e267] [cursor=pointer]:
+              - generic [ref=e269]: "3"
+              - generic [ref=e270]: 3 updates available
+          - group [ref=e271]:
+            - menuitem "0 Comments in moderation" [ref=e272] [cursor=pointer]:
+              - generic [ref=e274]: "0"
+              - generic [ref=e275]: 0 Comments in moderation
+          - group [ref=e276]:
+            - menuitem "New" [ref=e277] [cursor=pointer]:
+              - generic [ref=e279]: New
+          - group [ref=e280]:
+            - menuitem "SEO 2 notifications" [ref=e281] [cursor=pointer]:
+              - generic [ref=e283]: SEO
+              - generic [ref=e284]:
+                - text: "2"
+                - generic [ref=e285]: 2 notifications
+            - text: Premium Premium
+          - group [ref=e286]:
+            - menuitem "Forms" [ref=e287] [cursor=pointer]:
+              - generic [ref=e289]: Forms
+          - group [ref=e290]:
+            - menuitem "UpdraftPlus" [ref=e291]
+        - menu [ref=e292]:
+          - group [ref=e293]:
+            - menuitem "Howdy, admin" [ref=e294] [cursor=pointer]
+    - main [ref=e295]:
+      - generic [ref=e296]:
+        - generic [ref=e297]:
+          - button "Screen Options" [ref=e299] [cursor=pointer]
+          - button "Help" [ref=e301] [cursor=pointer]
+        - generic [ref=e302]:
+          - link "WordPress 6.9.4" [ref=e303] [cursor=pointer]:
+            - /url: https://wordpress.org/documentation/wordpress-version/version-6-9-4/
+          - text: is available!
+          - link "Please update WordPress now" [ref=e304] [cursor=pointer]:
+            - /url: https://devcraft.synergize.co/wp-admin/update-core.php
+            - text: Please update now
+          - text: .
+        - generic [ref=e305]:
+          - heading "Plugins" [level=1] [ref=e306]
+          - link "Add Plugin" [ref=e307] [cursor=pointer]:
+            - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php
+          - generic [ref=e308]:
+            - paragraph [ref=e309]: Plugin activated.
+            - button "Dismiss this notice." [ref=e310] [cursor=pointer]:
+              - generic [ref=e311]: Dismiss this notice.
+          - heading "Filter plugins list" [level=2] [ref=e312]
+          - list [ref=e313]:
+            - listitem [ref=e314]:
+              - link "All (6)" [ref=e315] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=all
+              - text: "|"
+            - listitem [ref=e316]:
+              - link "Active (5)" [ref=e317] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=active
+              - text: "|"
+            - listitem [ref=e318]:
+              - link "Inactive (1)" [ref=e319] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=inactive
+              - text: "|"
+            - listitem [ref=e320]:
+              - link "Update Available (2)" [ref=e321] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=upgrade
+              - text: "|"
+            - listitem [ref=e322]:
+              - link "Auto-updates Enabled (1)" [ref=e323] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=auto-update-enabled
+              - text: "|"
+            - listitem [ref=e324]:
+              - link "Auto-updates Disabled (5)" [ref=e325] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=auto-update-disabled
+          - paragraph [ref=e326]:
+            - generic [ref=e327]: Search installed plugins
+            - searchbox "Search installed plugins" [ref=e328]
+          - generic [ref=e329]:
+            - generic [ref=e330]:
+              - generic [ref=e331]:
+                - generic [ref=e332]: Select bulk action
+                - combobox "Select bulk action" [ref=e333] [cursor=pointer]:
+                  - option "Bulk actions" [selected]
+                  - option "Activate"
+                  - option "Deactivate"
+                  - option "Update"
+                  - option "Delete"
+                  - option "Enable Auto-updates"
+                  - option "Disable Auto-updates"
+                - button "Apply" [ref=e334] [cursor=pointer]
+              - generic [ref=e336]: 6 items
+            - heading "Plugins list" [level=2] [ref=e337]
+            - table [ref=e338]:
+              - rowgroup [ref=e339]:
+                - row "Select All Plugin Description Automatic Updates" [ref=e340]:
+                  - cell "Select All" [ref=e341]:
+                    - checkbox "Select All" [ref=e342] [cursor=pointer]
+                    - generic [ref=e344]: Select All
+                  - columnheader "Plugin" [ref=e345]
+                  - columnheader "Description" [ref=e346]
+                  - columnheader "Automatic Updates" [ref=e347]
+              - rowgroup [ref=e348]:
+                - row "Select Advanced Custom Fields PRO Advanced Custom Fields PRO Deactivate Advanced Custom Fields PRO Customize WordPress with powerful, professional and intuitive fields. Version 6.8.0.1 | By WP Engine | More information about Advanced Custom Fields PRO Enable auto-updates" [ref=e349]:
+                  - rowheader "Select Advanced Custom Fields PRO" [ref=e350]:
+                    - generic [ref=e352]: Select Advanced Custom Fields PRO
+                    - checkbox "Select Advanced Custom Fields PRO" [ref=e353] [cursor=pointer]
+                  - cell "Advanced Custom Fields PRO Deactivate Advanced Custom Fields PRO" [ref=e354]:
+                    - strong [ref=e355]: Advanced Custom Fields PRO
+                    - link "Deactivate Advanced Custom Fields PRO" [ref=e358] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=advanced-custom-fields-pro%2Facf.php&plugin_status=all&paged=1&s&_wpnonce=5451c880ed
+                      - text: Deactivate
+                  - cell "Customize WordPress with powerful, professional and intuitive fields. Version 6.8.0.1 | By WP Engine | More information about Advanced Custom Fields PRO" [ref=e359]:
+                    - paragraph [ref=e361]: Customize WordPress with powerful, professional and intuitive fields.
+                    - generic [ref=e362]:
+                      - text: Version 6.8.0.1 | By
+                      - link "WP Engine" [ref=e363] [cursor=pointer]:
+                        - /url: https://wpengine.com/?utm_source=wordpress.org&utm_medium=referral&utm_campaign=plugin_directory&utm_content=advanced_custom_fields
+                      - text: "|"
+                      - link "More information about Advanced Custom Fields PRO" [ref=e364] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=advanced-custom-fields-pro&TB_iframe=true&width=600&height=550
+                        - text: View details
+                  - cell "Enable auto-updates" [ref=e365]:
+                    - button "Enable auto-updates" [ref=e366] [cursor=pointer]:  Enable auto-updates
+                - row "There is a new version of Advanced Custom Fields PRO available. View Advanced Custom Fields PRO version 6.8.1 details or Update Advanced Custom Fields PRO now." [ref=e367]:
+                  - cell "There is a new version of Advanced Custom Fields PRO available. View Advanced Custom Fields PRO version 6.8.1 details or Update Advanced Custom Fields PRO now." [ref=e368]:
+                    - paragraph [ref=e370]:
+                      - text: There is a new version of Advanced Custom Fields PRO available.
+                      - link "View Advanced Custom Fields PRO version 6.8.1 details" [ref=e371] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=advanced-custom-fields-pro&section=changelog&TB_iframe=true&width=600&height=800
+                        - text: View version 6.8.1 details
+                      - text: or
+                      - link "Update Advanced Custom Fields PRO now" [ref=e372] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/update.php?action=upgrade-plugin&plugin=advanced-custom-fields-pro%2Facf.php&_wpnonce=a946abd560
+                        - text: update now
+                      - text: .
+                - 'row "Select Akismet Anti-spam: Spam Protection Akismet Anti-spam: Spam Protection Activate Akismet Anti-spam: Spam Protection | Delete Akismet Anti-spam: Spam Protection Used by millions, Akismet is quite possibly the best way in the world to protect your blog from spam. Akismet Anti-spam keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key. Version 5.7 | By Automattic - Anti-spam Team | More information about Akismet Anti-spam: Spam Protection Enable auto-updates" [ref=e373]':
+                  - 'rowheader "Select Akismet Anti-spam: Spam Protection" [ref=e374]':
+                    - generic [ref=e376]: "Select Akismet Anti-spam: Spam Protection"
+                    - 'checkbox "Select Akismet Anti-spam: Spam Protection" [ref=e377] [cursor=pointer]'
+                  - 'cell "Akismet Anti-spam: Spam Protection Activate Akismet Anti-spam: Spam Protection | Delete Akismet Anti-spam: Spam Protection" [ref=e378]':
+                    - strong [ref=e379]: "Akismet Anti-spam: Spam Protection"
+                    - generic [ref=e380]:
+                      - generic [ref=e381]:
+                        - 'link "Activate Akismet Anti-spam: Spam Protection" [ref=e382] [cursor=pointer]':
+                          - /url: plugins.php?action=activate&plugin=akismet%2Fakismet.php&plugin_status=all&paged=1&s&_wpnonce=d4f0111152
+                          - text: Activate
+                        - text: "|"
+                      - 'link "Delete Akismet Anti-spam: Spam Protection" [ref=e384] [cursor=pointer]':
+                        - /url: plugins.php?action=delete-selected&checked%5B0%5D=akismet%2Fakismet.php&plugin_status=all&paged=1&s&_wpnonce=0fb0067809
+                        - text: Delete
+                  - 'cell "Used by millions, Akismet is quite possibly the best way in the world to protect your blog from spam. Akismet Anti-spam keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key. Version 5.7 | By Automattic - Anti-spam Team | More information about Akismet Anti-spam: Spam Protection" [ref=e385]':
+                    - paragraph [ref=e387]:
+                      - text: Used by millions, Akismet is quite possibly the best way in the world to
+                      - strong [ref=e388]: protect your blog from spam
+                      - text: ". Akismet Anti-spam keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key."
+                    - generic [ref=e389]:
+                      - text: Version 5.7 | By
+                      - link "Automattic - Anti-spam Team" [ref=e390] [cursor=pointer]:
+                        - /url: https://automattic.com/wordpress-plugins/
+                      - text: "|"
+                      - 'link "More information about Akismet Anti-spam: Spam Protection" [ref=e391] [cursor=pointer]':
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=akismet&TB_iframe=true&width=600&height=550
+                        - text: View details
+                  - cell "Enable auto-updates" [ref=e392]:
+                    - button "Enable auto-updates" [ref=e393] [cursor=pointer]:  Enable auto-updates
+                - row "Select All-in-One WP Migration and Backup All-in-One WP Migration and Backup Deactivate All-in-One WP Migration and Backup All-in-One WP Migration makes moving your entire WordPress site simple. Export or import your database, media, plugins, and themes with just a few clicks. Version 7.105 | By ServMask | More information about All-in-One WP Migration and Backup | Contact Support | Translate Enable auto-updates" [ref=e394]:
+                  - rowheader "Select All-in-One WP Migration and Backup" [ref=e395]:
+                    - generic [ref=e397]: Select All-in-One WP Migration and Backup
+                    - checkbox "Select All-in-One WP Migration and Backup" [ref=e398] [cursor=pointer]
+                  - cell "All-in-One WP Migration and Backup Deactivate All-in-One WP Migration and Backup" [ref=e399]:
+                    - strong [ref=e400]: All-in-One WP Migration and Backup
+                    - link "Deactivate All-in-One WP Migration and Backup" [ref=e403] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=all-in-one-wp-migration%2Fall-in-one-wp-migration.php&plugin_status=all&paged=1&s&_wpnonce=80991748ea
+                      - text: Deactivate
+                  - cell "All-in-One WP Migration makes moving your entire WordPress site simple. Export or import your database, media, plugins, and themes with just a few clicks. Version 7.105 | By ServMask | More information about All-in-One WP Migration and Backup | Contact Support | Translate" [ref=e404]:
+                    - paragraph [ref=e406]: All-in-One WP Migration makes moving your entire WordPress site simple. Export or import your database, media, plugins, and themes with just a few clicks.
+                    - generic [ref=e407]:
+                      - text: Version 7.105 | By
+                      - link "ServMask" [ref=e408] [cursor=pointer]:
+                        - /url: https://servmask.com/
+                      - text: "|"
+                      - link "More information about All-in-One WP Migration and Backup" [ref=e409] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=all-in-one-wp-migration&TB_iframe=true&width=600&height=550
+                        - text: View details
+                      - text: "|"
+                      - link "Contact Support" [ref=e410] [cursor=pointer]:
+                        - /url: https://servmask.com/contact-support
+                      - text: "|"
+                      - link "Translate" [ref=e411] [cursor=pointer]:
+                        - /url: https://translate.wordpress.org/projects/wp-plugins/all-in-one-wp-migration/
+                  - cell "Enable auto-updates" [ref=e412]:
+                    - button "Enable auto-updates" [ref=e413] [cursor=pointer]:  Enable auto-updates
+                - row "Select Gravity Forms Gravity Forms Settings | Deactivate Gravity Forms Easily create web forms and manage form entries within the WordPress admin. Version 2.10.1 | By Gravity Forms | More information about Gravity Forms Disable auto-updates Automatic update overdue by 1 week. There may be a problem with WP-Cron." [ref=e414]:
+                  - rowheader "Select Gravity Forms" [ref=e415]:
+                    - generic [ref=e417]: Select Gravity Forms
+                    - checkbox "Select Gravity Forms" [ref=e418] [cursor=pointer]
+                  - cell "Gravity Forms Settings | Deactivate Gravity Forms" [ref=e419]:
+                    - strong [ref=e420]: Gravity Forms
+                    - generic [ref=e421]:
+                      - generic [ref=e422]:
+                        - link "Settings" [ref=e423] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/admin.php?page=gf_settings
+                        - text: "|"
+                      - link "Deactivate Gravity Forms" [ref=e425] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=gravityforms%2Fgravityforms.php&plugin_status=all&paged=1&s&_wpnonce=87ac8e77bc
+                        - text: Deactivate
+                  - cell "Easily create web forms and manage form entries within the WordPress admin. Version 2.10.1 | By Gravity Forms | More information about Gravity Forms" [ref=e426]:
+                    - paragraph [ref=e428]: Easily create web forms and manage form entries within the WordPress admin.
+                    - generic [ref=e429]:
+                      - text: Version 2.10.1 | By
+                      - link "Gravity Forms" [ref=e430] [cursor=pointer]:
+                        - /url: https://gravityforms.com
+                      - text: "|"
+                      - link "More information about Gravity Forms" [ref=e431] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=gravityforms&TB_iframe=true&width=600&height=550
+                        - text: View details
+                  - cell "Disable auto-updates Automatic update overdue by 1 week. There may be a problem with WP-Cron." [ref=e432]:
+                    - button "Disable auto-updates" [ref=e433] [cursor=pointer]:  Disable auto-updates
+                    - generic [ref=e434]: Automatic update overdue by 1 week. There may be a problem with WP-Cron.
+                - row "There is a new version of Gravity Forms available. View Gravity Forms version 2.10.2 details or Update Gravity Forms now." [ref=e435]:
+                  - cell "There is a new version of Gravity Forms available. View Gravity Forms version 2.10.2 details or Update Gravity Forms now." [ref=e436]:
+                    - paragraph [ref=e438]:
+                      - text: There is a new version of Gravity Forms available.
+                      - link "View Gravity Forms version 2.10.2 details" [ref=e439] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=gravityforms&section=changelog&TB_iframe=true&width=600&height=800
+                        - text: View version 2.10.2 details
+                      - text: or
+                      - link "Update Gravity Forms now" [ref=e440] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/update.php?action=upgrade-plugin&plugin=gravityforms%2Fgravityforms.php&_wpnonce=956a10adc4
+                        - text: update now
+                      - text: .
+                - 'row "Select UpdraftPlus - Backup/Restore UpdraftPlus - Backup/Restore Premium / Pro Support | Settings | Deactivate UpdraftPlus - Backup/Restore | Take Tour Backup and restore: take backups locally, or backup to Amazon S3, Dropbox, Google Drive, Rackspace, (S)FTP, WebDAV & email, on automatic schedules. Version 1.26.4 | By TeamUpdraft, DavidAnderson | More information about UpdraftPlus - Backup/Restore Enable auto-updates" [ref=e441]':
+                  - rowheader "Select UpdraftPlus - Backup/Restore" [ref=e442]:
+                    - generic [ref=e444]: Select UpdraftPlus - Backup/Restore
+                    - checkbox "Select UpdraftPlus - Backup/Restore" [ref=e445] [cursor=pointer]
+                  - cell "UpdraftPlus - Backup/Restore Premium / Pro Support | Settings | Deactivate UpdraftPlus - Backup/Restore | Take Tour" [ref=e446]:
+                    - strong [ref=e447]: UpdraftPlus - Backup/Restore
+                    - generic [ref=e448]:
+                      - generic [ref=e449]:
+                        - link "Premium / Pro Support" [ref=e450] [cursor=pointer]:
+                          - /url: https://teamupdraft.com/updraftplus/pricing/?utm_source=udp-plugin&utm_medium=referral&utm_campaign=paac&utm_content=wp-dash-get-premium
+                        - text: "|"
+                      - generic [ref=e451]:
+                        - link "Settings" [ref=e452] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/options-general.php?page=updraftplus
+                        - text: "|"
+                      - generic [ref=e453]:
+                        - link "Deactivate UpdraftPlus - Backup/Restore" [ref=e454] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=updraftplus%2Fupdraftplus.php&plugin_status=all&paged=1&s&_wpnonce=4318f9bf73
+                          - text: Deactivate
+                        - text: "|"
+                      - link "Take Tour" [ref=e456] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/options-general.php?page=updraftplus&updraftplus_tour=1
+                  - 'cell "Backup and restore: take backups locally, or backup to Amazon S3, Dropbox, Google Drive, Rackspace, (S)FTP, WebDAV & email, on automatic schedules. Version 1.26.4 | By TeamUpdraft, DavidAnderson | More information about UpdraftPlus - Backup/Restore" [ref=e457]':
+                    - paragraph [ref=e459]: "Backup and restore: take backups locally, or backup to Amazon S3, Dropbox, Google Drive, Rackspace, (S)FTP, WebDAV & email, on automatic schedules."
+                    - generic [ref=e460]:
+                      - text: Version 1.26.4 | By
+                      - link "TeamUpdraft, DavidAnderson" [ref=e461] [cursor=pointer]:
+                        - /url: https://teamupdraft.com/updraftplus/pricing/?utm_source=udp-plugin&utm_medium=referral&utm_campaign=paac&utm_content=wp-dash-get-premium
+                      - text: "|"
+                      - link "More information about UpdraftPlus - Backup/Restore" [ref=e462] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=updraftplus&TB_iframe=true&width=600&height=550
+                        - text: View details
+                  - cell "Enable auto-updates" [ref=e463]:
+                    - button "Enable auto-updates" [ref=e464] [cursor=pointer]:  Enable auto-updates
+                - row "Select Yoast SEO Yoast SEO Get Premium | Finish your first-time configuration | FAQ | Settings | Deactivate Yoast SEO The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more. Version 27.6 | By Team Yoast | More information about Yoast SEO Enable auto-updates" [ref=e465]:
+                  - rowheader "Select Yoast SEO" [ref=e466]:
+                    - generic [ref=e468]: Select Yoast SEO
+                    - checkbox "Select Yoast SEO" [ref=e469] [cursor=pointer]
+                  - cell "Yoast SEO Get Premium | Finish your first-time configuration | FAQ | Settings | Deactivate Yoast SEO" [ref=e470]:
+                    - strong [ref=e471]: Yoast SEO
+                    - generic [ref=e472]:
+                      - generic [ref=e473]:
+                        - link "Get Premium" [ref=e474] [cursor=pointer]:
+                          - /url: https://yoa.st/1yb?php_version=8.3&platform=wordpress&platform_version=6.9&software=free&software_version=27.6&days_active=10&user_language=en_US
+                        - text: "|"
+                      - generic [ref=e475]:
+                        - link "Finish your first-time configuration" [ref=e476] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/admin.php?page=wpseo_dashboard#/first-time-configuration
+                        - text: "|"
+                      - generic [ref=e477]:
+                        - link "FAQ" [ref=e478] [cursor=pointer]:
+                          - /url: https://yoa.st/1yc?php_version=8.3&platform=wordpress&platform_version=6.9&software=free&software_version=27.6&days_active=10&user_language=en_US
+                        - text: "|"
+                      - generic [ref=e479]:
+                        - link "Settings" [ref=e480] [cursor=pointer]:
+                          - /url: https://devcraft.synergize.co/wp-admin/admin.php?page=wpseo_dashboard
+                        - text: "|"
+                      - link "Deactivate Yoast SEO" [ref=e482] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=wordpress-seo%2Fwp-seo.php&plugin_status=all&paged=1&s&_wpnonce=d0d7863d54
+                        - text: Deactivate
+                  - cell "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more. Version 27.6 | By Team Yoast | More information about Yoast SEO" [ref=e483]:
+                    - paragraph [ref=e485]: The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.
+                    - generic [ref=e486]:
+                      - text: Version 27.6 | By
+                      - link "Team Yoast" [ref=e487] [cursor=pointer]:
+                        - /url: https://yoa.st/1uk
+                      - text: "|"
+                      - link "More information about Yoast SEO" [ref=e488] [cursor=pointer]:
+                        - /url: https://devcraft.synergize.co/wp-admin/plugin-install.php?tab=plugin-information&plugin=wordpress-seo&TB_iframe=true&width=600&height=550
+                        - text: View details
+                  - cell "Enable auto-updates" [ref=e489]:
+                    - button "Enable auto-updates" [ref=e490] [cursor=pointer]:  Enable auto-updates
+              - rowgroup [ref=e491]:
+                - row "Select All Plugin Description Automatic Updates" [ref=e492]:
+                  - cell "Select All" [ref=e493]:
+                    - checkbox "Select All" [ref=e494] [cursor=pointer]
+                    - generic [ref=e496]: Select All
+                  - columnheader "Plugin" [ref=e497]
+                  - columnheader "Description" [ref=e498]
+                  - columnheader "Automatic Updates" [ref=e499]
+            - generic [ref=e500]:
+              - generic [ref=e501]:
+                - generic [ref=e502]: Select bulk action
+                - combobox "Select bulk action" [ref=e503] [cursor=pointer]:
+                  - option "Bulk actions" [selected]
+                  - option "Activate"
+                  - option "Deactivate"
+                  - option "Update"
+                  - option "Delete"
+                  - option "Enable Auto-updates"
+                  - option "Disable Auto-updates"
+                - button "Apply" [ref=e504] [cursor=pointer]
+              - generic [ref=e506]: 6 items
+  - contentinfo [ref=e507]:
+    - paragraph [ref=e508]:
+      - generic [ref=e509]:
+        - text: Thank you for creating with
+        - link "WordPress" [ref=e510] [cursor=pointer]:
+          - /url: https://wordpress.org/
+        - text: .
+    - paragraph [ref=e511]:
+      - strong [ref=e512]:
+        - link "Get Version 6.9.4" [ref=e513] [cursor=pointer]:
+          - /url: https://devcraft.synergize.co/wp-admin/update-core.php

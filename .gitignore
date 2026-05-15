@@ -8,6 +8,7 @@ npm-debug.log
 yarn-error.log
 vendor/*
 #assets/config-local.json
+.env
 
 ## Yarn
 .yarn/*

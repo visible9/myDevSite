@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(Remove-Item \"D:\\\\my-site\\\\devwp\\\\acf-json\\\\group_two_images_block.json\" -ErrorAction SilentlyContinue)",
+      "Bash(yarn build *)",
+      "Bash(where curl *)",
+      "Bash(where winscp *)",
+      "Bash(powershell -Command \"Get-Command curl -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Skill(wp-plugin-development)",
+      "mcp__playwright__browser_fill_form",
+      "mcp__playwright__browser_press_key",
+      "Skill(wordpress-router)",
+      "Bash(node .claude/skills/wp-project-triage/scripts/detect_wp_project.mjs)",
+      "Bash(curl --version)",
+      "Bash(curl *)",
+      "mcp__playwright__browser_evaluate"
+    ]
+  }
+}

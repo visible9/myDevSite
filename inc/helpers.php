@@ -327,6 +327,20 @@ function get_acf_block_visibility_classes(
 }
 
 /**
+ * Return content-width class for ACF block.
+ *
+ * @param array $block
+ */
+function get_acf_block_content_width_class($block)
+{
+    if (!empty($block['useContentWidth'])) {
+        return 'has-content-width';
+    }
+
+    return '';
+}
+
+/**
  * Render multiple Gutenberg buttons inside wp:buttons wrapper.
  *
  * @param array $buttons Array of buttons:

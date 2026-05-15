@@ -1,0 +1,61 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Toolbar":
+      - menu:
+        - group [ref=e3]:
+          - menuitem "About WordPress" [ref=e4] [cursor=pointer]:
+            - generic [ref=e6]: About WordPress
+        - group [ref=e7]:
+          - menuitem "Projects - My Work & Projects Portfo…" [ref=e8] [cursor=pointer]
+        - group [ref=e9]:
+          - menuitem "Customize" [ref=e10] [cursor=pointer]
+        - group [ref=e11]:
+          - menuitem "2 updates available" [ref=e12] [cursor=pointer]:
+            - generic [ref=e14]: "2"
+            - generic [ref=e15]: 2 updates available
+        - group [ref=e16]:
+          - menuitem "0 Comments in moderation" [ref=e17] [cursor=pointer]:
+            - generic [ref=e19]: "0"
+            - generic [ref=e20]: 0 Comments in moderation
+        - group [ref=e21]:
+          - menuitem "New" [ref=e22] [cursor=pointer]:
+            - generic [ref=e24]: New
+        - group [ref=e25]:
+          - menuitem "Edit Page" [ref=e26] [cursor=pointer]
+        - group [ref=e27]:
+          - menuitem "SEO" [ref=e28] [cursor=pointer]:
+            - generic [ref=e30]: SEO
+            - generic [ref=e32]: Focus keyphrase not set
+        - group [ref=e33]:
+          - menuitem "Forms" [ref=e34] [cursor=pointer]:
+            - generic [ref=e36]: Forms
+      - menu [ref=e37]:
+        - group [ref=e38]:
+          - menuitem "Howdy, admin" [ref=e39] [cursor=pointer]
+        - group [ref=e40]:
+          - menuitem "Search" [ref=e41]:
+            - generic [ref=e42]:
+              - textbox "Search" [ref=e43] [cursor=pointer]
+              - generic [ref=e44]: Search
+  - banner [ref=e45]:
+    - button "Menu" [ref=e49] [cursor=pointer]
+  - main [ref=e51]:
+    - generic [ref=e52]:
+      - generic [ref=e55] [cursor=pointer]:
+        - text: Item title
+        - img [ref=e56]
+      - generic [ref=e60]:
+        - heading "Example Block" [level=2] [ref=e61]
+        - generic [ref=e62]:
+          - link "Test Button" [ref=e64] [cursor=pointer]:
+            - /url: "#"
+          - link "Test Button 2" [ref=e66] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e67]:
+        - button "Открыть" [ref=e68]
+        - dialog [ref=e70]:
+          - button [ref=e71]: ×
+          - paragraph [ref=e72]: привет я блок
+  - contentinfo [ref=e73]:
+    - paragraph [ref=e78]: "@ 2026 Just use the menu items."
+  - button "Открыть" [ref=e79] [cursor=pointer]

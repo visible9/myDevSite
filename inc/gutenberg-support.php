@@ -44,8 +44,7 @@ add_action('init', function () {
                 /**
                  * @global $controller
                  */
-                $dir_name = str_replace($acf_blocks_dir, '', dirname($filename));
-                $isAcfBlock = 0 === strpos($dir_name, '/acf-');
+                $isAcfBlock = 0 === strpos(basename(dirname($filename)), 'acf-');
                 $template = dirname($filename) . '/template.php';
                 $hasTemplate = file_exists($template);
                 $hasController = isset($controller);
