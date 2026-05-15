@@ -47,10 +47,12 @@ const setHeaderHeight = () => {
   const header = document.querySelector('.header');
 
   if (header) {
-    document.body.style.setProperty(
-      '--header-height',
-      `${header.offsetHeight}px`
-    );
+    setTimeout(() => {
+      document.body.style.setProperty(
+        '--header-height',
+        `${header.offsetHeight}px`
+      );
+    }, 100);
   }
 };
 

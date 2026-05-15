@@ -31,9 +31,9 @@ use theme\ThemeNavigation;
 <!-- BEGIN of header -->
 <header class="header is-root-container">
     <div class="header-inner">
-        <div class="logo">
+        <!-- <div class="logo">
             <?php show_custom_logo(); ?>
-        </div>
+        </div> -->
         <?php if (has_nav_menu('header-menu')) { ?>
             <div class="main-menu-container">
                 <div class="title-bar">

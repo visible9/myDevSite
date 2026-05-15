@@ -13,10 +13,11 @@
   --white: #ffffff;
   --gray: #cccccc;
   --red: #ff0000;
+  --pink: #ee4d5e;
   --green: #008000;
   --blue: #0000ff;
 
-  --primary: var(--blue);
+  --primary: var(--white);
   --secondary: var(--black);
   --tertiary: var(--secondary);
   --text-color: var(--black);
@@ -36,7 +37,7 @@
 
   // typo
   // -- family
-  --primary-font-family: 'Montserrat', sans-serif;
+  --primary-font-family: 'Josefin Sans', sans-serif;
   --heading-font-family: var(--primary-font-family);
 
   // -- weights

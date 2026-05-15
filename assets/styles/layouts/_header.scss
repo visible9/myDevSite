@@ -5,14 +5,13 @@
   top: var(--wp-admin--admin-bar--height, 0);
   overflow-x: clip;
   z-index: 3604;
-  background-color: var(--white);
   padding-block: var(--size-md);
   transition: var(--transition-base);
 
   .header-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: var(--size-lg);
   }
 
@@ -173,11 +172,25 @@
           display: block;
           color: var(--primary);
           padding: var(--size-xs);
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition-base);
+            transform: translateX(-50%);
+          }
 
           &:hover {
             /* menu item style on hover */
-            background: var(--primary);
-            color: var(--white);
+            &::after {
+              width: 50%;
+            }
           }
         }
 

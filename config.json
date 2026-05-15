@@ -1,9 +1,10 @@
 {
-  "devUrl": "https://wla-development.mystagingwebsite.com",
-  "themeName": "devwp",
+  "devUrl": "https://devcraft.synergize.co",
+  "themeName": "mysite",
   "proxyUrl": "https://localhost:3000",
   "open": false,
   "bsWatchFiles": [
+    "./*.php",
     "inc/**/*.php",
     "parts/**/*.php",
     "templates/**/*.php",
